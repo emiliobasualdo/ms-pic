@@ -1,25 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import logo from '../../assets/img/simplelogo.png';
+import { Link } from "@reach/router"
+import { LeftSide, BadgeAfter, BadgeAnimation } from './HeaderStyles';
 import {makeStyles, useTheme} from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import Badge from '@material-ui/core/Badge';
 import Container from '@material-ui/core/Container';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+import NotificationsIcon from '@material-ui/icons/Notifications';
+import SearchIcon from '@material-ui/icons/Search';
+import AssignmentIcon from '@material-ui/icons/Assignment';
+import ChatIcon from '@material-ui/icons/Chat';
+import HomeIcon from '@material-ui/icons/Home';
+import EmailIcon from '@material-ui/icons/Email';
+import PlaceIcon from '@material-ui/icons/Place';
+import ViewCarouselIcon from '@material-ui/icons/ViewCarousel';
+import BallotIcon from '@material-ui/icons/Ballot';
+import ShowChartIcon from '@material-ui/icons/ShowChart';
+import GridOnIcon from '@material-ui/icons/GridOn';
+import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 
 const drawerWidth = 240;
-const HeaderStyles = makeStyles((theme) => ({
+const DrawerStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
     },
@@ -54,7 +67,6 @@ const HeaderStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         padding: theme.spacing(0, 1),
-        // necessary for content to be below app bar
         ...theme.mixins.toolbar,
         justifyContent: 'flex-end',
     },
@@ -77,9 +89,54 @@ const HeaderStyles = makeStyles((theme) => ({
 }));
 
 const Header = () => {
-    const [open, setOpen] = React.useState(false);
-    const classes = HeaderStyles();
+    const [open, setOpen] = useState(false);
+    const [location, setLocation] = useState('/');
+
+    const classes = DrawerStyles();
     const theme = useTheme();
+
+    const sidebarData = [
+        {
+            path: 'negocio',
+            icon: <HomeIcon />,
+            textContent: 'Negocio'
+        },
+        {
+            path: 'clientes',
+            icon: <EmailIcon />,
+            textContent: 'Clientes'
+        },
+        {
+            path: 'zonas',
+            icon: <PlaceIcon />,
+            textContent: 'Zonas'
+        },
+        {
+            path: 'balance',
+            icon: <ShowChartIcon />,
+            textContent: 'Balance'
+        },
+        {
+            path: 'cupones',
+            icon: <ViewCarouselIcon />,
+            textContent: 'Cupones'
+        },
+        {
+            path: 'servicios',
+            icon: <BallotIcon />,
+            textContent: 'Servicios'
+        },
+        {
+            path: 'promociones',
+            icon: <GridOnIcon />,
+            textContent: 'Promociones'
+        },
+        {
+            path: 'informes',
+            icon: <AssignmentIndIcon />,
+            textContent: 'Informes'
+        }
+    ]
 
     const handleDrawerOpen = () => {
         setOpen(true);
@@ -89,6 +146,11 @@ const Header = () => {
         setOpen(false);
     };
 
+    const handleNavigation = (path) => {
+        setLocation(path);
+        handleDrawerClose();
+    }
+
     return (
         <>
             <AppBar
@@ -96,19 +158,40 @@ const Header = () => {
                 className={clsx(classes.appBar, {[classes.appBarShift]: open,})}
                 style={{ backgroundColor: '#000' }}>
                 <Container maxWidth="lg">
-                    <Toolbar>
-                        <IconButton
-                            edge="start"
-                            className={clsx(classes.menuButton, open && classes.hide)}
-                            color="inherit"
-                            aria-label="menu"
-                            onClick={handleDrawerOpen}>
-                            <MenuIcon />
-                        </IconButton>
-                        <img src={logo} style={{ width: '100px' }} alt="Más Simple logo"/>
+                    <Toolbar style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <LeftSide>
+                            <IconButton
+                                edge="start"
+                                className={clsx(classes.menuButton, open && classes.hide)}
+                                color="inherit"
+                                aria-label="menu"
+                                onClick={handleDrawerOpen}
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <img src={logo} style={{ width: '100px' }} alt="Más Simple logo"/>
+                        </LeftSide>
+                        <div>
+                            <IconButton aria-label="show 4 new mails" color="inherit">
+                                <SearchIcon />
+                            </IconButton>
+                            <IconButton aria-label="show 17 new notifications" color="inherit" style={{ position: 'relative' }}>
+                                <Badge badgeContent={17}>
+                                    <NotificationsIcon />
+                                </Badge>
+                                <BadgeAfter />
+                            </IconButton>
+                            <IconButton color="inherit">
+                                <AssignmentIcon />
+                            </IconButton>
+                            <IconButton color="inherit">
+                                <ChatIcon />
+                            </IconButton>
+                        </div>
                     </Toolbar>
                 </Container>
             </AppBar>
+
             <Drawer
                 className={classes.drawer}
                 variant="persistent"
@@ -125,22 +208,22 @@ const Header = () => {
                 </div>
                 <Divider />
                 <List>
-                    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
+                    {sidebarData.map((navItem, index) => (
+                        <Link
+                            key={index}
+                            to={navItem.path}
+                            onClick={() => handleNavigation(navItem.path)}
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <ListItem
+                                button>
+                                <ListItemIcon style={{ color: navItem.path === location ? '#e46a76' : '#333' }}>{navItem.icon}</ListItemIcon>
+                                <ListItemText style={{ color: navItem.path === location ? '#e46a76' : '#333' }} primary={navItem.textContent} />
+                            </ListItem>
+                        </Link>
                     ))}
                 </List>
                 <Divider />
-                <List>
-                    {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                            <ListItemText primary={text} />
-                        </ListItem>
-                    ))}
-                </List>
             </Drawer>
         </>
     )
