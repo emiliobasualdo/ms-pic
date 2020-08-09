@@ -5,6 +5,7 @@ export const TabsContainer = styled.div`
     align-items: center;
     background-color: #fff;
     height: 70px;
+    margin: 40px 0 0 0;
 `
 
 export const StyledUl = styled.ul`

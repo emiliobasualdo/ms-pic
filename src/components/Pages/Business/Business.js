@@ -5,7 +5,7 @@ const Business = ({ children }) => {
     const tabs = [
         {
             path: 'resumen',
-            textContent: 'Summary ejecutivo'
+            textContent: 'Resumen ejecutivo'
         },
         {
             path: 'total',

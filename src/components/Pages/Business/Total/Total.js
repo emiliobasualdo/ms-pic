@@ -1,7 +1,20 @@
 import React from 'react';
+import { Card } from './TotalStyles';
 
 const Total = () => {
-    return <h2>Total</h2>
+    return (
+        <>
+            <Card>
+                <p>fsfs</p>
+            </Card>
+            <Card>
+                <p>fsfs</p>
+            </Card>
+            <Card>
+                <p>fsfs</p>
+            </Card>
+        </>
+    )
 }
 
 export default Total;
