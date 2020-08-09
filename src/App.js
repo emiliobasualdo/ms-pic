@@ -13,23 +13,24 @@ import Promotions from "./components/Pages/Promotions/Promotions";
 import Reports from "./components/Pages/Reports/Reports";
 
 function App() {
+
   return (
       <>
-      <Layout>
-          <Container maxWidth="lg">
-              <Router>
-                  <Redirect from='/' to="negocio" noThrow />
-                  <Business path="negocio" />
-                  <Clients path="clientes" />
-                  <Zones path="zonas" />
-                  <Balance path="balance" />
-                  <Coupons path="cupones" />
-                  <Services path="servicios" />
-                  <Promotions path="promociones" />
-                  <Reports path="informes" />
-              </Router>
-          </Container>
-      </Layout>
+          <Layout>
+              <Container maxWidth="lg">
+                  <Router>
+                      <Redirect from ="/" to="negocio" noThrow />
+                      <Business path="negocio" />
+                      <Clients path="clientes" />
+                      <Zones path="zonas" />
+                      <Balance path="balance" />
+                      <Coupons path="cupones" />
+                      <Services path="servicios" />
+                      <Promotions path="promociones" />
+                      <Reports path="informes" />
+                  </Router>
+              </Container>
+          </Layout>
       </>
   )
 }

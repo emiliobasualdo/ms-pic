@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import logo from '../../assets/img/simplelogo.png';
 import { Link } from "@reach/router"
-import { LeftSide, BadgeAfter, BadgeAnimation } from './HeaderStyles';
-import {makeStyles, useTheme} from '@material-ui/core/styles';
+import { LeftSide, BadgeAfter } from './HeaderStyles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
@@ -92,6 +92,10 @@ const Header = () => {
     const [open, setOpen] = useState(false);
     const [location, setLocation] = useState('/');
 
+    useEffect(() => {
+       setLocation('negocio');
+    }, [])
+
     const classes = DrawerStyles();
     const theme = useTheme();
 
@@ -169,7 +173,9 @@ const Header = () => {
                             >
                                 <MenuIcon />
                             </IconButton>
-                            <img src={logo} style={{ width: '100px' }} alt="Más Simple logo"/>
+                            <Link to="negocio" onClick={ () => setLocation('negocio') }>
+                                <img src={logo} style={{ width: '100px' }} alt="Más Simple logo"/>
+                            </Link>
                         </LeftSide>
                         <div>
                             <IconButton aria-label="show 4 new mails" color="inherit">
