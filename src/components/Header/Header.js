@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import logo from '../../assets/img/simplelogo.png';
-import { Link } from "@reach/router"
+import { Link } from "@reach/router";
 import { LeftSide, BadgeAfter } from './HeaderStyles';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -34,7 +34,7 @@ import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 const drawerWidth = 240;
 const DrawerStyles = makeStyles((theme) => ({
     root: {
-        display: 'flex',
+        display: 'flex'
     },
     appBar: {
         transition: theme.transitions.create(['margin', 'width'], {
@@ -61,7 +61,7 @@ const DrawerStyles = makeStyles((theme) => ({
         flexShrink: 0,
     },
     drawerPaper: {
-        width: drawerWidth,
+        width: drawerWidth
     },
     drawerHeader: {
         display: 'flex',
@@ -77,7 +77,7 @@ const DrawerStyles = makeStyles((theme) => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
-        marginLeft: -drawerWidth,
+        marginLeft: -drawerWidth
     },
     contentShift: {
         transition: theme.transitions.create('margin', {
@@ -173,7 +173,7 @@ const Header = () => {
                             >
                                 <MenuIcon />
                             </IconButton>
-                            <Link to="negocio" onClick={ () => setLocation('negocio') }>
+                            <Link to="negocio/total" onClick={ () => handleNavigation('negocio') }>
                                 <img src={logo} style={{ width: '100px' }} alt="Más Simple logo"/>
                             </Link>
                         </LeftSide>
@@ -215,21 +215,22 @@ const Header = () => {
                 <Divider />
                 <List>
                     {sidebarData.map((navItem, index) => (
-                        <Link
-                            key={index}
-                            to={navItem.path}
-                            onClick={() => handleNavigation(navItem.path)}
-                            style={{ textDecoration: 'none' }}
-                        >
-                            <ListItem
-                                button>
-                                <ListItemIcon style={{ color: navItem.path === location ? '#e46a76' : '#333' }}>{navItem.icon}</ListItemIcon>
-                                <ListItemText style={{ color: navItem.path === location ? '#e46a76' : '#333' }} primary={navItem.textContent} />
-                            </ListItem>
-                        </Link>
+                        <React.Fragment key={index}>
+                            <Link
+                                to={navItem.path + '/total'}
+                                onClick={() => handleNavigation(navItem.path)}
+                                style={{ textDecoration: 'none' }}
+                            >
+                                <ListItem
+                                    button>
+                                    <ListItemIcon style={{ color: navItem.path === location ? '#e46a76' : '#333' }}>{navItem.icon}</ListItemIcon>
+                                    <ListItemText style={{ color: navItem.path === location ? '#e46a76' : '#333' }} primary={navItem.textContent} />
+                                </ListItem>
+                            </Link>
+                            <Divider />
+                        </React.Fragment>
                     ))}
                 </List>
-                <Divider />
             </Drawer>
         </>
     )
