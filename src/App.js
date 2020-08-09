@@ -24,7 +24,7 @@ function App() {
       <>
           <Layout>
               <Container maxWidth="lg">
-                  <Router>
+                  <Router style={{ paddingBottom: '100px' }}>
                       <Redirect from ="/" to="negocio/total" noThrow />
                       <Business path="negocio">
                           <Redirect from="/" to="total" noThrow />

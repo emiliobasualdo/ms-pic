@@ -5,13 +5,13 @@ const Total = () => {
     return (
         <>
             <Card>
-                <p>fsfs</p>
+                <p>Total</p>
             </Card>
             <Card>
-                <p>fsfs</p>
+                <p>Total</p>
             </Card>
             <Card>
-                <p>fsfs</p>
+                <p>Total</p>
             </Card>
         </>
     )

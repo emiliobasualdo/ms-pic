@@ -1,7 +1,14 @@
 import React from 'react';
+import { Card } from './PrepaidStyles';
 
 const Prepaid = () => {
-    return <h2>Prepaid</h2>
+    return (
+        <>
+            <Card>
+                <p>Prepaid</p>
+            </Card>
+        </>
+    )
 }
 
 export default Prepaid;
