@@ -1,4 +1,21 @@
-import styled, {keyframes} from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const tabsSkew = keyframes`
+    0% {
+        transform: rotateX(90deg) skew(-40deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: .5;
+    }
+    80% {
+        transform: rotateX(-20deg);
+    }
+    100% {
+        transform: rotateX(0) skew(0);
+        opacity: 1;
+    }
+`
 
 export const TabsContainer = styled.div`
     display: flex;
@@ -6,6 +23,7 @@ export const TabsContainer = styled.div`
     background-color: #fff;
     height: 70px;
     margin: 40px 0 0 0;
+    animation: ${ tabsSkew } .7s ease-in-out;
 `
 
 export const StyledUl = styled.ul`
