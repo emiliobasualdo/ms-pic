@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import logo from '../../assets/img/simplelogo.png';
 import { Link } from "@reach/router";
-import { LeftSide, BadgeAfter } from './HeaderStyles';
+import { LeftSide, BadgeAfter, BadgeAfterTwo } from './HeaderStyles';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
@@ -171,6 +171,7 @@ const Header = () => {
                                     <NotificationsIcon />
                                 </Badge>
                                 <BadgeAfter />
+                                <BadgeAfterTwo />
                             </IconButton>
                             <IconButton color="inherit">
                                 <AssignmentIcon />
