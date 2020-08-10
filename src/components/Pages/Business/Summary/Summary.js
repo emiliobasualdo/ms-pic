@@ -1,7 +1,14 @@
 import React from 'react';
+import { Card } from './SummaryStyles';
 
 const Summary = () => {
-    return <h2>Summary</h2>
+    return (
+        <>
+            <Card>
+                <p>Summary</p>
+            </Card>
+        </>
+    )
 }
 
 export default Summary;

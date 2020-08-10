@@ -1,7 +1,14 @@
 import React from 'react';
+import {Card} from "./PaymentStyles";
 
 const Payment = () => {
-    return <h2>Payment</h2>
+    return (
+        <>
+            <Card>
+                <p>Payment</p>
+            </Card>
+        </>
+    )
 }
 
 export default Payment;

@@ -1,7 +1,14 @@
 import React from 'react';
+import {Card} from "./TraditionalStyles";
 
 const Traditional = () => {
-    return <h2>Traditional</h2>
+    return (
+        <>
+            <Card>
+                <p>Traditional</p>
+            </Card>
+        </>
+    )
 }
 
 export default Traditional;

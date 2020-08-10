@@ -1,7 +1,14 @@
 import React from 'react';
+import {Card} from "./ConsumptionsStyles";
 
 const Consumptions = () => {
-    return <h2>Consumptions</h2>
+    return (
+        <>
+            <Card>
+                <p>Consumptions</p>
+            </Card>
+        </>
+    )
 }
 
 export default Consumptions;

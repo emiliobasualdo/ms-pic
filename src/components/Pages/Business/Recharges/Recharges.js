@@ -1,7 +1,14 @@
 import React from 'react';
+import {Card} from "./RechargesStyles";
 
 const Recharges = () => {
-    return <h2>Recharges</h2>
+    return (
+        <>
+            <Card>
+                <p>Recharges</p>
+            </Card>
+        </>
+    )
 }
 
 export default Recharges;
