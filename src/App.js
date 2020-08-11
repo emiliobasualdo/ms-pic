@@ -40,10 +40,10 @@ const App = () => {
             <ThemeProvider theme={baseTheme}>
                 <GlobalStyle/>
                 <Layout>
-                    <Container maxWidth="lg">
+                    <Container maxWidth="lg" style={{ minHeight: '100vh' }}>
                         <Router style={{paddingBottom: '100px'}}>
-                            <Redirect from ="/" to="negocio/total" noThrow/>
                             <Business path="negocio">
+                                <Redirect from ="/" to="total" noThrow/>
                                 <Summary path="resumen"/>
                                 <Total path="total"/>
                                 <Prepaid path="prepago"/>

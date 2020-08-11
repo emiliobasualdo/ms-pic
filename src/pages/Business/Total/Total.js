@@ -29,6 +29,7 @@ const Total = () => {
                         weekly={item.weekly}
                         monthly={item.monthly}
                         clientsAmmount={item.clientsAmmount}
+                        clientsText={item.clientsText}
                         volumeOpAmmount={item.volumeOpAmmount}
                         volumeOpText={item.volumeOpText}
                         volumeCoAmmount={item.volumeCoAmmount}

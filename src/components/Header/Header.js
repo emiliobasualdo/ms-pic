@@ -30,6 +30,7 @@ import BallotIcon from '@material-ui/icons/Ballot';
 import ShowChartIcon from '@material-ui/icons/ShowChart';
 import GridOnIcon from '@material-ui/icons/GridOn';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import baseTheme from "../../themes/baseTheme";
 
 const drawerWidth = 240;
 const DrawerStyles = makeStyles((theme) => ({
