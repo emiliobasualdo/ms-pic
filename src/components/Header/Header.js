@@ -30,7 +30,6 @@ import BallotIcon from '@material-ui/icons/Ballot';
 import ShowChartIcon from '@material-ui/icons/ShowChart';
 import GridOnIcon from '@material-ui/icons/GridOn';
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
-import baseTheme from "../../themes/baseTheme";
 
 const drawerWidth = 240;
 const DrawerStyles = makeStyles((theme) => ({
@@ -159,7 +158,7 @@ const Header = () => {
                             >
                                 <MenuIcon />
                             </IconButton>
-                            <Link to="negocio/total" onClick={ () => handleNavigation('negocio') }>
+                            <Link to="negocio" onClick={ () => handleNavigation('negocio') }>
                                 <img src={logo} style={{ width: '100px' }} alt="Más Simple logo"/>
                             </Link>
                         </LeftSide>
