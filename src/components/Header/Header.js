@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import logo from '../../assets/img/simplelogo.png';
 import { Link } from "@reach/router";
-import { LeftSide, BadgeAfter, BadgeAfterTwo } from './HeaderStyles';
+import { LeftSide, BadgeAfter, BadgeAfterTwo } from './Header.styles';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
@@ -79,8 +79,8 @@ const Header = () => {
     const [location, setLocation] = useState('/');
 
     useEffect(() => {
-       setLocation('negocio');
-    }, [])
+        setLocation('negocio');
+    }, []);
 
     const classes = DrawerStyles();
     const theme = useTheme();
@@ -203,7 +203,7 @@ const Header = () => {
                     {sidebarData.map((navItem, index) => (
                         <React.Fragment key={index}>
                             <Link
-                                to={navItem.path + '/total'}
+                                to={navItem.path}
                                 onClick={() => handleNavigation(navItem.path)}
                                 style={{ textDecoration: 'none' }}
                             >

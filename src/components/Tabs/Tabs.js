@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "@reach/router";
-import {LiContainer, StyledLi, StyledUl, TabsContainer} from "./TabsStyles";
+import {LiContainer, StyledLi, StyledUl, TabsContainer, TheLink} from "./Tabs.styles";
 import ArrowRight from "@material-ui/icons/ArrowRight";
 
-const Tabs = ({ tabItems }) => {
+const Tabs = ({tabItems}) => {
     const [show, setShow] = useState(true);
     const [location, setLocation] = useState(window.location.href);
 
@@ -20,7 +19,7 @@ const Tabs = ({ tabItems }) => {
         }, 0);
     }
 
-    return (
+    return(
         <>
             {show && (
                 <TabsContainer>
@@ -28,17 +27,15 @@ const Tabs = ({ tabItems }) => {
                         <StyledUl>
                             {tabItems.map((item, index) => {
                                 return (
-                                    <React.Fragment key={index}>
-                                        <Link
-                                            to={item.path}
-                                            style={{ textDecoration: 'none', color: '#000' }}
-                                            onClick={() => handleClick()}>
-                                            <LiContainer>
-                                                {window.location.href.includes(item.path) && <ArrowRight />}
-                                                <StyledLi>{ item.textContent }</StyledLi>
-                                            </LiContainer>
-                                        </Link>
-                                    </React.Fragment>
+                                    <TheLink
+                                        key={index}
+                                        to={item.path}
+                                        onClick={() => handleClick()}>
+                                        <LiContainer>
+                                            {window.location.href.includes(item.path) && <ArrowRight/>}
+                                            <StyledLi>{item.textContent}</StyledLi>
+                                        </LiContainer>
+                                    </TheLink>
                                 )
                             })}
                         </StyledUl>
@@ -46,7 +43,7 @@ const Tabs = ({ tabItems }) => {
                 </TabsContainer>
             )}
         </>
-    )
+    );
 }
 
 export default Tabs;

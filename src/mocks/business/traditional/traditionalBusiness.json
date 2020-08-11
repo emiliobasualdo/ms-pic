@@ -1,0 +1,21 @@
+[
+    {
+        "header": "Negocio Tradicional",
+        "paragraph": "Principales indicadores",
+        "diary": "Diaria",
+        "weekly": "Semanal",
+        "monthly": "Mensual",
+        "clientsAmmount": 56326,
+        "clientsText": "Clientes",
+        "volumeOpAmmount": 319299.238,
+        "volumeOpText": "Volumen Operado",
+        "volumeCoAmmount": 156465.963,
+        "volumeCoText": "Volumen Consumo",
+        "volumeReAmmount": 162796.173,
+        "volumeReText": "Volumen Operado",
+        "transactionsAmmount": 267169,
+        "transactionsText": "# Transacciones",
+        "ticketsAmmount": 132006 ,
+        "ticketsText": "# Tickets"
+    }
+]

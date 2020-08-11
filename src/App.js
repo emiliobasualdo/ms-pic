@@ -1,53 +1,70 @@
 import React from 'react';
-import './App.css';
-import Layout from './containers/Layout/Layout';
+import {createGlobalStyle, ThemeProvider, css} from 'styled-components';
+import baseTheme from './themes/baseTheme';
 import Container from '@material-ui/core/Container';
-import { Router, Redirect } from "@reach/router";
-import Business from "./components/Pages/Business/Business";
-import Summary from "./components/Pages/Business/Summary/Summary";
-import Total from './components/Pages/Business/Total/Total';
-import Prepaid from "./components/Pages/Business/Prepaid/Prepaid";
-import Traditional from "./components/Pages/Business/Traditional/Traditional";
-import Recharges from "./components/Pages/Business/Recharges/Recharges";
-import Consumptions from "./components/Pages/Business/Consumptions/Consumptions";
-import Payment from "./components/Pages/Business/Payment/Payment";
-import Clients from "./components/Pages/Clients/Clients";
-import Zones from "./components/Pages/Zones/Zones";
-import Balance from "./components/Pages/Balance/Balance";
-import Coupons from "./components/Pages/Coupons/Coupons";
-import Services from "./components/Pages/Services/Services";
-import Promotions from "./components/Pages/Promotions/Promotions";
-import Reports from "./components/Pages/Reports/Reports";
+import {Router, Redirect} from "@reach/router";
+//Layout
+import Layout from './containers/mainLayout/Layout';
+//Pages
+import {
+    Balance,
+    Business,
+    Total,
+    Clients,
+    Consumptions,
+    Coupons,
+    Payment,
+    Prepaid,
+    Promotions,
+    Recharges,
+    Reports,
+    Services,
+    Summary,
+    Traditional,
+    Zones
+} from './pages';
 
-function App() {
-  return (
-      <>
-          <Layout>
-              <Container maxWidth="lg">
-                  <Router style={{ paddingBottom: '100px' }}>
-                      <Redirect from ="/" to="negocio/total" noThrow />
-                      <Business path="negocio">
-                          <Redirect from="/" to="total" noThrow />
-                          <Summary path="resumen" />
-                          <Total path="total" />
-                          <Prepaid path="prepago" />
-                          <Traditional path="tradicional" />
-                          <Recharges path="recargas" />
-                          <Consumptions path="consumos" />
-                          <Payment path="cobro" />
-                      </Business>
-                      <Clients path="clientes" />
-                      <Zones path="zonas" />
-                      <Balance path="balance" />
-                      <Coupons path="cupones" />
-                      <Services path="servicios" />
-                      <Promotions path="promociones" />
-                      <Reports path="informes" />
-                  </Router>
-              </Container>
-          </Layout>
-      </>
-  )
+const GlobalStyle = createGlobalStyle(({theme}) => {
+    return css`
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: ${theme.typography.fonts.primary};
+        }
+    `;
+});
+
+const App = () => {
+    return(
+        <>
+            <ThemeProvider theme={baseTheme}>
+                <GlobalStyle/>
+                <Layout>
+                    <Container maxWidth="lg">
+                        <Router style={{paddingBottom: '100px'}}>
+                            <Redirect from ="/" to="negocio/total" noThrow/>
+                            <Business path="negocio">
+                                <Summary path="resumen"/>
+                                <Total path="total"/>
+                                <Prepaid path="prepago"/>
+                                <Traditional path="tradicional"/>
+                                <Recharges path="recargas"/>
+                                <Consumptions path="consumos"/>
+                                <Payment path="cobro"/>
+                            </Business>
+                            <Clients exact path="clientes"/>
+                            <Zones exact path="zonas"/>
+                            <Balance exact path="balance"/>
+                            <Coupons exact path="cupones"/>
+                            <Services exact path="servicios"/>
+                            <Promotions exact path="promociones"/>
+                            <Reports exact path="informes"/>
+                        </Router>
+                    </Container>
+                </Layout>
+            </ThemeProvider>
+        </>
+    );
 }
 
 export default App;
