@@ -4,7 +4,7 @@ import baseTheme from './themes/baseTheme';
 import Container from '@material-ui/core/Container';
 import {Router, Redirect} from "@reach/router";
 //Layout
-import Layout from './containers/mainLayout/Layout';
+import Layout from './layouts/mainLayout/Layout';
 //Pages
 import {
     Balance,

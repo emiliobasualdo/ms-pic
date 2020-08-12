@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Recarga Promedio",
+        "header": {
+            "column1": "Medio",
+            "column2": "Promedio"
+            },
+        "column1": {
+            "one": "Maestro",
+            "two": "Visa Débito",
+            "three": "Visa",
+            "four": "MasterCard",
+            "five": "Efectivo",
+            "six": "Otras"
+            },
+        "column3": {
+            "one": 1.099,
+            "two": 1.515,
+            "three": 1.189,
+            "four": 1.177,
+            "five": 1.430,
+            "six": 1.149
+        }
+    }
+]

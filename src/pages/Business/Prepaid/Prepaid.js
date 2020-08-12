@@ -5,7 +5,7 @@ import {PrepaidBusinessContainer} from './Prepaid.styles';
 import prepaidBusinessData from '../../../mocks/business/prepaid/prepaidBusiness.json';
 
 const Prepaid = () => {
-    return (
+    return(
         <PrepaidBusinessContainer>
             {prepaidBusinessData.map((item, index) => {
                 return(

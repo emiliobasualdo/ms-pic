@@ -8,6 +8,7 @@ export const TitleCardContainer = styled.div(({theme}) => {
         margin: 2.5rem 0;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     `;
 });
 
@@ -24,14 +25,19 @@ export const Title = styled.h2(({theme}) => {
     `;
 });
 
-export const SecondContainer = styled.ul`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
-    list-style: none;
-    padding: 0 5rem;
-`;
+export const SecondContainer = styled.ul(({theme}) => {
+    return css`
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 3rem;
+        list-style: none;
+        padding: 0 5rem;
+        border-bottom: 1px solid ${theme.colors['light-grey']};
+        background-color: transparent;
+    `;
+});
 
 export const Item = styled.button(({theme}) => {
     return css`
@@ -41,10 +47,11 @@ export const Item = styled.button(({theme}) => {
         text-decoration: none;
         outline: none;
         border: none;
-        border: none;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
         background-color: transparent;
         cursor: pointer;
-        padding: 10px 15px;
+        padding: 0.9rem 1.2rem;
         margin-right: 15px;
         outline: none;
         &:hover{
