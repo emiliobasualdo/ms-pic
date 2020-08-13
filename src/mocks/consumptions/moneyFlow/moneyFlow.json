@@ -1,0 +1,89 @@
+[
+    {
+        "title": "Expresado en Volumen",
+        "header": {
+            "column1": "Rango",
+            "column2": "Volumen",
+            "column3": "%"
+            },
+        "column1": {
+            "one": "0-1000",
+            "two": "1001-3000",
+            "three": "3001-5000",
+            "four": "5001-7500",
+            "five": "+ 7500"
+            },
+        "column2": {
+            "one": 26.0382,
+            "two": 14.8840,
+            "three": 37.1666,
+            "four": 18.5854,
+            "five": 44.1048
+            },
+        "column3": {
+            "one": 16.0,
+            "two": 9.1,
+            "three": 22.8,
+            "four": 11.4,
+            "five": 27.1
+        }
+    },
+    {
+        "title": "Expresado en Transacciones",
+        "header": {
+            "column1": "Rango",
+            "column2": "Transacciones",
+            "column3": "%"
+            },
+        "column1": {
+            "one": "0-1000",
+            "two": "1001-3000",
+            "three": "3001-5000",
+            "four": "5001-7500",
+            "five": "+ 7500"
+            },
+        "column2": {
+            "one": 23.682,
+            "two": 12.934,
+            "three": 31.260,
+            "four": 15.792,
+            "five": 30.848
+            },
+        "column3": {
+            "one": 17.5,
+            "two": 9.6,
+            "three": 23.1,
+            "four": 11.7,
+            "five": 22.8
+        }
+    },
+    {
+        "title": "Por Clientes",
+        "header": {
+            "column1": "Rango",
+            "column2": "V. Promedio",
+            "column3": "Txt. Promedio"
+            },
+        "column1": {
+            "one": "0-1000",
+            "two": "1001-3000",
+            "three": "3001-5000",
+            "four": "5001-7500",
+            "five": "+ 7500"
+            },
+        "column2": {
+            "one": 26.038,
+            "two": 14.880,
+            "three": 37.166,
+            "four": 18.584,
+            "five": 44.108
+            },
+        "column3": {
+            "one": 16.0,
+            "two": 9.1,
+            "three": 22.8,
+            "four": 11.4,
+            "five": 27.1
+        }
+    }
+]

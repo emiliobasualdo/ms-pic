@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Recarga Promedio",
+        "header": {
+            "column1": "Zona",
+            "column2": "Promedio"
+        },
+        "column1": {
+            "one": "Caba",
+            "two": "Córdoba",
+            "three": "Corrientes",
+            "four": "Entre Rios",
+            "five": "GBA",
+            "six": "Santa Fe"
+        },
+        "column2": {
+            "one": 1.099,
+            "two": 1.515,
+            "three": 1.189,
+            "four": 1.177,
+            "five": 1.430,
+            "six": 1.149
+        }
+    }
+]

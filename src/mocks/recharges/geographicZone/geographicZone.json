@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Expresado en Volumen",
+        "header": {
+            "column1": "Zona",
+            "column2": "Volumen",
+            "column3": "%"
+        },
+        "column1": {
+            "one": "Caba",
+            "two": "Córdoba",
+            "three": "Corrientes",
+            "four": "Entre Rios",
+            "five": "GBA",
+            "six": "Santa Fe"
+        },
+        "column2": {
+            "one": 26.0382,
+            "two": 14.8840,
+            "three": 37.1666,
+            "four": 18.5854,
+            "five": 44.1048,
+            "six": 19.7383
+        },
+        "column3": {
+            "one": 16.0,
+            "two": 9.1,
+            "three": 22.8,
+            "four": 11.4,
+            "five": 27.1,
+            "six": 12.1
+        }
+    },
+    {
+        "title": "Expresado en Transacciones",
+        "header": {
+            "column1": "Zona",
+            "column2": "Transacciones",
+            "column3": "%"
+        },
+        "column1": {
+            "one": "Caba",
+            "two": "Córdoba",
+            "three": "Corrientes",
+            "four": "Entre Rios",
+            "five": "GBA",
+            "six": "Santa Fe"
+        },
+        "column2": {
+            "one": 26.0382,
+            "two": 14.8840,
+            "three": 37.1666,
+            "four": 18.5854,
+            "five": 44.1048,
+            "six": 19.7383
+        },
+        "column3": {
+            "one": 16.0,
+            "two": 9.1,
+            "three": 22.8,
+            "four": 11.4,
+            "five": 27.1,
+            "six": 12.1
+        }
+    }
+]
