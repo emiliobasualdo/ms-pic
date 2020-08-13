@@ -6,13 +6,13 @@ import {PaymentBusinessContainer} from "./Payment.styles";
 const Payment = () => {
     return (
         <PaymentBusinessContainer>
-             <TitleCard
+            <TitleCard
                 icon={<PaymentOutlinedIcon/>}
                 title="Medios de Cobro"
                 description="Principales indicadores"
-                item1="Diaria"
-                item2="Semanal"
-                item3="Mensual"
+                diary="Diaria"
+                weekly="Semanal"
+                monthly="Mensual"
             />
         </PaymentBusinessContainer>
     );

@@ -22,9 +22,9 @@ const Recharges = () => {
                 icon={<PaymentOutlinedIcon/>}
                 title="Análisis de recargas"
                 description="Principales indicadores"
-                item1="Diaria"
-                item2="Semanal"
-                item3="Mensual"
+                diary="Diaria"
+                weekly="Semanal"
+                monthly="Mensual"
             />
             <RechargesBusinessDataContainer>
                 {
@@ -53,9 +53,9 @@ const Recharges = () => {
                 icon={<PaymentOutlinedIcon/>}
                 title="Flujo de Dinero"
                 description="Generación de Recargas"
-                item1="Diaria"
-                item2="Semanal"
-                item3="Mensual"
+                diary="Diaria"
+                weekly="Semanal"
+                monthly="Mensual"
             />
             <SquaredsContainer>
                 {
@@ -133,9 +133,9 @@ const Recharges = () => {
                 icon={<PaymentOutlinedIcon/>}
                 title="Zona Geográfica"
                 description="Generación de Recargas"
-                item1="Diaria"
-                item2="Semanal"
-                item3="Mensual"
+                diary="Diaria"
+                weekly="Semanal"
+                monthly="Mensual"
             />
             <SquaredsContainer>
                 {

@@ -19,9 +19,9 @@ const Consumptions = () => {
                 icon={<PaymentOutlinedIcon/>}
                 title="Análisis de consumos"
                 description="Principales indicadores"
-                item1="Diaria"
-                item2="Semanal"
-                item3="Mensual"
+                diary="Diaria"
+                weekly="Semanal"
+                monthly="Mensual"
             />
             <ConsumptionsBusinessDataContainer>
                 {
@@ -50,9 +50,9 @@ const Consumptions = () => {
                 icon={<PaymentOutlinedIcon/>}
                 title="Flujo de Dinero"
                 description="Consumos"
-                item1="Diaria"
-                item2="Semanal"
-                item3="Mensual"
+                diary="Diaria"
+                weekly="Semanal"
+                monthly="Mensual"
             />
             <SquaredsContainer>
                 {
@@ -93,10 +93,10 @@ const Consumptions = () => {
             <TitleCard
                 icon={<PaymentOutlinedIcon/>}
                 title="Zona Geográfica"
-                description="Generación de Recargas"
-                item1="Diaria"
-                item2="Semanal"
-                item3="Mensual"
+                description="Consumos"
+                diary="Diaria"
+                weekly="Semanal"
+                monthly="Mensual"
             />
             <SquaredsContainer>
                 {

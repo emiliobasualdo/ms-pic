@@ -1,15 +1,15 @@
 import React from 'react';
-import Card from '../../../components/Card/Card';
+import Card2 from '../../../components/Card/Card';
 import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
 import traditionalBusinessData from '../../../mocks/business/traditional/traditionalBusiness.json';
 import {TraditionalBusinessContainer} from './Traditional.styles';
 
 const Traditional = () => {
-    return (
+    return(
         <TraditionalBusinessContainer>
             {traditionalBusinessData.map((item, index) => {
                 return(
-                    <Card
+                    <Card2
                         key={index}
                         icon={<PaymentOutlinedIcon className="card-header__icon"/>}
                         header={item.header}

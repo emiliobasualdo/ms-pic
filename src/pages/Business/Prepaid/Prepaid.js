@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from '../../../components/Card/Card';
+import Card2 from '../../../components/Card/Card';
 import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
 import {PrepaidBusinessContainer} from './Prepaid.styles';
 import prepaidBusinessData from '../../../mocks/business/prepaid/prepaidBusiness.json';
@@ -9,7 +9,7 @@ const Prepaid = () => {
         <PrepaidBusinessContainer>
             {prepaidBusinessData.map((item, index) => {
                 return(
-                    <Card
+                    <Card2
                         key={index}
                         icon={<PaymentOutlinedIcon className="card-header__icon"/>}
                         header={item.header}

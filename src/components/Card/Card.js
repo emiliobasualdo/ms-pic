@@ -1,64 +1,60 @@
 import React from 'react';
 import {
-    CardContainer,
-    CardTop,
-    CardHeader,
-    CardTabs,
-    CardData
+    Card2Container,
+    FirstContainer,
+    MainContainer,
+    Title,
+    SecondaryContainer,
+    Item,
+    SecondContainer,
+    StyledP
 } from './Card.styles';
 
-const Card = (props) => {
+const Card2 = (props) => {
     return(
-        <CardContainer key={props.key}>
-            <CardTop>
-                <div className="top">
-                    <CardHeader>
-                        {props.icon}
-                        <div className="card-header__text">
-                            <h2>{props.header}</h2>
-                            <p>{props.paragraph}</p>
-                        </div>
-                    </CardHeader>
-                    <div className="card__list">
-                        <CardTabs>
-                            <button><li>{props.diary}</li></button>
-                            <button><li>{props.weekly}</li></button>
-                            <button><li>{props.monthly}</li></button>
-                        </CardTabs>
-                        <span className="bottom-line" />
+        <Card2Container>
+            <FirstContainer>
+                <MainContainer>
+                    {props.icon}
+                    <div>
+                        <Title>{props.header}</Title>
+                        <p>{props.paragraph}</p>
                     </div>
+                </MainContainer>
+                <SecondaryContainer>
+                    <Item>{props.diary}</Item>
+                    <Item>{props.weekly}</Item>
+                    <Item>{props.monthly}</Item>
+                </SecondaryContainer>
+            </FirstContainer>
+            <SecondContainer>
+                <div>
+                    <h3>{props.clientsAmmount}</h3>
+                    <StyledP>{props.clientsText}</StyledP>
                 </div>
-            </CardTop>
-            <CardData>
-                <div className="clients">
-                    <h2>{props.clientsAmmount}</h2>
-                    <p>{props.clientsText}</p>
+                <div>
+                    <h3>{props.volumeOpAmmount}</h3>
+                    <StyledP>{props.volumeOpText}</StyledP>
                 </div>
-                <div className="volumes-data">
-                    <div className="volume-op">
-                        <h2>{props.volumeOpAmmount}</h2>
-                        <p>{props.volumeOpText}</p>
-                    </div>
-                    <div className="volume-co">
-                        <h2>{props.volumeCoAmmount}</h2>
-                        <p>{props.volumeCoText}</p>
-                    </div>
-                    <div className="volume-re">
-                        <h2>{props.volumeReAmmount}</h2>
-                        <p>{props.volumeReText}</p>
-                    </div>
-                    <div className="transactions">
-                        <h2>{props.transactionsAmmount}</h2>
-                        <p>{props.transactionsText}</p>
-                    </div>
-                    <div className="tickets">
-                        <h2>{props.ticketsAmmount}</h2>
-                        <p>{props.ticketsText}</p>
-                    </div>
+                <div>
+                    <h3>{props.volumeCoAmmount}</h3>
+                    <StyledP>{props.volumeCoText}</StyledP>
                 </div>
-            </CardData>
-        </CardContainer>
+                <div>
+                    <h3>{props.volumeReAmmount}</h3>
+                    <StyledP>{props.volumeReText}</StyledP>
+                </div>
+                <div>
+                    <h3>{props.transactionsAmmount}</h3>
+                    <StyledP>{props.transactionsText}</StyledP>
+                </div>
+                <div>
+                    <h3>{props.ticketsAmmount}</h3>
+                    <StyledP>{props.ticketsText}</StyledP>
+                </div>
+            </SecondContainer>
+        </Card2Container>
     );
 }
 
-export default Card;
+export default Card2;

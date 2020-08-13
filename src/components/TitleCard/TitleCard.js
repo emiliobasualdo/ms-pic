@@ -18,9 +18,9 @@ const TitleCard = (props) => {
                 </div>
             </FirstContainer>
             <SecondContainer>
-                <Item>{props.item1}</Item>
-                <Item>{props.item2}</Item>
-                <Item>{props.item3}</Item>
+                <Item>{props.diary}</Item>
+                <Item>{props.weekly}</Item>
+                <Item>{props.monthly}</Item>
             </SecondContainer>
         </TitleCardContainer>
     );

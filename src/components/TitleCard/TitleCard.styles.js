@@ -1,4 +1,13 @@
-import styled, {css} from "styled-components";
+import styled, {css, keyframes} from "styled-components";
+
+export const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+`;
 
 export const TitleCardContainer = styled.div(({theme}) => {
     return css`
@@ -9,6 +18,7 @@ export const TitleCardContainer = styled.div(({theme}) => {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        animation: ${fadeIn} .5s .2s ease-in backwards;
     `;
 });
 
@@ -61,3 +71,9 @@ export const Item = styled.button(({theme}) => {
         }
     `;
 });
+
+export const ThirdContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+`;

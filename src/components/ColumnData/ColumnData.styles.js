@@ -1,4 +1,13 @@
-import styled, {css} from "styled-components";
+import styled, {css, keyframes} from "styled-components";
+
+export const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+`;
 
 export const ColumnDataContainer = styled.div(({theme}) => {
     return css`
@@ -9,6 +18,7 @@ export const ColumnDataContainer = styled.div(({theme}) => {
         padding: 0.5rem 1rem 1rem 1rem;
         font-family: ${theme.typography.fonts.secondary};
         width: auto;
+        animation: ${fadeIn} .5s .2s ease-in backwards;
     `;
 });
 

@@ -1,4 +1,13 @@
-import styled, {css} from "styled-components";
+import styled, {css, keyframes} from "styled-components";
+
+export const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+`;
 
 export const SquareDataContainer = styled.div(({theme}) => {
     return css`
@@ -9,6 +18,7 @@ export const SquareDataContainer = styled.div(({theme}) => {
         height: 22rem;
         padding: 1rem;
         width: 28%;
+        animation: ${fadeIn} .5s .2s ease-in backwards;
     `;
 });
 
