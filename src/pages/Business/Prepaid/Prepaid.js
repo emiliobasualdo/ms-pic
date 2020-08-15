@@ -30,7 +30,7 @@ const Prepaid = () => {
                 return (
                     <Card2
                         key={index}
-                        icon={<PaymentOutlinedIcon className="card-header__icon"/>}
+                        icon={<PaymentOutlinedIcon fontSize="large"/>}
                         header={item.header}
                         paragraph={item.paragraph}
                         diary={item.diary}

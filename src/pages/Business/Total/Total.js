@@ -8,9 +8,9 @@ import {TotalBusinessContainer} from './Total.styles';
 
 const Total = () => {
     const icons = {
-        icon1: <MonetizationOnOutlinedIcon className="card-header__icon"/>,
-        icon2: <MobileFriendlyOutlinedIcon className="card-header__icon"/>,
-        icon3: <PaymentOutlinedIcon className="card-header__icon"/>
+        icon1: <MonetizationOnOutlinedIcon fontSize="large" />,
+        icon2: <MobileFriendlyOutlinedIcon fontSize="large" />,
+        icon3: <PaymentOutlinedIcon fontSize="large" />
     }
 
     return(

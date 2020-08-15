@@ -18,7 +18,7 @@ const Consumptions = () => {
     return(
         <ConsumptionsBusinessContainer>
             <TitleCard
-                icon={<PermDeviceInformationIcon/>}
+                icon={<PermDeviceInformationIcon fontSize="large"/>}
                 title="Análisis de consumos"
                 description="Principales indicadores"
                 diary="Diaria"
@@ -49,7 +49,7 @@ const Consumptions = () => {
                 }
             </ConsumptionsBusinessDataContainer>
             <TitleCard
-                icon={<LocalAtmIcon/>}
+                icon={<LocalAtmIcon fontSize="large"/>}
                 title="Flujo de Dinero"
                 description="Consumos"
                 diary="Diaria"
@@ -93,7 +93,7 @@ const Consumptions = () => {
                 }
             </SquaredsContainer>
             <TitleCard
-                icon={<NearMeIcon/>}
+                icon={<NearMeIcon fontSize="large"/>}
                 title="Zona Geográfica"
                 description="Consumos"
                 diary="Diaria"

@@ -22,7 +22,7 @@ const Recharges = () => {
     return(
         <RechargesBusinessContainer>
             <TitleCard
-                icon={<PaymentOutlinedIcon/>}
+                icon={<PaymentOutlinedIcon fontSize="large"/>}
                 title="Análisis de recargas"
                 description="Principales indicadores"
                 diary="Diaria"
@@ -53,7 +53,7 @@ const Recharges = () => {
                 }
             </RechargesBusinessDataContainer>
             <TitleCard
-                icon={<LocalAtmIcon/>}
+                icon={<LocalAtmIcon fontSize="large"/>}
                 title="Flujo de Dinero"
                 description="Generación de Recargas"
                 diary="Diaria"
@@ -133,7 +133,7 @@ const Recharges = () => {
                 }
             </SquaredsContainer>
             <TitleCard
-                icon={<NearMeIcon/>}
+                icon={<NearMeIcon fontSize="large"/>}
                 title="Zona Geográfica"
                 description="Generación de Recargas"
                 diary="Diaria"
