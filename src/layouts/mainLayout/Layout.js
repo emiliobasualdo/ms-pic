@@ -6,7 +6,7 @@ import {LayoutContainer} from './Layout.styles';
 const Layout = ({children}) => {
     return(
         <LayoutContainer>
-            <Header/>
+            <Header style={{backgroundColor: 'pink'}}/>
                 {children}
             <Footer/>
         </LayoutContainer>

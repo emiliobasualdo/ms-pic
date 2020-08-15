@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 import {
     SquareDataContainer,
     StyledTitle,
@@ -6,11 +7,11 @@ import {
     HeaderContainer,
     StyledDivContainer,
     StyledHeaderSpan,
-    StyledDiv,
-    DetailsButton
+    StyledDiv
 } from './SquareData.styles';
 
 const SquareData = (props) => {
+
     return(
         <SquareDataContainer>
             <StyledTitle>{props.title}</StyledTitle>
@@ -45,7 +46,7 @@ const SquareData = (props) => {
                     <StyledDiv>{props.sixColumnThree}</StyledDiv>
                 </StyledDivContainer>
             </SquareContainer>
-            <DetailsButton>Más Detalles</DetailsButton>
+            <Button buttonName="Más Detalles"/>
         </SquareDataContainer>
     );
 }

@@ -1,0 +1,21 @@
+[
+    {
+        "percentage": 2,
+        "description": "0-1000"
+    },
+    {
+        "percentage": 13,
+        "description": "1001-3000"
+    },
+    {
+        "percentage": 18,
+        "description": "3001-5000"
+    },
+    {
+        "percentage": 22,
+        "description": "5001-7500"
+    },{
+        "percentage": 43,
+        "description": "+7500"
+    }
+]

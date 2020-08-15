@@ -16,6 +16,7 @@ import {
 } from './Recharges.styles';
 
 const Recharges = () => {
+
     return(
         <RechargesBusinessContainer>
             <TitleCard

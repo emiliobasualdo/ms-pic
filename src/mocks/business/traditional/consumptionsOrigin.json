@@ -1,0 +1,26 @@
+[
+    {
+        "percentage": 14,
+        "description": "Visa Electron"
+    },
+    {
+        "percentage": 26,
+        "description": "Maestro"
+    },
+    {
+        "percentage": 11,
+        "description": "Otras"
+    },
+    {
+        "percentage": 29,
+        "description": "Visa"
+    },
+    {
+        "percentage": 14,
+        "description": "Mastercard"
+    },
+    {
+        "percentage": 5,
+        "description": "American Express"
+    }
+]

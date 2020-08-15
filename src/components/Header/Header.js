@@ -166,8 +166,8 @@ const Header = () => {
                             <IconButton aria-label="show 4 new mails" color="inherit">
                                 <SearchIcon />
                             </IconButton>
-                            <IconButton aria-label="show 17 new notifications" color="inherit" style={{ position: 'relative' }}>
-                                <Badge badgeContent={17}>
+                            <IconButton aria-label="show 15 new notifications" color="inherit" style={{ position: 'relative' }}>
+                                <Badge badgeContent={15}>
                                     <NotificationsIcon />
                                 </Badge>
                                 <BadgeAfter />

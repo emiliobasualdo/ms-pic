@@ -66,21 +66,3 @@ export const StyledDiv = styled.div(({theme}) => {
         font-size: 0.9rem;
     `;
 });
-
-export const DetailsButton = styled.button(({theme}) => {
-    return css`
-        align-self: center;
-        background-color: transparent;
-        width: 40%;
-        padding: 0.5rem;
-        border: none;
-        outline: none;
-        font-weight: bold;
-        color: ${theme.colors['dark-grey']};
-        &:hover{
-            cursor: pointer;
-            color: ${theme.colors['light-green']};
-            transition: .5s;
-        }
-    `;
-});

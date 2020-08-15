@@ -1,0 +1,26 @@
+[
+    {
+        "percentage": 23,
+        "description": "Efectivo"
+    },
+    {
+        "percentage": 45,
+        "description": "Crédito"
+    },
+    {
+        "percentage": 30,
+        "description": "Débito"
+    },
+    {
+        "percentage": 40,
+        "description": "Visa"
+    },
+    {
+        "percentage": 36,
+        "description": "Mastercard"
+    },
+    {
+        "percentage": 16,
+        "description": "Otras"
+    }
+]

@@ -40,9 +40,9 @@ const App = () => {
             <ThemeProvider theme={baseTheme}>
                 <GlobalStyle/>
                 <Layout>
-                    <Container maxWidth="lg" style={{ minHeight: '100vh' }}>
-                        <Router style={{paddingBottom: '100px'}}>
-                            <Redirect from ="/" to="negocio" noThrow/>
+                    <Container maxWidth="lg" style={{ minHeight: '100vh'}}>
+                        <Router style={{paddingBottom: '50px'}}>
+                        <Redirect from ="/" to="negocio" noThrow/>
                             <Business path="negocio">
                                 <Redirect from ="/" to="total" noThrow/>
                                 <Summary path="resumen"/>

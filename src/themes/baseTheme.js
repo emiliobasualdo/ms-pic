@@ -6,7 +6,11 @@ const colors = {
     ['light-green']: '#00AD8B',
     white: '#FFF',
     blue: '#337ab7',
-    background: '#f6f8fa'
+    background: '#f6f8fa',
+    circularProgress: {
+        primary: '#FF8000',
+        secondary: '#E4E4E4'
+    }
 }
 
 const typography = {

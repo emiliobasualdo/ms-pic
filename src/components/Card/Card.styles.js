@@ -20,7 +20,7 @@ export const Card2Container = styled.div(({theme}) => {
         margin: 2.5rem 0;
         animation: ${fadeIn} .5s .2s ease-in backwards;
     `;
-})
+});
 
 export const FirstContainer = styled.div`
     display: flex;

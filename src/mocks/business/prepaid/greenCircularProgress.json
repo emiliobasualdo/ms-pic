@@ -1,0 +1,18 @@
+[
+    {
+        "percentage": 82,
+        "description": "Clientes"
+    },
+    {
+        "percentage": 96,
+        "description": "Cons-Recargas"
+    },
+    {
+        "percentage": 4,
+        "description": "Float-Recargas"
+    },
+    {
+        "percentage": 84,
+        "description": "Recargas/Txt"
+    }
+]
