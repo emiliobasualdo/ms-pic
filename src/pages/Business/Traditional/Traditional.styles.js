@@ -17,6 +17,7 @@ export const VerticalContainer = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
+    min-height: 30rem;
 `;
 
 export const HorizontalContainer = styled.div`
@@ -24,7 +25,6 @@ export const HorizontalContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     width: 80%;
-    height: 80vh;
 `;
 
 export const LastContainer = styled.div`

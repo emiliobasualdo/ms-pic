@@ -25,8 +25,9 @@ import {
 const Prepaid = () => {
     return(
         <PrepaidBusinessContainer>
-            {prepaidBusinessData.map((item, index) => {
-                return(
+            {
+                prepaidBusinessData.map((item, index) => {
+                return (
                     <Card2
                         key={index}
                         icon={<PaymentOutlinedIcon className="card-header__icon"/>}
@@ -36,6 +37,7 @@ const Prepaid = () => {
                         weekly={item.weekly}
                         monthly={item.monthly}
                         clientsAmmount={item.clientsAmmount}
+                        clientsText={item.clientsText}
                         volumeOpAmmount={item.volumeOpAmmount}
                         volumeOpText={item.volumeOpText}
                         volumeCoAmmount={item.volumeCoAmmount}
@@ -60,29 +62,33 @@ const Prepaid = () => {
                                     progressDescription={circle.description}
                                     width="40%"
                                     height="100%"
+                                    textColor="rgb(90, 191, 141)"
+                                    pathColor="rgb(90, 191, 141)"
                                 />
                             )
                         })
                     }
                 </VerticalContainer>
                 <HorizontalContainer>
-                <CircularProgressCard
+                    <CircularProgressCard
                         CircularProgressCardTitle="Rango de Recargas por clientes"
                         height="12rem"
-                    >
-                        {
-                            customersRecharges.map((circle, index) => {
-                                return(
-                                    <CircularProgressContainer
-                                        key={index}
-                                        percentage={circle.percentage}
-                                        progressDescription={circle.description}
-                                        width="60%"
-                                        height="100%"
-                                    />
-                                )
-                            })
-                        }
+                        >
+                            {
+                                customersRecharges.map((circle, index) => {
+                                    return(
+                                        <CircularProgressContainer
+                                            key={index}
+                                            percentage={circle.percentage}
+                                            progressDescription={circle.description}
+                                            width="60%"
+                                            height="100%"
+                                            textColor="rgb(238, 134, 71)"
+                                            pathColor="rgb(238, 134, 71)"
+                                        />
+                                    )
+                                })
+                            }
                     </CircularProgressCard>
                     <CircularProgressCard
                         CircularProgressCardTitle="Rango de Recargas por Volumen Operado"
@@ -97,6 +103,8 @@ const Prepaid = () => {
                                         progressDescription={circle.description}
                                         width="60%"
                                         height="100%"
+                                        textColor="rgb(238, 134, 71)"
+                                        pathColor="rgb(238, 134, 71)"
                                     />
                                 )
                             })
@@ -135,6 +143,8 @@ const Prepaid = () => {
                                     progressDescription={circle.description}
                                     width="30%"
                                     height="60%"
+                                    textColor="rgb(232, 51, 35)"
+                                    pathColor="rgb(232, 51, 35)"
                                 />
                             )
                         })

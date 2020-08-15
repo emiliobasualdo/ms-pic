@@ -10,5 +10,6 @@ export const StyledP = styled.p(({theme}) => {
     return css`
         color: ${theme.colors['dark-grey']};
         font-size: 0.8rem;
+        margin: .7rem 0;
     `;
 });

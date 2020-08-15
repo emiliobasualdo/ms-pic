@@ -60,6 +60,8 @@ const Traditional = () => {
                                     progressDescription={circle.description}
                                     width="40%"
                                     height="100%"
+                                    textColor="rgb(90, 191, 141)"
+                                    pathColor="rgb(90, 191, 141)"
                                 />
                             )
                         })
@@ -79,6 +81,8 @@ const Traditional = () => {
                                         progressDescription={circle.description}
                                         width="60%"
                                         height="100%"
+                                        textColor="rgb(238, 134, 71)"
+                                        pathColor="rgb(238, 134, 71)"
                                     />
                                 )
                             })
@@ -97,6 +101,8 @@ const Traditional = () => {
                                         progressDescription={circle.description}
                                         width="60%"
                                         height="100%"
+                                        textColor="rgb(238, 134, 71)"
+                                        pathColor="rgb(238, 134, 71)"
                                     />
                                 )
                             })
@@ -134,6 +140,8 @@ const Traditional = () => {
                                     progressDescription={circle.description}
                                     width="30%"
                                     height="60%"
+                                    textColor="rgb(232, 51, 35)"
+                                    pathColor="rgb(232, 51, 35)"
                                 />
                             )
                         })
