@@ -54,8 +54,8 @@ const SimpleTable = (props) => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {rows.map((row) => (
-                        <TableRow key={row.name}>
+                    {rows.map((row, index) => (
+                        <TableRow key={index}>
                             <TableCell component="th" scope="row" align="center">
                                 {row.one}
                             </TableCell>

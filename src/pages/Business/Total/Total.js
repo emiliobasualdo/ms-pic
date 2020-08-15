@@ -8,13 +8,11 @@ import {TotalBusinessContainer} from './Total.styles';
 
 const Total = () => {
 
-    const icons = [
-        {
-            icon1: <MonetizationOnOutlinedIcon className="card-header__icon"/>,
-            icon2: <MobileFriendlyOutlinedIcon className="card-header__icon"/>,
-            icon3: <PaymentOutlinedIcon className="card-header__icon"/>
-        }
-    ]
+    const icons = {
+        icon1: <MonetizationOnOutlinedIcon className="card-header__icon"/>,
+        icon2: <MobileFriendlyOutlinedIcon className="card-header__icon"/>,
+        icon3: <PaymentOutlinedIcon className="card-header__icon"/>
+    }
 
     return(
         <TotalBusinessContainer>
@@ -22,7 +20,7 @@ const Total = () => {
                 return(
                     <Card2
                         key={index}
-                        icon={<MonetizationOnOutlinedIcon className="card-header__icon"/>}
+                        icon={icons[`icon${index + 1}`]}
                         header={item.header}
                         paragraph={item.paragraph}
                         diary={item.diary}
