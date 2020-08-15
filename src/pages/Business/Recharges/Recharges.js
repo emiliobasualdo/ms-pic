@@ -4,6 +4,8 @@ import ColumnData from '../../../components/ColumnData/ColumnData';
 import SquareData from '../../../components/SquareData/SquareData';
 import SquareData2 from '../../../components/SquareData2/SquareData2';
 import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
+import LocalAtmIcon from '@material-ui/icons/LocalAtm';
+import NearMeIcon from '@material-ui/icons/NearMe';
 import rechargesAnalysisData from '../../../mocks/recharges/rechargesAnalysis/rechargesAnalysis.json';
 import moneyFlowData from '../../../mocks/recharges/moneyFlow/moneyFlow.json';
 import averageRechargeData from '../../../mocks/recharges/moneyFlow/averageRecharge.json';
@@ -51,7 +53,7 @@ const Recharges = () => {
                 }
             </RechargesBusinessDataContainer>
             <TitleCard
-                icon={<PaymentOutlinedIcon/>}
+                icon={<LocalAtmIcon/>}
                 title="Flujo de Dinero"
                 description="Generación de Recargas"
                 diary="Diaria"
@@ -131,7 +133,7 @@ const Recharges = () => {
                 }
             </SquaredsContainer>
             <TitleCard
-                icon={<PaymentOutlinedIcon/>}
+                icon={<NearMeIcon/>}
                 title="Zona Geográfica"
                 description="Generación de Recargas"
                 diary="Diaria"

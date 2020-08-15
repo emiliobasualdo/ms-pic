@@ -41,7 +41,7 @@ const App = () => {
                 <GlobalStyle/>
                 <Layout>
                     <Container maxWidth="lg" style={{ minHeight: '100vh'}}>
-                        <Router style={{paddingBottom: '50px'}}>
+                        <Router primary={false} style={{paddingBottom: '50px'}}>
                         <Redirect from ="/" to="negocio" noThrow/>
                             <Business path="negocio">
                                 <Redirect from ="/" to="total" noThrow/>

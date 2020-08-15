@@ -1,13 +1,13 @@
 import React from 'react';
 import TitleCard from '../../../components/TitleCard/TitleCard';
-import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
+import DvrIcon from '@material-ui/icons/Dvr';
 import {PaymentBusinessContainer} from "./Payment.styles";
 
 const Payment = () => {
     return (
         <PaymentBusinessContainer>
             <TitleCard
-                icon={<PaymentOutlinedIcon/>}
+                icon={<DvrIcon/>}
                 title="Medios de Cobro"
                 description="Principales indicadores"
                 diary="Diaria"

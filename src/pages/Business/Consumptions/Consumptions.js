@@ -2,7 +2,9 @@ import React from 'react';
 import TitleCard from '../../../components/TitleCard/TitleCard';
 import ColumnData from '../../../components/ColumnData/ColumnData';
 import SquareData from '../../../components/SquareData/SquareData';
-import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
+import PermDeviceInformationIcon from '@material-ui/icons/PermDeviceInformation';
+import LocalAtmIcon from '@material-ui/icons/LocalAtm';
+import NearMeIcon from '@material-ui/icons/NearMe';
 import consumptionsAnalysisData from '../../../mocks/consumptions/consumptionsAnalysis/consumptionsAnalysis.json';
 import moneyFlowData from '../../../mocks/consumptions/moneyFlow/moneyFlow.json';
 import geographicZoneData from '../../../mocks/consumptions/geographicZone/geographicZone.json';
@@ -16,7 +18,7 @@ const Consumptions = () => {
     return(
         <ConsumptionsBusinessContainer>
             <TitleCard
-                icon={<PaymentOutlinedIcon/>}
+                icon={<PermDeviceInformationIcon/>}
                 title="Análisis de consumos"
                 description="Principales indicadores"
                 diary="Diaria"
@@ -47,7 +49,7 @@ const Consumptions = () => {
                 }
             </ConsumptionsBusinessDataContainer>
             <TitleCard
-                icon={<PaymentOutlinedIcon/>}
+                icon={<LocalAtmIcon/>}
                 title="Flujo de Dinero"
                 description="Consumos"
                 diary="Diaria"
@@ -91,7 +93,7 @@ const Consumptions = () => {
                 }
             </SquaredsContainer>
             <TitleCard
-                icon={<PaymentOutlinedIcon/>}
+                icon={<NearMeIcon/>}
                 title="Zona Geográfica"
                 description="Consumos"
                 diary="Diaria"

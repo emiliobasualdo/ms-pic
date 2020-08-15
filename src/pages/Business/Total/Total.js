@@ -7,7 +7,6 @@ import Card2 from '../../../components/Card/Card';
 import {TotalBusinessContainer} from './Total.styles';
 
 const Total = () => {
-
     const icons = {
         icon1: <MonetizationOnOutlinedIcon className="card-header__icon"/>,
         icon2: <MobileFriendlyOutlinedIcon className="card-header__icon"/>,
