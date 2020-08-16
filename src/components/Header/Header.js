@@ -8,6 +8,7 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import NavbarPopup from "../NavbarPopup/NavbarPopup";
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
@@ -77,6 +78,9 @@ const DrawerStyles = makeStyles((theme) => ({
 const Header = () => {
     const [open, setOpen] = useState(false);
     const [location, setLocation] = useState('/');
+    const [openNotifications, setOpenNotifications] = useState(false);
+    const [openTasks, setOpenTasks] = useState(false);
+    const [openChat, setOpenChat] = useState(false);
 
     useEffect(() => {
         setLocation('negocio');
@@ -141,6 +145,24 @@ const Header = () => {
         handleDrawerClose();
     }
 
+    const toggleNotifications = () => {
+        setOpenNotifications(!openNotifications);
+        setOpenTasks(false);
+        setOpenChat(false);
+    }
+
+    const toggleTasks = () => {
+        setOpenTasks(!openTasks);
+        setOpenNotifications(false);
+        setOpenChat(false);
+    }
+
+    const toggleChat = () => {
+        setOpenChat(!openChat);
+        setOpenNotifications(false);
+        setOpenTasks(false);
+    }
+
     return (
         <>
             <AppBar
@@ -166,23 +188,30 @@ const Header = () => {
                             <IconButton aria-label="show 4 new mails" color="inherit">
                                 <SearchIcon />
                             </IconButton>
-                            <IconButton aria-label="show 15 new notifications" color="inherit" style={{ position: 'relative' }}>
+                            <IconButton
+                                aria-label="show 15 new notifications"
+                                color="inherit"
+                                style={{ position: 'relative' }}
+                                onClick={() => toggleNotifications()}>
                                 <Badge badgeContent={15}>
                                     <NotificationsIcon />
                                 </Badge>
                                 <BadgeAfter />
                                 <BadgeAfterTwo />
                             </IconButton>
-                            <IconButton color="inherit">
+                            <IconButton color="inherit" onClick={() => toggleTasks()}>
                                 <AssignmentIcon />
                             </IconButton>
-                            <IconButton color="inherit">
+                            <IconButton color="inherit" onClick={() => toggleChat()}>
                                 <ChatIcon />
                             </IconButton>
                         </div>
                     </Toolbar>
                 </Container>
             </AppBar>
+            { openNotifications && <NavbarPopup name="notifications" /> }
+            { openTasks && <NavbarPopup name="tasks" /> }
+            { openChat && <NavbarPopup name="chat" /> }
 
             <Drawer
                 className={classes.drawer}
