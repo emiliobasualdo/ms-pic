@@ -26,6 +26,7 @@ export const ActionParagraph = styled.p`
 export const Item = styled.span`
     display: flex;
     align-items: center;
+    cursor: pointer;
     & p {
         margin-left: 1rem;
     }
