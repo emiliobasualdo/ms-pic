@@ -38,6 +38,5 @@ export const List = styled.ul`
     list-style: none;
     & li {
         padding: 1.5rem 0;
-        background-color: red;
     }
 `;

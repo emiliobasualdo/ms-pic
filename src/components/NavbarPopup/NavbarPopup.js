@@ -28,7 +28,7 @@ const NavbarPopup = ({ name }) => {
         <PopupWrapper>
             <Heading>{ heading }</Heading>
             <Content>
-                { loading ? <p>Loading</p> : (
+                { loading ? <p style={{ textAlign: 'center', marginTop: '2rem' }}>Loading</p> : (
                     <List>
                         <li>Test</li>
                         <li>Test</li>
