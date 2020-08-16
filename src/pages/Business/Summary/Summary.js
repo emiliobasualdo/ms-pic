@@ -1,11 +1,16 @@
 import React from 'react';
-import { Card } from './Summary.styles';
+import { Card, Heading, AccordionsContainer } from './Summary.styles';
+import SummaryAccordion from "../../../components/SummaryAccordion/SummaryAccordion";
 
 const Summary = () => {
     return (
         <>
             <Card>
-                <p>Summary</p>
+                <Heading>Total Cartera</Heading>
+                <AccordionsContainer>
+                    <SummaryAccordion accordionHeader="Volumen"/>
+                    <SummaryAccordion accordionHeader="Cantidad"/>
+                </AccordionsContainer>
             </Card>
         </>
     );

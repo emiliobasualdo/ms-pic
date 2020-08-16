@@ -21,7 +21,7 @@ const Payment = () => {
     return (
         <PaymentBusinessContainer>
             <TitleCard
-                icon={<DvrIcon/>}
+                icon={<DvrIcon fontSize="large"/>}
                 title="Medios de Cobro"
                 description="Principales indicadores"
                 diary="Diaria"
