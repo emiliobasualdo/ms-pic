@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SummaryAccordionItem from '../SummaryAccordionItem/SumaryAccordionItem';
-import { AccordionContainer, AccordionItem, GreyLine, AnimatedLine, Item } from './SummaryAccordion.styles';
+import { AccordionContainer, AccordionItem, ActionParagraph, GreyLine, AnimatedLine, Item } from './SummaryAccordion.styles';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
 
@@ -72,7 +72,7 @@ const SummaryAccordion = ({ accordionHeader }) => {
             <AccordionItem>
                 <Item onClick={() => handleClickFirstItem()}>
                     { showFirstItem ? <RemoveIcon /> : <AddIcon /> }
-                    <p>Volumen Operado</p>
+                    <ActionParagraph>{ accordionHeader === 'Volumen' ? 'Volumen Operador' : 'Clientes' }</ActionParagraph>
                 </Item>
                 <GreyLine>
                     { showFirstItem && <AnimatedLine lineColor={ accordionHeader === 'Volumen' ? 'red' : 'green' }/> }
@@ -84,7 +84,7 @@ const SummaryAccordion = ({ accordionHeader }) => {
             <AccordionItem>
                 <Item onClick={() => handleClickSecondItem()}>
                     { showFirstItem ? <RemoveIcon /> : <AddIcon /> }
-                    <p>Volumen de Recargas</p>
+                    <ActionParagraph>{ accordionHeader === 'Volumen' ? 'Volumen de Recargas' : 'Transacciones' }</ActionParagraph>
                 </Item>
                 <GreyLine>
                     { showSecondItem && <AnimatedLine lineColor={ accordionHeader === 'Volumen' ? 'red' : 'green'} /> }
@@ -96,7 +96,7 @@ const SummaryAccordion = ({ accordionHeader }) => {
             <AccordionItem>
                 <Item onClick={() => handleClickThirdItem()}>
                     { showFirstItem ? <RemoveIcon /> : <AddIcon /> }
-                    <p>Consumos</p>
+                    <ActionParagraph>{ accordionHeader === 'Volumen' ? 'Consumos' : 'Tickets' }</ActionParagraph>
                 </Item>
                 <GreyLine>
                     { showThirdItem && <AnimatedLine lineColor={ accordionHeader === 'Volumen' ? 'red' : 'green'} /> }

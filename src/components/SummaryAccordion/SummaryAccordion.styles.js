@@ -15,8 +15,12 @@ export const AccordionContainer = styled.div`
 `;
 
 export const AccordionItem = styled.div`
-    padding: .5rem 0;
+    padding: 2rem 0 0 0;
     height: 100%;
+`;
+
+export const ActionParagraph = styled.p`
+    font-weight: 800;
 `;
 
 export const Item = styled.span`

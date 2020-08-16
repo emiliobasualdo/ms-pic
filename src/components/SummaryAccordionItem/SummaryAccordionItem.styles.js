@@ -19,7 +19,7 @@ const TableAnimation = keyframes`
 `;
 
 export const TableWrapper = styled.div`
-    animation: ${WrapperAnimation} .3s ease
+    animation: ${WrapperAnimation} .3s ease;
 `;
 
 export const Table = styled.table`
@@ -32,5 +32,8 @@ export const Table = styled.table`
     & td {
     padding: .2rem 1rem;
         border: 1px solid #000;
+    }
+    & tr td:first-child {
+        font-weight: 800;
     }
 `;
