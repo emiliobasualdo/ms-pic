@@ -210,9 +210,9 @@ const Header = () => {
                 </Container>
             </AppBar>
 
-            { openNotifications && <NavbarPopup name="Mensajes" onClose={() => setOpenNotifications(!openNotifications) }/> }
-            { openTasks && <NavbarPopup name="Tareas" onClose={() => setOpenTasks(!openTasks) }/> }
-            { openChat && <NavbarPopup name="Chat" onClose={() => setOpenChat(!openChat) }/> }
+            { openNotifications && <NavbarPopup popupType="Mensajes" onClose={() => setOpenNotifications(!openNotifications) }/> }
+            { openTasks && <NavbarPopup popupType="Tareas" onClose={() => setOpenTasks(!openTasks) }/> }
+            { openChat && <NavbarPopup popupType="Chat" onClose={() => setOpenChat(!openChat) }/> }
 
             <Drawer
                 className={classes.drawer}

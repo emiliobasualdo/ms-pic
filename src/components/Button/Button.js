@@ -1,9 +1,15 @@
 import React from 'react';
 import {TheButton} from './Button.styles';
 
-const Button = ({buttonName}) => {
+const Button = ({buttonName, isSubmit, isDisabled, onButtonClicked}) => {
     return(
-        <TheButton>{buttonName}</TheButton>
+        <TheButton
+            onClick={(e) => onButtonClicked ? onButtonClicked(e) : null}
+            type={ isSubmit ? 'submit' : 'button' }
+            disabled={ isDisabled }
+        >
+            {buttonName}
+        </TheButton>
     );
 }
 

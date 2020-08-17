@@ -45,6 +45,7 @@ export const List = styled.ul`
         padding: .8rem 0;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 `;
 
@@ -72,6 +73,31 @@ export const LinearProgressWrapper = styled.div`
 
 export const LinearProgressDescription = styled.p`
     margin-bottom: .4rem;
+`;
+
+export const PopupForm = styled.form`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+`;
+
+export const PopupInput = styled.input`
+    border: none;
+    padding: .8rem 3rem;
+    border-radius: .2rem;
+    background-color: #f6f8fa;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    &::placeholder {
+        font-size: 1rem;
+    }
+`;
+
+export const FormIconWrapper = styled.span`
+    position: absolute;
+    top: 37.5%;
+    left: 12%;
 `;
 
 export const LoadingContent = styled.div`

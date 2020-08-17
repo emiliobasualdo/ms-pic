@@ -10,6 +10,9 @@ import {
     ListDescription,
     LinearProgressWrapper,
     LinearProgressDescription,
+    PopupInput,
+    FormIconWrapper,
+    PopupForm,
     LoadingContent
 } from "./NavbarPopup.styles";
 import Button from '../../components/Button/Button';
@@ -18,19 +21,21 @@ import LinearWithValueLabel from "../LinearProgressWithLabel/LinealProgressWithL
 import MonetizationOnOutlinedIcon from '@material-ui/icons/MonetizationOnOutlined';
 import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceWalletOutlined';
 import PlayForWorkOutlinedIcon from '@material-ui/icons/PlayForWorkOutlined';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-const NavbarPopup = ({ name, onClose }) => {
+const NavbarPopup = ({ popupType, onClose }) => {
     const [heading, setHeading] = useState('');
     const [loading, setLoading] = useState(true);
     const [data, setData] = useState([]);
+    const [inputText, setInputText] = useState('');
 
     // this should be replaced by a useEffect hook to fetch from API (now: mocked data only)
     // The data should only use the first three items so the popup has no need for scrolling
     useEffect(() => {
-        setHeading(name);
+        setHeading(popupType);
         setLoading(true);
         const obtainData = setTimeout(() => {
-            if (name === 'Mensajes') {
+            if (popupType === 'Mensajes') {
                 setData([
                     {
                         title: 'Acreditación Pendiente',
@@ -49,7 +54,7 @@ const NavbarPopup = ({ name, onClose }) => {
                     }
                 ]);
             }
-            if (name === 'Tareas') {
+            if (popupType === 'Tareas') {
                 // This should be passed to LinearProgressDescription and LinearWithvalueLabel below
                 setData([
                     {
@@ -66,7 +71,7 @@ const NavbarPopup = ({ name, onClose }) => {
                     }
                 ]);
             }
-            if (name === 'Chat') {
+            if (popupType === 'Chat') {
                 setData([
                     {
                         title: 'pendiente: componente chat'
@@ -74,11 +79,20 @@ const NavbarPopup = ({ name, onClose }) => {
                 ]);
             }
             setLoading(false);
-        }, 2000);
+        }, 1000);
         return () => {
             clearTimeout(obtainData);
         }
-    }, [name]);
+    }, [popupType]);
+
+    const handleSearchUser = (e) => {
+        e.preventDefault();
+        console.log('Submitted');
+    }
+
+    const handleInputChange = (event) => {
+        setInputText(event.target.value);
+    }
 
     return (
         <PopupWrapper>
@@ -91,45 +105,59 @@ const NavbarPopup = ({ name, onClose }) => {
                     <List>
                         {data.map((item, index) => {
                             return (
-                                <Link key={index} to="/" onClick={() => onClose()}>
+                                <React.Fragment key={index}>
                                     {
-                                        name === 'Mensajes' && (
-                                            <li>
-                                                <IconWrapper>
-                                                    {item.icon}
-                                                </IconWrapper>
-                                                <ListItemWrapper>
-                                                    <ListTitle>{item.title}</ListTitle>
-                                                    <ListDescription>{item.description}</ListDescription>
-                                                </ListItemWrapper>
-                                            </li>
+                                        popupType === 'Mensajes' && (
+                                            <Link to="/" onClick={() => onClose()}>
+                                                <li>
+                                                    <IconWrapper>
+                                                        {item.icon}
+                                                    </IconWrapper>
+                                                    <ListItemWrapper>
+                                                        <ListTitle>{item.title}</ListTitle>
+                                                        <ListDescription>{item.description}</ListDescription>
+                                                    </ListItemWrapper>
+                                                </li>
+                                            </Link>
                                         )
                                     }
                                     {
-                                        name === 'Tareas' && (
-                                            <li>
-                                                <LinearProgressWrapper>
-                                                    <LinearProgressDescription>{item.title}</LinearProgressDescription>
-                                                    <LinearWithValueLabel value={item.value} />
-                                                </LinearProgressWrapper>
-                                            </li>
+                                        popupType === 'Tareas' && (
+                                            <Link to="/" onClick={() => onClose()}>
+                                                <li>
+                                                    <LinearProgressWrapper>
+                                                        <LinearProgressDescription>{item.title}</LinearProgressDescription>
+                                                        <LinearWithValueLabel value={item.value} />
+                                                    </LinearProgressWrapper>
+                                                </li>
+                                            </Link>
                                         )
                                     }
                                     {
-                                        name === 'Chat' && (
-                                            <li>
-                                                <div>
-                                                    <ListTitle>{item.title}</ListTitle>
-                                                </div>
-                                            </li>
+                                        popupType === 'Chat' && (
+                                            <div>
+                                                <PopupForm>
+                                                    <FormIconWrapper><ArrowBackIcon/></FormIconWrapper>
+                                                    <PopupInput
+                                                        onChange={(e) => handleInputChange(e)}
+                                                        type="text"
+                                                        name="name"
+                                                        placeholder="Buscar personas" />
+                                                    <Button
+                                                        buttonName="Buscar"
+                                                        isSubmit={true}
+                                                        isDisabled={!inputText}
+                                                        onButtonClicked={(e) => handleSearchUser(e)} />
+                                                </PopupForm>
+                                            </div>
                                         )
                                     }
-                                </Link>
+                                </React.Fragment>
                             )
                         })}
                     </List>
                 )}
-            { !loading && <Button buttonName="Ver más" /> }
+            { !loading && <Button buttonName="Ver más" isSubmit={false} isDisabled={false} /> }
         </PopupWrapper>
     )
 }
