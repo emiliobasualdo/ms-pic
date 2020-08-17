@@ -34,8 +34,7 @@ export const Heading = styled.h2`
 export const List = styled.ul`
     list-style: none;
     margin-top: .8rem;
-    padding-bottom: 1rem;
-    min-height: 11rem;
+    min-height: 13.5rem;
     width: 100%;
     & a {
         color: #000;
@@ -45,6 +44,7 @@ export const List = styled.ul`
         cursor: pointer;
         padding: .8rem 0;
         display: flex;
+        align-items: center;
     }
 `;
 
@@ -52,9 +52,26 @@ export const IconWrapper = styled.div`
     padding: 0 2rem;
 `;
 
+export const ListItemWrapper = styled.div`
+    width: 100%;
+`;
+
 export const ListTitle = styled.h3`
     font-weight: 800;
     font-size: .9rem;
+`;
+
+export const ListDescription = styled.p`
+    margin-top: .5rem;
+`;
+
+export const LinearProgressWrapper = styled.div`
+    width: 80%;
+    margin-left: 2rem;
+`;
+
+export const LinearProgressDescription = styled.p`
+    margin-bottom: .4rem;
 `;
 
 export const LoadingContent = styled.div`

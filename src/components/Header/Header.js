@@ -228,10 +228,10 @@ const Header = () => {
                         {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                     </IconButton>
                 </div>
-                <Divider />
                 <List>
                     {sidebarData.map((navItem, index) => (
                         <React.Fragment key={index}>
+                            { index === 0 && <Divider /> }
                             <Link
                                 to={navItem.path}
                                 onClick={() => handleNavigation(navItem.path)}

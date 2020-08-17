@@ -83,7 +83,7 @@ const SummaryAccordion = ({ accordionHeader }) => {
             </AccordionItem>
             <AccordionItem>
                 <Item onClick={() => handleClickSecondItem()}>
-                    { showFirstItem ? <RemoveIcon /> : <AddIcon /> }
+                    { showSecondItem ? <RemoveIcon /> : <AddIcon /> }
                     <ActionParagraph>{ accordionHeader === 'Volumen' ? 'Volumen de Recargas' : 'Transacciones' }</ActionParagraph>
                 </Item>
                 <GreyLine>
@@ -95,7 +95,7 @@ const SummaryAccordion = ({ accordionHeader }) => {
             </AccordionItem>
             <AccordionItem>
                 <Item onClick={() => handleClickThirdItem()}>
-                    { showFirstItem ? <RemoveIcon /> : <AddIcon /> }
+                    { showThirdItem ? <RemoveIcon /> : <AddIcon /> }
                     <ActionParagraph>{ accordionHeader === 'Volumen' ? 'Consumos' : 'Tickets' }</ActionParagraph>
                 </Item>
                 <GreyLine>

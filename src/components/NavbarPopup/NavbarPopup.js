@@ -1,8 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from '@reach/router';
-import { PopupWrapper, Heading, List, IconWrapper, ListTitle, LoadingContent } from "./NavbarPopup.styles";
+import {
+    PopupWrapper,
+    Heading,
+    List,
+    IconWrapper,
+    ListItemWrapper,
+    ListTitle,
+    ListDescription,
+    LinearProgressWrapper,
+    LinearProgressDescription,
+    LoadingContent
+} from "./NavbarPopup.styles";
 import Button from '../../components/Button/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import LinearWithValueLabel from "../LinearProgressWithLabel/LinealProgressWithLabel";
 import MonetizationOnOutlinedIcon from '@material-ui/icons/MonetizationOnOutlined';
 import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceWalletOutlined';
 import PlayForWorkOutlinedIcon from '@material-ui/icons/PlayForWorkOutlined';
@@ -13,6 +25,7 @@ const NavbarPopup = ({ name, onClose }) => {
     const [data, setData] = useState([]);
 
     // this should be replaced by a useEffect hook to fetch from API (now: mocked data only)
+    // The data should only use the first three items so the popup has no need for scrolling
     useEffect(() => {
         setHeading(name);
         setLoading(true);
@@ -37,12 +50,19 @@ const NavbarPopup = ({ name, onClose }) => {
                 ]);
             }
             if (name === 'Tareas') {
+                // This should be passed to LinearProgressDescription and LinearWithvalueLabel below
                 setData([
                     {
-                        title: 'pendiente: tareas item 1'
+                        title: 'Acreditación Pago',
+                        value: 95
                     },
                     {
-                        title: 'pendiente: tareas item 2'
+                        title: 'Recarga en Efectivo',
+                        value: 85
+                    },
+                    {
+                        title: 'Transferencia en efectivo',
+                        value: 66
                     }
                 ]);
             }
@@ -78,19 +98,20 @@ const NavbarPopup = ({ name, onClose }) => {
                                                 <IconWrapper>
                                                     {item.icon}
                                                 </IconWrapper>
-                                                <div>
+                                                <ListItemWrapper>
                                                     <ListTitle>{item.title}</ListTitle>
-                                                    <p>{item.description}</p>
-                                                </div>
+                                                    <ListDescription>{item.description}</ListDescription>
+                                                </ListItemWrapper>
                                             </li>
                                         )
                                     }
                                     {
                                         name === 'Tareas' && (
                                             <li>
-                                                <div>
-                                                    <ListTitle>{item.title}</ListTitle>
-                                                </div>
+                                                <LinearProgressWrapper>
+                                                    <LinearProgressDescription>{item.title}</LinearProgressDescription>
+                                                    <LinearWithValueLabel value={item.value} />
+                                                </LinearProgressWrapper>
                                             </li>
                                         )
                                     }
