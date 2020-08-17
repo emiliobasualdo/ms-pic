@@ -1,41 +1,114 @@
-import React, { useState } from 'react';
-import { PopupWrapper, Content, Heading, List } from "./NavbarPopup.styles";
+import React, { useState, useEffect } from 'react';
+import { Link } from '@reach/router';
+import { PopupWrapper, Heading, List, IconWrapper, ListTitle, LoadingContent } from "./NavbarPopup.styles";
+import Button from '../../components/Button/Button';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import MonetizationOnOutlinedIcon from '@material-ui/icons/MonetizationOnOutlined';
+import AccountBalanceWalletOutlinedIcon from '@material-ui/icons/AccountBalanceWalletOutlined';
+import PlayForWorkOutlinedIcon from '@material-ui/icons/PlayForWorkOutlined';
 
-const NavbarPopup = ({ name }) => {
-    let heading;
+const NavbarPopup = ({ name, onClose }) => {
+    const [heading, setHeading] = useState('');
     const [loading, setLoading] = useState(true);
+    const [data, setData] = useState([]);
 
-    setTimeout(() => {
-        setLoading(false);
-    }, 1000);
-
-    switch (name) {
-        case 'notifications':
-            heading = 'Mensajes';
-            break;
-        case 'tasks':
-            heading = 'Tareas';
-            break;
-        case 'chat':
-            heading = 'Chat';
-            break;
-        default:
-            heading = '';
-            break;
-    }
+    // this should be replaced by a useEffect hook to fetch from API (now: mocked data only)
+    useEffect(() => {
+        setHeading(name);
+        setLoading(true);
+        const obtainData = setTimeout(() => {
+            if (name === 'Mensajes') {
+                setData([
+                    {
+                        title: 'Acreditación Pendiente',
+                        description: 'Ir al Balance -> Pendientes',
+                        icon: <MonetizationOnOutlinedIcon fontSize="large" />
+                    },
+                    {
+                        title: 'Banco Santander acreditado',
+                        description: 'Acreditación en cuenta',
+                        icon: <AccountBalanceWalletOutlinedIcon fontSize="large" />
+                    },
+                    {
+                        title: 'Cupones rechazados',
+                        description: 'Ir a cupones -> Rechazados',
+                        icon: <PlayForWorkOutlinedIcon fontSize="large"/>
+                    }
+                ]);
+            }
+            if (name === 'Tareas') {
+                setData([
+                    {
+                        title: 'pendiente: tareas item 1'
+                    },
+                    {
+                        title: 'pendiente: tareas item 2'
+                    }
+                ]);
+            }
+            if (name === 'Chat') {
+                setData([
+                    {
+                        title: 'pendiente: componente chat'
+                    }
+                ]);
+            }
+            setLoading(false);
+        }, 2000);
+        return () => {
+            clearTimeout(obtainData);
+        }
+    }, [name]);
 
     return (
         <PopupWrapper>
             <Heading>{ heading }</Heading>
-            <Content>
-                { loading ? <p style={{ textAlign: 'center', marginTop: '2rem' }}>Loading</p> : (
+                { loading ? (
+                    <LoadingContent>
+                        <CircularProgress color="primary" />
+                    </LoadingContent>
+                ) : (
                     <List>
-                        <li>Test</li>
-                        <li>Test</li>
-                        <li>test</li>
+                        {data.map((item, index) => {
+                            return (
+                                <Link key={index} to="/" onClick={() => onClose()}>
+                                    {
+                                        name === 'Mensajes' && (
+                                            <li>
+                                                <IconWrapper>
+                                                    {item.icon}
+                                                </IconWrapper>
+                                                <div>
+                                                    <ListTitle>{item.title}</ListTitle>
+                                                    <p>{item.description}</p>
+                                                </div>
+                                            </li>
+                                        )
+                                    }
+                                    {
+                                        name === 'Tareas' && (
+                                            <li>
+                                                <div>
+                                                    <ListTitle>{item.title}</ListTitle>
+                                                </div>
+                                            </li>
+                                        )
+                                    }
+                                    {
+                                        name === 'Chat' && (
+                                            <li>
+                                                <div>
+                                                    <ListTitle>{item.title}</ListTitle>
+                                                </div>
+                                            </li>
+                                        )
+                                    }
+                                </Link>
+                            )
+                        })}
                     </List>
                 )}
-            </Content>
+            { !loading && <Button buttonName="Ver más" /> }
         </PopupWrapper>
     )
 }

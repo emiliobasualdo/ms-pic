@@ -82,12 +82,12 @@ const Header = () => {
     const [openTasks, setOpenTasks] = useState(false);
     const [openChat, setOpenChat] = useState(false);
 
+    const classes = DrawerStyles();
+    const theme = useTheme();
+
     useEffect(() => {
         setLocation('negocio');
     }, []);
-
-    const classes = DrawerStyles();
-    const theme = useTheme();
 
     const sidebarData = [
         {
@@ -209,9 +209,10 @@ const Header = () => {
                     </Toolbar>
                 </Container>
             </AppBar>
-            { openNotifications && <NavbarPopup name="notifications" /> }
-            { openTasks && <NavbarPopup name="tasks" /> }
-            { openChat && <NavbarPopup name="chat" /> }
+
+            { openNotifications && <NavbarPopup name="Mensajes" onClose={() => setOpenNotifications(!openNotifications) }/> }
+            { openTasks && <NavbarPopup name="Tareas" onClose={() => setOpenTasks(!openTasks) }/> }
+            { openChat && <NavbarPopup name="Chat" onClose={() => setOpenChat(!openChat) }/> }
 
             <Drawer
                 className={classes.drawer}
