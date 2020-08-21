@@ -10,7 +10,7 @@ import {
     StyledP
 } from './Card.styles';
 
-const Card2 = (props) => {
+const Card = (props) => {
     return(
         <Card2Container>
             <FirstContainer>
@@ -57,4 +57,4 @@ const Card2 = (props) => {
     );
 }
 
-export default Card2;
+export default Card;

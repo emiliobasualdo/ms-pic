@@ -3,7 +3,7 @@ import MonetizationOnOutlinedIcon from '@material-ui/icons/MonetizationOnOutline
 import MobileFriendlyOutlinedIcon from '@material-ui/icons/MobileFriendlyOutlined';
 import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
 import totalBusinessData from '../../../mocks/business/total/totalBusiness.json';
-import Card2 from '../../../components/Card/Card';
+import Card from '../../../components/Card/Card';
 import {TotalBusinessContainer} from './Total.styles';
 
 const Total = () => {
@@ -17,7 +17,7 @@ const Total = () => {
         <TotalBusinessContainer>
             {totalBusinessData.map((item, index) => {
                 return(
-                    <Card2
+                    <Card
                         key={index}
                         icon={icons[`icon${index + 1}`]}
                         header={item.header}

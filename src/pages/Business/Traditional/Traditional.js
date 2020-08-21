@@ -6,7 +6,7 @@ import customersConsumptions from '../../../mocks/business/traditional/customers
 import volumeRecharges from '../../../mocks/business/traditional/volumeRecharges.json';
 import consumptionsOrigin from '../../../mocks/business/traditional/consumptionsOrigin.json';
 import {
-    Card2,
+    Card,
     CircularProgressContainer,
     CircularProgressCard,
     SimpleTable,
@@ -27,7 +27,7 @@ const Traditional = () => {
         <TraditionalBusinessContainer>
             {traditionalBusinessData.map((item, index) => {
                 return(
-                    <Card2
+                    <Card
                         key={index}
                         icon={<PaymentOutlinedIcon fontSize="large"/>}
                         header={item.header}

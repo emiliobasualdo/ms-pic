@@ -1,6 +1,14 @@
 import React from 'react';
-import { LargeColumnDataContainer, Heading, IconContainer, TextContainer, TopText, BottomText } from "./LargeColumnData.styles";
-import { StyledDiv, StyledP, StyledSpan } from '../ColumnData/ColumnData.styles';
+import Button from '../Button/Button';
+import {StyledDiv, StyledP, StyledSpan} from '../ColumnData/ColumnData.styles';
+import {
+    LargeColumnDataContainer,
+    Heading,
+    IconContainer,
+    TextContainer,
+    TopText,
+    BottomText
+} from "./LargeColumnData.styles";
 
 const LargeColumnData = (props) => {
 
@@ -69,6 +77,7 @@ const LargeColumnData = (props) => {
                 <StyledP>{props.averageRechargeText}</StyledP>
                 <StyledSpan>{props.averageRechargeAmmount}</StyledSpan>
             </StyledDiv>
+            <Button buttonName={props.buttonName}/>
         </LargeColumnDataContainer>
     );
 }

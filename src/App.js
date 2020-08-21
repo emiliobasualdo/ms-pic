@@ -10,7 +10,7 @@ import {
     Balance,
     Business,
     Total,
-    Clients,
+    Customers,
     Consumptions,
     Coupons,
     Payment,
@@ -21,7 +21,12 @@ import {
     Services,
     Summary,
     Traditional,
-    Zones
+    Zones,
+    CustomersTotal,
+    Current,
+    New,
+    CustomersTraditional,
+    CustomersPrepaid
 } from './pages';
 
 const GlobalStyle = createGlobalStyle(({theme}) => {
@@ -53,7 +58,14 @@ const App = () => {
                                 <Consumptions path="consumos"/>
                                 <Payment path="cobro"/>
                             </Business>
-                            <Clients exact path="clientes"/>
+                            <Customers path="clientes">
+                                <Redirect from ="/" to="total" noThrow/>
+                                <CustomersTotal path="total"/>
+                                <Current path="actuales"/>
+                                <New path="nuevos"/>
+                                <CustomersTraditional path="tradicionales"/>
+                                <CustomersPrepaid path="prepagos"/>
+                            </Customers>
                             <Zones exact path="zonas"/>
                             <Balance exact path="balance"/>
                             <Coupons exact path="cupones"/>

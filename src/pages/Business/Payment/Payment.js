@@ -1,15 +1,13 @@
 import React from 'react';
-import TitleCard from '../../../components/TitleCard/TitleCard';
 import DvrIcon from '@material-ui/icons/Dvr';
-import {PaymentBusinessContainer} from "./Payment.styles";
-import { PaymentBusinessDataContainer } from "./Payment.styles";
-import paymentsBusiness from '../../../mocks/payments/paymentsBusiness.json';
-import LargeColumnData from "../../../components/LargeColumnData/LargeColumnData";
 import CropFreeOutlinedIcon from "@material-ui/icons/CropFreeOutlined";
 import AddShoppingCartOutlinedIcon from "@material-ui/icons/AddShoppingCartOutlined";
 import InsertDriveFileOutlinedIcon from '@material-ui/icons/InsertDriveFileOutlined';
+import TitleCard from '../../../components/TitleCard/TitleCard';
+import LargeColumnData from "../../../components/LargeColumnData/LargeColumnData";
 import CameraRearOutlinedIcon from '@material-ui/icons/CameraRearOutlined';
-
+import paymentsBusiness from '../../../mocks/payments/paymentsBusiness.json';
+import {PaymentBusinessContainer, PaymentBusinessDataContainer} from "./Payment.styles";
 
 const Payment = () => {
     const icons = {
@@ -65,6 +63,7 @@ const Payment = () => {
                                 averageTxtRAmmount={item.averageTxtRAmmount}
                                 averageRechargeText={item.averageRechargeText}
                                 averageRechargeAmmount={item.averageRechargeAmmount}
+                                buttonName="Más Detalles"
                             />
                         )
                     })

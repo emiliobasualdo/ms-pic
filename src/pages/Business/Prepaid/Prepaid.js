@@ -6,7 +6,7 @@ import greenCircularProgress from '../../../mocks/business/prepaid/greenCircular
 import rechargesOriginData from '../../../mocks/business/prepaid/rechargesOrigin.json';
 import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
 import {
-    Card2,
+    Card,
     CircularProgressContainer,
     CircularProgressCard,
     SimpleTable,
@@ -28,7 +28,7 @@ const Prepaid = () => {
             {
                 prepaidBusinessData.map((item, index) => {
                 return (
-                    <Card2
+                    <Card
                         key={index}
                         icon={<PaymentOutlinedIcon fontSize="large"/>}
                         header={item.header}
