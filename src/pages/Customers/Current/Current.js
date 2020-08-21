@@ -1,12 +1,12 @@
 import React from 'react';
 import PeopleIcon from '@material-ui/icons/People';
 //Mocks
-import BarGraphsData from '../../../mocks/customers/current/barGraphs.json';
-import GenresData from '../../../mocks/customers/current/genre.json';
-import AgeRangeData from '../../../mocks/customers/current/ageRange.json';
-import GeographicZonesData from '../../../mocks/customers/current/geographicZones.json';
-import MaleGenreData from '../../../mocks/customers/current/maleGenre.json';
-import FemaleGenreData from '../../../mocks/customers/current/femaleGenre.json';
+import BarGraphsData from '../../../mocks/customers/barGraphs.json';
+import GenresData from '../../../mocks/customers/genre.json';
+import AgeRangeData from '../../../mocks/customers/ageRange.json';
+import GeographicZonesData from '../../../mocks/customers/geographicZones.json';
+import MaleGenreData from '../../../mocks/customers/maleGenre.json';
+import FemaleGenreData from '../../../mocks/customers/femaleGenre.json';
 //Components
 import{
     TitleCard,

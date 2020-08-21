@@ -1,12 +1,12 @@
 import React from 'react';
 import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 //Mocks
-import BarGraphsData from '../../../mocks/customers/total/barGraphs.json';
-import GenresData from '../../../mocks/customers/total/genre.json';
-import AgeRangeData from '../../../mocks/customers/total/ageRange.json';
-import GeographicZonesData from '../../../mocks/customers/total/geographicZones.json';
-import MaleGenreData from '../../../mocks/customers/total/maleGenre.json';
-import FemaleGenreData from '../../../mocks/customers/total/femaleGenre.json';
+import BarGraphsData from '../../../mocks/customers/barGraphs.json';
+import GenresData from '../../../mocks/customers/genre.json';
+import AgeRangeData from '../../../mocks/customers/ageRange.json';
+import GeographicZonesData from '../../../mocks/customers/geographicZones.json';
+import MaleGenreData from '../../../mocks/customers/maleGenre.json';
+import FemaleGenreData from '../../../mocks/customers/femaleGenre.json';
 //Components
 import {
     Button,
