@@ -60,8 +60,8 @@ const CustomersTotal = () => {
                                     percentage={genre.percentage}
                                     progressDescription={genre.description}
                                     width="35%"
-                                    textColor="blue"
-                                    pathColor="blue"
+                                    textColor={genre.color}
+                                    pathColor={genre.color}
                                 />
                             )
                         })
