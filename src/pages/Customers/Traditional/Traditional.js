@@ -23,6 +23,7 @@ import {
     BarGraphCardsContainer,
     CircularProgressCardsContainer
 } from './Traditional.styles';
+
 const CustomersTraditional = () => {
     return(
         <CustomersTraditionalContent>
