@@ -1,0 +1,18 @@
+[
+    {
+        "number": 52.768,
+        "description": "Clientes"
+    },
+    {
+        "number": 43.625,
+        "description": "Clientes prepagos"
+    },
+    {
+        "number": 9.143,
+        "description": "Clientes tradicionales"
+    },
+    {
+        "number": 2.461,
+        "description": "Clientes sin consumo"
+    }
+]
