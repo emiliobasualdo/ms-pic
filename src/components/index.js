@@ -9,6 +9,7 @@ import SquareAreaChart from './SquareAreaChart/SquareAreaChart';
 import SquareProgressCircular from './SquareProgressCircular/SquareProgressCircular';
 import TitleCard from './TitleCard/TitleCard';
 import TwoCircularProgressCard from './TwoCircularProgressCard/TwoCircularProgress';
+import LargeCircularProgressCard from './LargeCircularProgressCard/LargeCircularProgress';
 
 export {
     Button,
@@ -21,5 +22,6 @@ export {
     SquareAreaChart,
     SquareProgressCircular,
     TitleCard,
-    TwoCircularProgressCard
+    TwoCircularProgressCard,
+    LargeCircularProgressCard
 }

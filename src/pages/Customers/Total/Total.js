@@ -4,22 +4,26 @@ import BarGraphsData from '../../../mocks/customers/total/barGraphs.json';
 import GenresData from '../../../mocks/customers/total/genre.json';
 import AgeRangeData from '../../../mocks/customers/total/ageRange.json';
 import GeographicZonesData from '../../../mocks/customers/total/geographicZones.json';
+import MaleGenreData from '../../../mocks/customers/total/maleGenre.json';
+import FemaleGenreData from '../../../mocks/customers/total/femaleGenre.json';
 import {
     Button,
     TitleCard,
     BarGraphCard,
     SquareProgressCircular,
     CircularProgressContainer,
-    TwoCircularProgressCard
+    TwoCircularProgressCard,
+    LargeCircularProgressCard
 } from '../../../components';
 import {
+    CustomersTotalContent,
     BarGraphCardsContainer,
     CircularProgressCardsContainer
 } from './Total.styles';
 
 const CustomersTotal = () => {
     return(
-        <>
+        <CustomersTotalContent>
             <TitleCard
                 icon={<LocalAtmIcon fontSize="large"/>}
                 title="Detalle de Cartera"
@@ -104,7 +108,43 @@ const CustomersTotal = () => {
                     }
                 </SquareProgressCircular>
             </CircularProgressCardsContainer>
-        </>
+            <LargeCircularProgressCard title="Género Femenino">
+                {
+                    FemaleGenreData.map((circle, index) => {
+                        return(
+                            <CircularProgressContainer
+                                key={index}
+                                percentage={circle.percentage}
+                                progressDescription={circle.description}
+                                width="8%"
+                                height="10%"
+                                textColor="salmon"
+                                pathColor="salmon"
+                                margin="1rem 3rem"
+                            />
+                        )
+                    })
+                }
+            </LargeCircularProgressCard>
+            <LargeCircularProgressCard title="Género Masculino">
+                {
+                    MaleGenreData.map((circle, index) => {
+                        return(
+                            <CircularProgressContainer
+                                key={index}
+                                percentage={circle.percentage}
+                                progressDescription={circle.description}
+                                width="8%"
+                                height="10%"
+                                textColor="blue"
+                                pathColor="blue"
+                                margin="1rem 3rem"
+                            />
+                        )
+                    })
+                }
+            </LargeCircularProgressCard>
+        </CustomersTotalContent>
     );
 }
 
