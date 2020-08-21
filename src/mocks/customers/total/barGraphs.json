@@ -1,0 +1,18 @@
+[
+    {
+        "number": 68.092,
+        "description": "Clientes"
+    },
+    {
+        "number": 56.326,
+        "description": "Clientes prepagos"
+    },
+    {
+        "number": 11.766,
+        "description": "Clientes tradicionales"
+    },
+    {
+        "number": 15.324,
+        "description": "Clientes nuevos"
+    }
+]
