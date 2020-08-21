@@ -13,7 +13,7 @@ export const TitleCardContainer = styled.div(({theme}) => {
     return css`
         background-color: ${theme.colors.white};
         height: 4rem;
-        padding: 1.2rem;
+        padding: 1.5rem;
         margin: 2.5rem 0;
         display: flex;
         justify-content: space-between;
@@ -26,7 +26,11 @@ export const FirstContainer = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 25%;
+    width: auto;
+`;
+
+export const TitleContainer = styled.div`
+    margin-left: 1.5rem;
 `;
 
 export const Title = styled.h2(({theme}) => {

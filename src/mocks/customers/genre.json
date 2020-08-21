@@ -1,10 +1,12 @@
 [
     {
         "percentage": 59,
-        "description": "Femenino"
+        "description": "Femenino",
+        "color": "salmon"
     },
     {
         "percentage": 41,
-        "description": "Masculino"
+        "description": "Masculino",
+        "color": "blue"
     }
 ]

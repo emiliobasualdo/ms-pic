@@ -2,6 +2,7 @@ import React from 'react';
 import {
     TitleCardContainer,
     FirstContainer,
+    TitleContainer,
     Title,
     SecondContainer,
     Item
@@ -12,10 +13,10 @@ const TitleCard = (props) => {
         <TitleCardContainer>
             <FirstContainer>
                 {props.icon}
-                <div>
+                <TitleContainer>
                     <Title>{props.title}</Title>
                     <p>{props.description}</p>
-                </div>
+                </TitleContainer>
             </FirstContainer>
             <SecondContainer>
                 <Item>{props.diary}</Item>
