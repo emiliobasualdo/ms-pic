@@ -12,7 +12,7 @@ import {
     SimpleTable,
     SquareProgressBars,
     SquareAreaChart,
-    SquarePayments
+    SquareProgressCircular
 } from '../../../components/';
 import {
     PrepaidBusinessContainer,
@@ -133,7 +133,7 @@ const Prepaid = () => {
             <LastContainer>
                 <SquareProgressBars width="28%" title="Cantidad de Recargas"/>
                 <SquareAreaChart width="28%" title="Transacciones de Recargas"/>
-                <SquarePayments width="28%" title="Origen de Recargas">
+                <SquareProgressCircular width="28%" title="Origen de Recargas">
                     {
                         rechargesOriginData.map((circle, index) => {
                             return(
@@ -149,7 +149,7 @@ const Prepaid = () => {
                             )
                         })
                     }
-                </SquarePayments>
+                </SquareProgressCircular>
             </LastContainer>
         </PrepaidBusinessContainer>
     )

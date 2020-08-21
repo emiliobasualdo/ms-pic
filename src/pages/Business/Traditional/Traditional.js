@@ -12,7 +12,7 @@ import {
     SimpleTable,
     SquareProgressBars,
     SquareAreaChart,
-    SquarePayments
+    SquareProgressCircular
 } from '../../../components/';
 import {
     TraditionalBusinessContainer,
@@ -130,7 +130,7 @@ const Traditional = () => {
             <LastContainer>
                 <SquareProgressBars width="28%" title="Consumo Tradicional por Zona"/>
                 <SquareAreaChart width="28%" title="Transacciones de Consumos"/>
-                <SquarePayments width="28%" title="Origen de Consumos">
+                <SquareProgressCircular width="28%" title="Origen de Consumos">
                     {
                         consumptionsOrigin.map((circle, index) => {
                             return(
@@ -146,7 +146,7 @@ const Traditional = () => {
                             )
                         })
                     }
-                </SquarePayments>
+                </SquareProgressCircular>
             </LastContainer>
         </TraditionalBusinessContainer>
     );

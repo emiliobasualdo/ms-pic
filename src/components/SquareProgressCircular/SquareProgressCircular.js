@@ -4,18 +4,18 @@ import {
     RechargesOriginContainer,
     RechargesTitle,
     RechargesOriginCircles
-} from './SquarePayments.styles';
+} from './SquareProgressCircular.styles';
 
-const SquarePayments = ({children, width, title}) => {
+const SquarePreogressCircular = ({children, width, title, buttonName}) => {
     return(
         <RechargesOriginContainer style={{width: width}}>
             <RechargesTitle>{title}</RechargesTitle>
             <RechargesOriginCircles>
                 {children}
             </RechargesOriginCircles>
-            <Button buttonName="Ver Todo"/>
+            <Button buttonName={buttonName}/>
         </RechargesOriginContainer>
     );
 }
 
-export default SquarePayments;
+export default SquarePreogressCircular;
