@@ -6,7 +6,8 @@ export const RechargesOriginContainer = styled.div(({theme}) => {
         padding: 0 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 1rem;
     `;
 });
 

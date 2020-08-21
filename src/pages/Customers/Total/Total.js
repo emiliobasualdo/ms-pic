@@ -1,11 +1,13 @@
 import React from 'react';
 import LocalAtmIcon from '@material-ui/icons/LocalAtm';
+//Mocks
 import BarGraphsData from '../../../mocks/customers/total/barGraphs.json';
 import GenresData from '../../../mocks/customers/total/genre.json';
 import AgeRangeData from '../../../mocks/customers/total/ageRange.json';
 import GeographicZonesData from '../../../mocks/customers/total/geographicZones.json';
 import MaleGenreData from '../../../mocks/customers/total/maleGenre.json';
 import FemaleGenreData from '../../../mocks/customers/total/femaleGenre.json';
+//Components
 import {
     Button,
     TitleCard,
@@ -15,6 +17,7 @@ import {
     TwoCircularProgressCard,
     LargeCircularProgressCard
 } from '../../../components';
+//Styles
 import {
     CustomersTotalContent,
     BarGraphCardsContainer,
