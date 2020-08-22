@@ -30,7 +30,13 @@ import {
     ZonesTotal,
     ZonesProvinces,
     ZonesStores,
-    ZonesRegistration
+    ZonesRegistration,
+    BalanceTotal,
+    BalanceSettlements,
+    BalanceReports,
+    BalanceTaxes,
+    BalanceConciliation,
+    BalanceSchedule
 } from './pages';
 
 const GlobalStyle = createGlobalStyle(({theme}) => {
@@ -77,7 +83,15 @@ const App = () => {
                                 <ZonesStores path="comercios"/>
                                 <ZonesRegistration path="alta"/>
                             </Zones>
-                            <Balance exact path="balance"/>
+                            <Balance exact path="balance">
+                                <Redirect from ="/" to="total" noThrow/>
+                                <BalanceTotal path="total"/>
+                                <BalanceSettlements path="liquidaciones"/>
+                                <BalanceReports path="reportes"/>
+                                <BalanceTaxes path="impuestos"/>
+                                <BalanceConciliation path="conciliacion"/>
+                                <BalanceSchedule path="agenda"/>
+                            </Balance>
                             <Coupons exact path="cupones"/>
                             <Services exact path="servicios"/>
                             <Promotions exact path="promociones"/>

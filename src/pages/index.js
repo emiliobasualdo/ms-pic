@@ -1,4 +1,3 @@
-import Balance from './Balance/Balance';
 import Coupons from './Coupons/Coupons';
 import Promotions from './Promotions/Promotions';
 import Reports from './Reports/Reports';
@@ -29,6 +28,15 @@ import ZonesProvinces from './Zones/Provinces/Provinces';
 import ZonesStores from './Zones/Stores/Stores';
 import ZonesRegistration from './Zones/Registration/Registration';
 
+//Balance
+import Balance from './Balance/Balance';
+import BalanceTotal from './Balance/Total/Total';
+import BalanceSettlements from './Balance/Settlements/Settlements';
+import BalanceReports from './Balance/Reports/Reports';
+import BalanceTaxes from './Balance/Taxes/Taxes';
+import BalanceConciliation from './Balance/Conciliation/Conciliation';
+import BalanceSchedule from './Balance/Schedule/Schedule';
+
 export {
     Balance,
     Business,
@@ -53,5 +61,11 @@ export {
     ZonesTotal,
     ZonesProvinces,
     ZonesStores,
-    ZonesRegistration
+    ZonesRegistration,
+    BalanceTotal,
+    BalanceSettlements,
+    BalanceReports,
+    BalanceTaxes,
+    BalanceConciliation,
+    BalanceSchedule
 }
