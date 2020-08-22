@@ -3,7 +3,6 @@ import Coupons from './Coupons/Coupons';
 import Promotions from './Promotions/Promotions';
 import Reports from './Reports/Reports';
 import Services from './Services/Services';
-import Zones from './Zones/Zones';
 
 //Business
 import Business from './Business/Business';
@@ -15,13 +14,20 @@ import Recharges from "./Business/Recharges/Recharges";
 import Summary from "./Business/Summary/Summary";
 import Traditional from "./Business/Traditional/Traditional";
 
-//Clients
+//Customers
 import Customers from './Customers/Customers';
 import CustomersTotal from './Customers/Total/Total';
 import Current from './Customers/Current/Current';
 import New from './Customers/New/New';
 import CustomersTraditional from './Customers/Traditional/Traditional';
 import CustomersPrepaid from './Customers/Prepaid/Prepaid'; 
+
+//Zones
+import Zones from './Zones/Zones';
+import ZonesTotal from './Zones/Total/Total';
+import ZonesProvinces from './Zones/Provinces/Provinces';
+import ZonesStores from './Zones/Stores/Stores';
+import ZonesRegistration from './Zones/Registration/Registration';
 
 export {
     Balance,
@@ -43,5 +49,9 @@ export {
     Current,
     New,
     CustomersTraditional,
-    CustomersPrepaid
+    CustomersPrepaid,
+    ZonesTotal,
+    ZonesProvinces,
+    ZonesStores,
+    ZonesRegistration
 }

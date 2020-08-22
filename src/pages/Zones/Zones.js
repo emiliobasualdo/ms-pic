@@ -1,9 +1,31 @@
 import React from "react";
 
-const Zones = () => {
+import Tabs from '../../components/Tabs/Tabs';
+
+const Zones = ({children}) => {
+    const tabs = [
+        {
+            path: 'total',
+            textContent: 'Total'
+        },
+        {
+            path: 'provincias',
+            textContent: 'Provincias'
+        },
+        {
+            path: 'comercios',
+            textContent: 'Comercios'
+        },
+        {
+            path: 'alta',
+            textContent: 'Alta de Comercios'
+        }
+    ]
+
     return(
         <>
-            <h2>Zones</h2>
+            <Tabs tabItems={tabs}/>
+            {children}
         </>
     );
 }

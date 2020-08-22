@@ -26,7 +26,11 @@ import {
     Current,
     New,
     CustomersTraditional,
-    CustomersPrepaid
+    CustomersPrepaid,
+    ZonesTotal,
+    ZonesProvinces,
+    ZonesStores,
+    ZonesRegistration
 } from './pages';
 
 const GlobalStyle = createGlobalStyle(({theme}) => {
@@ -66,7 +70,13 @@ const App = () => {
                                 <CustomersTraditional path="tradicionales"/>
                                 <CustomersPrepaid path="prepagos"/>
                             </Customers>
-                            <Zones exact path="zonas"/>
+                            <Zones path="zonas">
+                                <Redirect from ="/" to="total" noThrow/>
+                                <ZonesTotal path="total"/>
+                                <ZonesProvinces path="provincias"/>
+                                <ZonesStores path="comercios"/>
+                                <ZonesRegistration path="alta"/>
+                            </Zones>
                             <Balance exact path="balance"/>
                             <Coupons exact path="cupones"/>
                             <Services exact path="servicios"/>
