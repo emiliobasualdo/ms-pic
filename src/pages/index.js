@@ -19,7 +19,8 @@ import CustomersTotal from './Customers/Total/Total';
 import Current from './Customers/Current/Current';
 import New from './Customers/New/New';
 import CustomersTraditional from './Customers/Traditional/Traditional';
-import CustomersPrepaid from './Customers/Prepaid/Prepaid'; 
+import CustomersPrepaid from './Customers/Prepaid/Prepaid';
+import CustomersProfiles from "./Customers/Profiles/Profiles";
 
 //Zones
 import Zones from './Zones/Zones';
@@ -54,6 +55,7 @@ export {
     Traditional,
     Zones,
     CustomersTotal,
+    CustomersProfiles,
     Current,
     New,
     CustomersTraditional,

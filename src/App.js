@@ -27,6 +27,7 @@ import {
     New,
     CustomersTraditional,
     CustomersPrepaid,
+    CustomersProfiles,
     ZonesTotal,
     ZonesProvinces,
     ZonesStores,
@@ -75,6 +76,7 @@ const App = () => {
                                 <New path="nuevos"/>
                                 <CustomersTraditional path="tradicionales"/>
                                 <CustomersPrepaid path="prepagos"/>
+                                <CustomersProfiles path="perfiles" />
                             </Customers>
                             <Zones path="zonas">
                                 <Redirect from ="/" to="total" noThrow/>

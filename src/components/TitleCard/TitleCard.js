@@ -19,9 +19,18 @@ const TitleCard = (props) => {
                 </TitleContainer>
             </FirstContainer>
             <SecondContainer>
-                <Item>{props.diary}</Item>
-                <Item>{props.weekly}</Item>
-                <Item>{props.monthly}</Item>
+                { (props.diary && props.weekly && props.monthly) && (
+                    <>
+                        <Item>{props.diary}</Item>
+                        <Item>{props.weekly}</Item>
+                        <Item>{props.monthly}</Item>
+                    </>
+                ) }
+                { props.action && (
+                    <Item onClick={props.onClick}>
+                        {props.action}
+                    </Item>
+                ) }
             </SecondContainer>
         </TitleCardContainer>
     );
