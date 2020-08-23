@@ -13,3 +13,13 @@ export const ZonesTotalContent = styled.div`
     width: auto;
     animation: ${fadeIn} .5s .2s ease-in backwards;
 `;
+
+export const ZonesDataContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+export const ZonesCircleDataContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;

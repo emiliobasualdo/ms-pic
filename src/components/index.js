@@ -10,6 +10,8 @@ import SquareProgressCircular from './SquareProgressCircular/SquareProgressCircu
 import TitleCard from './TitleCard/TitleCard';
 import TwoCircularProgressCard from './TwoCircularProgressCard/TwoCircularProgress';
 import LargeCircularProgressCard from './LargeCircularProgressCard/LargeCircularProgress';
+import LargeColumnData from "./LargeColumnData/LargeColumnData";
+
 
 export {
     Button,
@@ -23,5 +25,6 @@ export {
     SquareProgressCircular,
     TitleCard,
     TwoCircularProgressCard,
-    LargeCircularProgressCard
+    LargeCircularProgressCard,
+    LargeColumnData
 }

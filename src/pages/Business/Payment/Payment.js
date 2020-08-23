@@ -33,6 +33,7 @@ const Payment = () => {
                             <LargeColumnData
                                 key={index}
                                 icon={icons[`icon${index + 1}`]}
+                                type="businessData"
                                 header={item.header}
                                 subheader={item.subheader}
                                 commerceText={item.commerceText}
