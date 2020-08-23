@@ -5,6 +5,7 @@ const ProfileForm = ({ formContent, triggered }) => {
 
     const [formData, setFormData] = useState([]);
     const theForm = createRef();
+    const theSubmitButton = createRef();
 
     useEffect(() => {
         const data = formContent.map((firstLevel => {
@@ -18,16 +19,13 @@ const ProfileForm = ({ formContent, triggered }) => {
         setFormData(data);
     }, [formContent]);
 
-    /*
+    // BUG
     useEffect(() => {
-        const submitForm = () => {
-            if (triggered !== null) {
-                theForm.current.dispatchEvent(triggered);
-            }
+        console.log(triggered);
+        if (triggered) {
+            theSubmitButton.current.click();
         }
-        submitForm();
-    }, [triggered]);
-    */
+    }, [theSubmitButton, triggered]);
 
     const handleFormDataChange = (change) => {
         const newData = formData.map(firstLevel => {
@@ -44,7 +42,7 @@ const ProfileForm = ({ formContent, triggered }) => {
     const handleFormSubmit = (e) => {
         e.preventDefault();
         // This should send the data here
-        console.log(formData);
+        console.log('SUBMITTED', formData);
     }
 
     return (
@@ -71,6 +69,7 @@ const ProfileForm = ({ formContent, triggered }) => {
                         )
                     })
                 })}
+                <button hidden={true} ref={theSubmitButton} id="submit-button" onClick={(e) => handleFormSubmit(e)}>Button</button>
             </Form>
         </FormContainer>
     )
