@@ -160,12 +160,12 @@ const LargeColumnData = (props) => {
             {props.type === 'zonesCirclesData' && (
                 <>
                     <CircularProgressCard
-                        height="12rem"
+                        height="8rem"
                     >
                         {
                             <CirclePair>
                                 <CircleItem>
-                                    <CircularProgress percentage={props.valueF} pathColor={'pink'} textColor={'pink'}/>
+                                    <CircularProgress percentage={props.valueF} pathColor={'pink'} textColor={'pink'} />
                                     <StyledP>{props.labelF}</StyledP>
                                 </CircleItem>
                                 <CircleItem>
@@ -176,7 +176,7 @@ const LargeColumnData = (props) => {
                         }
                     </CircularProgressCard>
                     <CircularProgressCard
-                        height="12rem"
+                        height="8rem"
                     >
                         {
                             <CirclePair>
@@ -192,7 +192,7 @@ const LargeColumnData = (props) => {
                         }
                     </CircularProgressCard>
                     <CircularProgressCard
-                        height="12rem"
+                        height="8rem"
                     >
                         {
                             <CirclePair>
@@ -208,7 +208,7 @@ const LargeColumnData = (props) => {
                         }
                     </CircularProgressCard>
                     <CircularProgressCard
-                        height="12rem"
+                        height="8rem"
                     >
                         {
                             <CirclePair>
@@ -224,7 +224,7 @@ const LargeColumnData = (props) => {
                         }
                     </CircularProgressCard>
                     <CircularProgressCard
-                        height="12rem"
+                        height="8rem"
                     >
                         {
                             <CirclePair>
@@ -245,29 +245,5 @@ const LargeColumnData = (props) => {
         </LargeColumnDataContainer>
     );
 }
-
-/*
-/*
-<CircularProgressCard
-    CircularProgressCardTitle="Rango de Recargas por clientes"
-    height="12rem"
-    >
-        {
-            customersRecharges.map((circle, index) => {
-                return(
-                    <CircularProgressContainer
-                        key={index}
-                        percentage={circle.percentage}
-                        progressDescription={circle.description}
-                        width="60%"
-                        height="100%"
-                        textColor="rgb(238, 134, 71)"
-                        pathColor="rgb(238, 134, 71)"
-                    />
-                )
-            })
-        }
-</CircularProgressCard>
-* */
 
 export default LargeColumnData;
