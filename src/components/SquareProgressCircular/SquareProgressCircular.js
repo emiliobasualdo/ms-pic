@@ -6,7 +6,7 @@ import {
     RechargesOriginCircles
 } from './SquareProgressCircular.styles';
 
-const SquarePreogressCircular = ({children, width, title, buttonName}) => {
+const SquareProgressCircular = ({children, width, title, buttonName}) => {
     return(
         <RechargesOriginContainer style={{width: width}}>
             <RechargesTitle>{title}</RechargesTitle>
@@ -18,4 +18,4 @@ const SquarePreogressCircular = ({children, width, title, buttonName}) => {
     );
 }
 
-export default SquarePreogressCircular;
+export default SquareProgressCircular;

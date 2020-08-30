@@ -10,8 +10,6 @@ export const LargeColumnDataContainer = styled.div(({theme}) => {
         justify-content: space-between;
         padding: 0.5rem 1rem 1rem 1rem;
         font-family: ${theme.typography.fonts.secondary};
-        max-width: 15rem;
-        width: 15rem;
         margin: 2rem 0;
         animation: ${fadeIn} .5s .2s ease-in backwards;
     `;

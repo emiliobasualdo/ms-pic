@@ -21,7 +21,6 @@ const ProfileForm = ({ formContent, triggered }) => {
 
     // BUG
     useEffect(() => {
-        console.log(triggered);
         if (triggered) {
             theSubmitButton.current.click();
         }

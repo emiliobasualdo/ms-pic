@@ -1,0 +1,206 @@
+{
+  "circlesContentOneLeft": [
+    {
+      "title": "Nuevo",
+      "value": 22
+    },
+    {
+      "title": "Actual",
+      "value": 78
+    },
+    {
+      "title": "Tradicional",
+      "value": 16
+    },
+    {
+      "title": "Prepago",
+      "value": 84
+    },
+    {
+      "title": "Femenino",
+      "value": 59
+    },
+    {
+      "title": "Masculino",
+      "value": 41
+    },
+    {
+      "title": "Uso Prepago",
+      "value": 94
+    },
+    {
+      "title": "Float",
+      "value": 6
+    }
+  ],
+  "circlesContentOneRight": [
+    {
+      "title": "Nuevo",
+      "value": 23
+    },
+    {
+      "title": "Actual",
+      "value": 77
+    },
+    {
+      "title": "Tradicional",
+      "value": 17
+    },
+    {
+      "title": "Prepago",
+      "value": 83
+    },
+    {
+      "title": "Femenino",
+      "value": 59
+    },
+    {
+      "title": "Masculino",
+      "value": 41
+    },
+    {
+      "title": "Uso Prepago",
+      "value": 94
+    },
+    {
+      "title": "Float",
+      "value": 6
+    }
+  ],
+  "circlesContentTwoLeft": [
+    {
+      "title": "Nuevo",
+      "value": 23
+    },
+    {
+      "title": "Actual",
+      "value": 75
+    },
+    {
+      "title": "Tradicional",
+      "value": 19
+    },
+    {
+      "title": "Prepago",
+      "value": 79
+    },
+    {
+      "title": "Femenino",
+      "value": 54
+    },
+    {
+      "title": "Masculino",
+      "value": 38
+    },
+    {
+      "title": "Uso Prepago",
+      "value": 87
+    },
+    {
+      "title": "Float",
+      "value": 5
+    }
+  ],
+  "circlesContentTwoRight": [
+    {
+      "title": "Nuevo",
+      "value": 22
+    },
+    {
+      "title": "Actual",
+      "value": 78
+    },
+    {
+      "title": "Tradicional",
+      "value": 17
+    },
+    {
+      "title": "Prepago",
+      "value": 83
+    },
+    {
+      "title": "Femenino",
+      "value": 59
+    },
+    {
+      "title": "Masculino",
+      "value": 41
+    },
+    {
+      "title": "Uso Prepago",
+      "value": 95
+    },
+    {
+      "title": "Float",
+      "value": 5
+    }
+  ],
+  "circlesContentThreeLeft": [
+    {
+      "title": "Nuevo",
+      "value": 23
+    },
+    {
+      "title": "Actual",
+      "value": 7
+    },
+    {
+      "title": "Tradicional",
+      "value": 19
+    },
+    {
+      "title": "Prepago",
+      "value": 81
+    },
+    {
+      "title": "Femenino",
+      "value": 59
+    },
+    {
+      "title": "Masculino",
+      "value": 41
+    },
+    {
+      "title": "Uso Prepago",
+      "value": 94
+    },
+    {
+      "title": "Float",
+      "value": 6
+    }
+  ],
+  "circlesContentThreeRight": [
+    {
+      "title": "Nuevo",
+      "value": 22
+    },
+    {
+      "title": "Actual",
+      "value": 78
+    },
+    {
+      "title": "Tradicional",
+      "value": 18
+    },
+    {
+      "title": "Prepago",
+      "value": 82
+    },
+    {
+      "title": "Femenino",
+      "value": 59
+    },
+    {
+      "title": "Masculino",
+      "value": 41
+    },
+    {
+      "title": "Uso Prepago",
+      "value": 93
+    },
+    {
+      "title": "Float",
+      "value": 7
+    }
+  ]
+}

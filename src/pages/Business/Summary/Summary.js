@@ -8,8 +8,8 @@ const Summary = () => {
             <Card>
                 <Heading>Total Cartera</Heading>
                 <AccordionsContainer>
-                    <SummaryAccordion accordionHeader="Volumen"/>
-                    <SummaryAccordion accordionHeader="Cantidad"/>
+                    <SummaryAccordion accordionHeader="Volumen" circlesData={false} />
+                    <SummaryAccordion accordionHeader="Cantidad" circlesData={false} />
                 </AccordionsContainer>
             </Card>
         </>

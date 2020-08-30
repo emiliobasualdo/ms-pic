@@ -15,7 +15,6 @@ import CircularProgressCard from "../CircularProgressCard/CircularProgressCard";
 import CircularProgress from "../CircularProgress/CircularProgress";
 
 const LargeColumnData = (props) => {
-
     return(
         <LargeColumnDataContainer>
             <Heading>
