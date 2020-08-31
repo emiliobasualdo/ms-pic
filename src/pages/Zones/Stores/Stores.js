@@ -8,7 +8,7 @@ import {
     CircularProgressContainer
 } from '../../../components';
 //Styles
-import {ZonesStoresContent, StoresSelectionContainer, StoreSelectedContainer, MapAndZones, MapData, Zones, StoresTable, Map, SelectedStoreInTable} from './Stores.styles';
+import {ZonesStoresContent, StoresSelectionContainer, Stores, StoreSelectedContainer, MapAndZones, MapData, Zones, StoresTable, Map, SelectedStoreInTable} from './Stores.styles';
 //Mock
 import zonesStoresData from '../../../mocks/Zones/zonesStoresData.json';
 
@@ -100,14 +100,17 @@ const ZonesStores = () => {
                 weekly="Semanal"
                 monthly="Mensual"
             />
-            <StoresSelectionContainer storesLength={zonesStoresData.length}>
-                {
-                    zonesStoresData.map((item, index) => {
-                        return (
-                            <Button key={index} buttonName={item.store} isSubmit={false} onButtonClicked={() => handleStoreSelected(index + 1)}/>
-                        )
-                    })
-                }
+            <StoresSelectionContainer>
+                <h3>Seleccione el número de comercio</h3>
+                <Stores storesLength={zonesStoresData.length}>
+                    {
+                        zonesStoresData.map((item, index) => {
+                            return (
+                                <Button key={index} buttonName={item.store} isSubmit={false} onButtonClicked={() => handleStoreSelected(index + 1)}/>
+                            )
+                        })
+                    }
+                </Stores>
             </StoresSelectionContainer>
             { storeSelected && (
                 <StoreSelectedContainer>

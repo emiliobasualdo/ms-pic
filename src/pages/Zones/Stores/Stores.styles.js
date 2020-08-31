@@ -17,10 +17,14 @@ export const ZonesStoresContent = styled.div`
 export const StoresSelectionContainer = styled.div`
     background-color: #fff;
     width: 100%;
+    animation: ${fadeIn} .5s .2s ease-in backwards;
+    padding: 2rem;
+`;
+
+export const Stores = styled.div`
     display: flex;
     flex-wrap: wrap;
-    padding: .5rem 0;
-    animation: ${fadeIn} .5s .2s ease-in backwards;
+    margin-top: 1rem;
     & button {
         font-weight: 400;
         width: ${props => 100 / props.storesLength}rem;
@@ -49,7 +53,7 @@ export const MapData = styled.div`
 `;
 
 export const Map = styled.div`
-    background-color: red;
+    border: 1px solid red;
     width: 100%;
     height: 25rem;
 `;
