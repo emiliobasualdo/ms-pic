@@ -1,0 +1,394 @@
+[
+  {
+    "store": "Comercio 001",
+    "data": {
+      "map": "no data for now",
+      "zones": [
+        {
+          "title": "Nuevo",
+          "value": 36
+        },
+        {
+          "title": "Actual",
+          "value": 37
+        },
+        {
+          "title": "Tradicional",
+          "value": 35
+        },
+        {
+          "title": "Prepago",
+          "value": 20
+        },
+        {
+          "title": "Tickets",
+          "value": 20
+        },
+        {
+          "title": "Volumen",
+          "value": 17
+        },
+        {
+          "title": "Clientes",
+          "value": 36
+        }
+      ],
+      "storeValues": {
+        "title": "Comercio 1",
+        "clients": 5406,
+        "clientsPercentage": 36,
+        "transactions": 7978,
+        "transactionsPercentage": 20,
+        "vConsumption": 9244588,
+        "vConsumptionPercentage": 17,
+        "prepaidClients": 4547,
+        "prepaidClientsPercentage": 20,
+        "traditional": 859,
+        "traditionalPercentage": 35,
+        "current": 4161,
+        "currentPercentage": 36,
+        "new": 1245,
+        "newPercentage": 37,
+        "ticketsPerClient": 1.48,
+        "consumptionPerClient": 1710,
+        "volumePerClient": 1159
+      }
+    }
+  },
+  {
+    "store": "Comercio 002",
+    "data": {
+      "map": "no data for now",
+      "zones": [
+        {
+          "title": "Nuevo",
+          "value": 36
+        },
+        {
+          "title": "Actual",
+          "value": 37
+        },
+        {
+          "title": "Tradicional",
+          "value": 35
+        },
+        {
+          "title": "Prepago",
+          "value": 20
+        },
+        {
+          "title": "Tickets",
+          "value": 20
+        },
+        {
+          "title": "Volumen",
+          "value": 17
+        },
+        {
+          "title": "Clientes",
+          "value": 36
+        }
+      ],
+      "storeValues": {
+        "title": "Comercio 2",
+        "clients": 4699,
+        "clientsPercentage": 31,
+        "transactions": 6375,
+        "transactionsPercentage": 16,
+        "vConsumption": 7753879,
+        "vConsumptionPercentage": 15,
+        "prepaidClients": 4493,
+        "prepaidClientsPercentage": 19,
+        "traditional": 206,
+        "traditionalPercentage": 8,
+        "current": 3651,
+        "currentPercentage": 31,
+        "new": 1048,
+        "newPercentage": 31,
+        "ticketsPerClient": 1.36,
+        "consumptionPerClient": 1650,
+        "volumePerClient": 1216
+      }
+    }
+  },
+  {
+    "store": "Comercio 003",
+    "data": {
+      "map": "no data for now",
+      "zones": [
+        {
+          "title": "Nuevo",
+          "value": 36
+        },
+        {
+          "title": "Actual",
+          "value": 37
+        },
+        {
+          "title": "Tradicional",
+          "value": 35
+        },
+        {
+          "title": "Prepago",
+          "value": 20
+        },
+        {
+          "title": "Tickets",
+          "value": 20
+        },
+        {
+          "title": "Volumen",
+          "value": 17
+        },
+        {
+          "title": "Clientes",
+          "value": 36
+        }
+      ],
+      "storeValues": {
+        "title": "Comercio 3",
+        "clients": 4670,
+        "clientsPercentage": 31,
+        "transactions": 6368,
+        "transactionsPercentage": 16,
+        "vConsumption": 7678692,
+        "vConsumptionPercentage": 14,
+        "prepaidClients": 4482,
+        "prepaidClientsPercentage": 19,
+        "traditional": 188,
+        "traditionalPercentage": 8,
+        "current": 3655,
+        "currentPercentage": 31,
+        "new": 1015,
+        "newPercentage": 30,
+        "ticketsPerClient": 1.36,
+        "consumptionPerClient": 1644,
+        "volumePerClient": 1206
+      }
+    }
+  },
+  {
+    "store": "Comercio 004",
+    "data": {
+      "map": "no data for now",
+      "zones": [
+        {
+          "title": "Nuevo",
+          "value": 36
+        },
+        {
+          "title": "Actual",
+          "value": 37
+        },
+        {
+          "title": "Tradicional",
+          "value": 35
+        },
+        {
+          "title": "Prepago",
+          "value": 20
+        },
+        {
+          "title": "Tickets",
+          "value": 20
+        },
+        {
+          "title": "Volumen",
+          "value": 17
+        },
+        {
+          "title": "Clientes",
+          "value": 36
+        }
+      ],
+      "storeValues": {
+        "title": "Comercio 4",
+        "clients": 4634,
+        "clientsPercentage": 31,
+        "transactions": 6466,
+        "transactionsPercentage": 16,
+        "vConsumption": 8041867,
+        "vConsumptionPercentage": 15,
+        "prepaidClients": 4427,
+        "prepaidClientsPercentage": 19,
+        "traditional": 207,
+        "traditionalPercentage": 8,
+        "current": 3551,
+        "currentPercentage": 30,
+        "new": 1083,
+        "newPercentage": 32,
+        "ticketsPerClient": 1.40,
+        "consumptionPerClient": 1735,
+        "volumePerClient": 1244
+      }
+    }
+  },
+  {
+    "store": "Comercio 005",
+    "data": {
+      "map": "no data for now",
+      "zones": [
+        {
+          "title": "Nuevo",
+          "value": 36
+        },
+        {
+          "title": "Actual",
+          "value": 37
+        },
+        {
+          "title": "Tradicional",
+          "value": 35
+        },
+        {
+          "title": "Prepago",
+          "value": 20
+        },
+        {
+          "title": "Tickets",
+          "value": 20
+        },
+        {
+          "title": "Volumen",
+          "value": 17
+        },
+        {
+          "title": "Clientes",
+          "value": 36
+        }
+      ],
+      "storeValues": {
+        "title": "Comercio 5",
+        "clients": 6234,
+        "clientsPercentage": 41,
+        "transactions": 12610,
+        "transactionsPercentage": 32,
+        "vConsumption": 20256570,
+        "vConsumptionPercentage": 38,
+        "prepaidClients": 5235,
+        "prepaidClientsPercentage": 23,
+        "traditional": 999,
+        "traditionalPercentage": 41,
+        "current": 4837,
+        "currentPercentage": 41,
+        "new": 1397,
+        "newPercentage": 41,
+        "ticketsPerClient": 2.02,
+        "consumptionPerClient": 3249,
+        "volumePerClient": 1606
+      }
+    }
+  },
+  {
+    "store": "Comercio 006",
+    "data": {
+      "map": "no data for now",
+      "zones": [
+        {
+          "title": "Nuevo",
+          "value": 22
+        },
+        {
+          "title": "Actual",
+          "value": 77
+        },
+        {
+          "title": "Tradicional",
+          "value": 8
+        },
+        {
+          "title": "Prepago",
+          "value": 92
+        },
+        {
+          "title": "Tickets",
+          "value": 43
+        },
+        {
+          "title": "Volumen",
+          "value": 38
+        },
+        {
+          "title": "Clientes",
+          "value": 61
+        }
+      ],
+      "storeValues": {
+        "title": "Comercio 6",
+        "clients": 5360,
+        "clientsPercentage": 61,
+        "transactions": 10807,
+        "transactionsPercentage": 43,
+        "vConsumption": 12896054,
+        "vConsumptionPercentage": 38,
+        "prepaidClients": 4922,
+        "prepaidClientsPercentage": 53,
+        "traditional": 438,
+        "traditionalPercentage": 26,
+        "current": 4154,
+        "currentPercentage": 77,
+        "new": 1245,
+        "newPercentage": 22,
+        "ticketsPerClient": 2.02,
+        "consumptionPerClient": 2406,
+        "volumePerClient": 1193
+      }
+    }
+  },
+  {
+    "store": "Comercio 007",
+    "data": {
+      "map": "no data for now",
+      "zones": [
+        {
+          "title": "Nuevo",
+          "value": 22
+        },
+        {
+          "title": "Actual",
+          "value": 77
+        },
+        {
+          "title": "Tradicional",
+          "value": 8
+        },
+        {
+          "title": "Prepago",
+          "value": 92
+        },
+        {
+          "title": "Tickets",
+          "value": 43
+        },
+        {
+          "title": "Volumen",
+          "value": 38
+        },
+        {
+          "title": "Clientes",
+          "value": 61
+        }
+      ],
+      "storeValues": {
+        "title": "Comercio 7",
+        "clients": 5617,
+        "clientsPercentage": 64,
+        "transactions": 14164,
+        "transactionsPercentage": 56,
+        "vConsumption": 20659469,
+        "vConsumptionPercentage": 61,
+        "prepaidClients": 4382,
+        "prepaidClientsPercentage": 47,
+        "traditional": 1235,
+        "traditionalPercentage": 74,
+        "current": 4370,
+        "currentPercentage": 77,
+        "new": 1048,
+        "newPercentage": 22,
+        "ticketsPerClient": 2.52,
+        "consumptionPerClient": 3678,
+        "volumePerClient": 1459
+      }
+    }
+  }
+]

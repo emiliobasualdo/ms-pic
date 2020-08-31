@@ -4,7 +4,7 @@ export const TheButton = styled.button(({theme}) => {
     return css`
         align-self: center;
         background-color: transparent;
-        width: 60%;
+        width: 100%;
         padding: 0.5rem;
         border: none;
         outline: none;
