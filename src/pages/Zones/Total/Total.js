@@ -8,8 +8,8 @@ import {
 //Styles
 import {ZonesTotalContent, ZonesDataContainer, ZonesCircleDataContainer} from './Total.styles';
 // Mock
-import zonesColumnData from '../../../mocks/Zones/zonesColumnData.json';
-import zonesColumnCirclesData from '../../../mocks/Zones/zonesColumnCirclesData.json';
+import zonesColumnData from '../../../mocks/zones/zonesColumnData.json';
+import zonesColumnCirclesData from '../../../mocks/zones/zonesColumnCirclesData.json';
 import PersonPinCircleOutlinedIcon from '@material-ui/icons/PersonPinCircleOutlined';
 
 const ZonesTotal = () => {

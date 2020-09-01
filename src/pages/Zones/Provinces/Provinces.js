@@ -6,11 +6,17 @@ import {
     TitleCard,
 } from '../../../components';
 import SummaryAccordion from "../../../components/SummaryAccordion/SummaryAccordion";
-//Styles
-import {ZonesProvincesContent, ProvincesDataContainer, AccordionsContainer, Card, Heading } from './Provinces.styles';
 // Mock
-import zonesProvincesData from '../../../mocks/Zones/zonesProvincesData.json';
+import zonesProvincesData from '../../../mocks/zones/zonesProvincesData.json';
 import PersonPinCircleOutlinedIcon from "@material-ui/icons/PersonPinCircleOutlined";
+//Styles
+import{
+    ZonesProvincesContent,
+    ProvincesDataContainer,
+    AccordionsContainer,
+    Card,
+    Heading
+} from './Provinces.styles';
 
 const ZonesProvinces = () => {
     return(

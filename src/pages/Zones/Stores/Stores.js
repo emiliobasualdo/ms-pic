@@ -7,10 +7,21 @@ import {
     SquareProgressCircular,
     CircularProgressContainer
 } from '../../../components';
-//Styles
-import {ZonesStoresContent, StoresSelectionContainer, Stores, StoreSelectedContainer, MapAndZones, MapData, Zones, StoresTable, Map, SelectedStoreInTable} from './Stores.styles';
 //Mock
-import zonesStoresData from '../../../mocks/Zones/zonesStoresData.json';
+import zonesStoresData from '../../../mocks/zones/zonesStoresData.json';
+//Styles
+import{
+    ZonesStoresContent,
+    StoresSelectionContainer,
+    Stores,
+    StoreSelectedContainer,
+    MapAndZones,
+    MapData,
+    Zones,
+    StoresTable,
+    Map,
+    SelectedStoreInTable
+} from './Stores.styles';
 
 const ZonesStores = () => {
     const [storeSelected, setStoreSelected] = useState(null);

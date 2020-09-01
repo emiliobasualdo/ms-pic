@@ -12,13 +12,9 @@ import {
     Total,
     Customers,
     Consumptions,
-    Coupons,
     Payment,
     Prepaid,
-    Promotions,
     Recharges,
-    Reports,
-    Services,
     Summary,
     Traditional,
     Zones,
@@ -37,7 +33,11 @@ import {
     BalanceReports,
     BalanceTaxes,
     BalanceConciliation,
-    BalanceSchedule
+    BalanceSchedule,
+    Coupons,
+    Services,
+    Promotions,
+    Reports
 } from './pages';
 
 const GlobalStyle = createGlobalStyle(({theme}) => {
@@ -94,10 +94,18 @@ const App = () => {
                                 <BalanceConciliation path="conciliacion"/>
                                 <BalanceSchedule path="agenda"/>
                             </Balance>
-                            <Coupons exact path="cupones"/>
-                            <Services exact path="servicios"/>
-                            <Promotions exact path="promociones"/>
-                            <Reports exact path="informes"/>
+                            <Coupons exact path="cupones">
+                                <Redirect from ="/" to="resumen" noThrow/>
+                            </Coupons>
+                            <Services exact path="servicios">
+                                <Redirect from ="/" to="total" noThrow/>
+                            </Services>
+                            <Promotions exact path="promociones">
+                                <Redirect from ="/" to="resumen" noThrow/>
+                            </Promotions>
+                            <Reports exact path="informes">
+                                <Redirect from ="/" to="resumen" noThrow/>
+                            </Reports>
                         </Router>
                     </Container>
                 </Layout>

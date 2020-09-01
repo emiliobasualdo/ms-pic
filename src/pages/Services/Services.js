@@ -1,8 +1,27 @@
 import React from "react";
+import Tabs from '../../components/Tabs/Tabs';
 
-const Services = () => {
+const Services = ({children}) => {
+    const tabs = [
+        {
+            path: 'total',
+            textContent: 'Total'
+        },
+        {
+            path: 'ranking',
+            textContent: 'Ranking'
+        },
+        {
+            path: 'abm',
+            textContent: 'ABM'
+        }
+    ]
+
     return(
-        <h2>Services</h2>
+        <>
+            <Tabs tabItems={tabs}/>
+            {children}
+        </>
     );
 }
 

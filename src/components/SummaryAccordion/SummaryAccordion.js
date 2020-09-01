@@ -1,10 +1,19 @@
 import React, { useState } from 'react';
 import SummaryAccordionItem from '../SummaryAccordionItem/SumaryAccordionItem';
 import { SquareProgressCircular, CircularProgressContainer } from '../../components';
-import { AccordionContainer, AccordionItem, ActionParagraph, GreyLine, AnimatedLine, Item, CircularProgressCardsContainer, CirclesWrapper, CirclesOpacity } from './SummaryAccordion.styles';
 import AddIcon from '@material-ui/icons/Add';
 import RemoveIcon from '@material-ui/icons/Remove';
-import zonesProvincesCirclesData from '../../mocks/Zones/zonesProvincesCirclesData.json';
+import zonesProvincesCirclesData from '../../mocks/zones/zonesProvincesCirclesData.json';
+import{
+    AccordionContainer,
+    AccordionItem,
+    ActionParagraph,
+    GreyLine,
+    AnimatedLine,
+    Item,
+    CircularProgressCardsContainer,
+    CirclesWrapper, CirclesOpacity
+} from './SummaryAccordion.styles';
 
 const SummaryAccordion = ({ accordionHeader, circlesData }) => {
     const [showFirstItem, setShowFirstItem] = useState(false);
@@ -97,14 +106,23 @@ const SummaryAccordion = ({ accordionHeader, circlesData }) => {
                     <AccordionItem>
                         <Item onClick={() => handleClickFirstItem()}>
                             { showFirstItem ? <RemoveIcon /> : <AddIcon /> }
-                            <ActionParagraph>{ accordionHeader === 'Volumen' ? 'Volumen Operador' : 'Clientes' }</ActionParagraph>
+                            <ActionParagraph>
+                                { accordionHeader === 'Volumen' ? 'Volumen Operador' : 'Clientes' }
+                            </ActionParagraph>
                         </Item>
                         <GreyLine>
-                            { showFirstItem && <AnimatedLine lineColor={ accordionHeader === 'Volumen' ? 'red' : 'green' }/> }
+                            {showFirstItem && 
+                                <AnimatedLine
+                                    lineColor={ accordionHeader === 'Volumen' ? 'red' : 'green' }
+                                />
+                            }
                         </GreyLine>
-                        { showFirstItem && <SummaryAccordionItem
-                            rowsContent={ accordionHeader === 'Volumen' ? tableContentOne : tableContentTwo }
-                            style={{ marginTop: '30px' }}>Item escondido</SummaryAccordionItem> }
+                        { showFirstItem &&
+                            <SummaryAccordionItem
+                                rowsContent={ accordionHeader === 'Volumen' ? tableContentOne : tableContentTwo }
+                                style={{ marginTop: '30px' }}>Item escondido
+                            </SummaryAccordionItem>
+                        }
                     </AccordionItem>
                     <AccordionItem>
                         <Item onClick={() => handleClickSecondItem()}>
