@@ -101,7 +101,7 @@ const App = () => {
                                 <Redirect from ="/" to="total" noThrow/>
                             </Services>
                             <Promotions exact path="promociones">
-                                <Redirect from ="/" to="resumen" noThrow/>
+                                <Redirect from ="/" to="total" noThrow/>
                             </Promotions>
                             <Reports exact path="informes">
                                 <Redirect from ="/" to="resumen" noThrow/>

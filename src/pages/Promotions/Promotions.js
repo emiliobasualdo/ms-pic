@@ -4,8 +4,8 @@ import Tabs from '../../components/Tabs/Tabs';
 const Promotions = ({children}) => {
     const tabs = [
         {
-            path: 'resumen',
-            textContent: 'Resumen'
+            path: 'total',
+            textContent: 'Total'
         },
         {
             path: 'promocioneshistoricas',
