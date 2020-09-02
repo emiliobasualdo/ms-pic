@@ -131,8 +131,8 @@ const Prepaid = () => {
                 
             />
             <LastContainer>
-                <SquareProgressBars width="28%" title="Cantidad de Recargas"/>
-                <SquareAreaChart width="28%" title="Transacciones de Recargas"/>
+                <SquareProgressBars width="28%" iframeWidth="100%" iframeHeight="85%"/>
+                <SquareAreaChart width="28%" iframeWidth="100%" iframeHeight="85%"/>
                 <SquareProgressCircular width="28%" title="Origen de Recargas">
                     {
                         rechargesOriginData.map((circle, index) => {

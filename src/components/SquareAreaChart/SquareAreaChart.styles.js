@@ -10,20 +10,3 @@ export const RechargesTransactionsContainer = styled.div(({theme}) => {
         justify-content: space-around;
     `;
 });
-
-export const RechargesTransactionsTitle = styled.h3(({theme}) => {
-    return css`
-        color: ${theme.colors['dark-grey']};
-    `;
-});
-
-export const Subtitle = styled.p(({theme}) => {
-    return css`
-        color: ${theme.colors['dark-grey']};
-        font-size: 0.8rem;
-    `;
-});
-
-export const Img = styled.img`
-    height: 50%;
-`;

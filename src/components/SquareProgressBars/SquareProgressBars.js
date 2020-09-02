@@ -1,20 +1,18 @@
 import React from 'react';
 import Button from '../Button/Button';
-import {
-    RechargesQuantityContainer,
-    RechargesQuantityTitle,
-    Subtitle,
-    Img
-} from './SquareProgressBars.styles';
+import {RechargesQuantityContainer} from './SquareProgressBars.styles';
 
-const SquareProgressBars = ({width, title}) => {
+const SquareProgressBars = ({width, iframeWidth, iframeHeight}) => {
     return(
         <RechargesQuantityContainer style={{width: width}}>
-            <div>
-                <RechargesQuantityTitle>{title}</RechargesQuantityTitle>
-                <Subtitle>Detalle por Zona Geográfica</Subtitle>
-            </div>
-            <Img alt="gráfico" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/03adf8c0-7cd3-4bca-a7fc-6fe23457de51/linear-percent-done-progress-indicator-opt.jpeg"/>
+            <iframe
+                title="Cantidad de recargas por zona geográfica"
+                src="http://metabase.piux.com.ar/public/question/a0e33560-6e70-43f0-805d-ee929c4a9549"
+                frameborder="0"
+                width={iframeWidth}
+                height={iframeHeight}
+                allowtransparency
+            ></iframe>
             <Button buttonName="Más Detalles"/>
         </RechargesQuantityContainer>
     );
