@@ -4,15 +4,12 @@ import traditionalBusinessData from '../../../mocks/business/traditional/traditi
 import greenCircularProgress from '../../../mocks/business/traditional/greenCircularProgress.json';
 import customersConsumptions from '../../../mocks/business/traditional/customersConsumptions.json';
 import volumeRecharges from '../../../mocks/business/traditional/volumeRecharges.json';
-import consumptionsOrigin from '../../../mocks/business/traditional/consumptionsOrigin.json';
 import {
     Card,
     CircularProgressContainer,
     CircularProgressCard,
     SimpleTable,
-    SquareMetabaseGraphic,
-    SquareAreaChart,
-    SquareProgressCircular
+    SquareMetabaseGraphic
 } from '../../../components/';
 import {
     TraditionalBusinessContainer,

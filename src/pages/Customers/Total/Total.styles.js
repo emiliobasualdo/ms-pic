@@ -23,4 +23,15 @@ export const CircularProgressCardsContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 2rem 0;
+    min-height: 80vh;
+    width: auto;
+`;
+
+export const VerticalCircularProgressContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin: 2rem 0;
+    min-height: 80vh; */
+    width: 68%;
 `;
