@@ -128,27 +128,36 @@ const Traditional = () => {
                 header15="%"
             />
             <LastContainer>
-                <SquareMetabaseGraphic width="28%" title="Consumo Tradicional por Zona">
-                    
+                <SquareMetabaseGraphic width="28%" link="/zonas/total">
+                    <iframe
+                        title="Promedio cant. consumo por zona"
+                        src="http://metabase.piux.com.ar/public/question/cb694264-f56b-4f95-8baf-06d8001f0a8a"
+                        frameborder="0"
+                        width="100%"
+                        height="85%"
+                        allowtransparency
+                    ></iframe>
                 </SquareMetabaseGraphic>
-                <SquareAreaChart width="28%" title="Transacciones de Consumos"/>
-                <SquareProgressCircular width="28%" title="Origen de Consumos">
-                    {
-                        consumptionsOrigin.map((circle, index) => {
-                            return(
-                                <CircularProgressContainer
-                                    key={index}
-                                    percentage={circle.percentage}
-                                    progressDescription={circle.description}
-                                    width="30%"
-                                    height="60%"
-                                    textColor="rgb(232, 51, 35)"
-                                    pathColor="rgb(232, 51, 35)"
-                                />
-                            )
-                        })
-                    }
-                </SquareProgressCircular>
+                <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
+                    <iframe
+                        title="Volumen consumo por zona"
+                        src="http://metabase.piux.com.ar/public/question/5e1e18e2-c848-43f7-975e-e59ed344ca5a"
+                        frameborder="0"
+                        width="100%"
+                        height="85%"
+                        allowtransparency
+                    ></iframe>
+                </SquareMetabaseGraphic>
+                <SquareMetabaseGraphic width="28%" link="/zonas/total">
+                    <iframe
+                        title="Porcentaje de consumo por marca"
+                        src="http://metabase.piux.com.ar/public/question/1a64e686-3688-41a6-a8a2-c0d40f0f13c2"
+                        frameborder="0"
+                        width="100%"
+                        height="85%"
+                        allowtransparency
+                    ></iframe>
+                </SquareMetabaseGraphic>
             </LastContainer>
         </TraditionalBusinessContainer>
     );

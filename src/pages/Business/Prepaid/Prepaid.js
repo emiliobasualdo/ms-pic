@@ -3,15 +3,13 @@ import prepaidBusinessData from '../../../mocks/business/prepaid/prepaidBusiness
 import customersRecharges from '../../../mocks/business/prepaid/customersRecharges.json';
 import volumeRecharges from '../../../mocks/business/prepaid/volumeRecharges.json';
 import greenCircularProgress from '../../../mocks/business/prepaid/greenCircularProgress.json';
-import rechargesOriginData from '../../../mocks/business/prepaid/rechargesOrigin.json';
 import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
 import {
     Card,
     CircularProgressContainer,
     CircularProgressCard,
     SimpleTable,
-    SquareMetabaseGraphic,
-    SquareProgressCircular
+    SquareMetabaseGraphic
 } from '../../../components/';
 import {
     PrepaidBusinessContainer,
@@ -152,6 +150,7 @@ const Prepaid = () => {
                 </SquareMetabaseGraphic>
                 <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
                     <iframe
+                        title="Porcentaje de recargas por medio de pago"
                         src="http://metabase.piux.com.ar/public/question/095fa0ae-5983-4c10-af6d-f14220c387c8"
                         frameborder="0"
                         width="100%"
@@ -159,6 +158,7 @@ const Prepaid = () => {
                         allowtransparency
                     ></iframe>
                     <iframe
+                        title="Porcentaje de recargas por marca"
                         src="http://metabase.piux.com.ar/public/question/e29ddc6f-5c50-4804-bb2d-df6d077704db"
                         frameborder="0"
                         width="100%"
@@ -166,23 +166,6 @@ const Prepaid = () => {
                         allowtransparency
                     ></iframe>
                 </SquareMetabaseGraphic>
-                {/* <SquareProgressCircular width="28%" title="Origen de Recargas">
-                    {
-                        rechargesOriginData.map((circle, index) => {
-                            return(
-                                <CircularProgressContainer
-                                    key={index}
-                                    percentage={circle.percentage}
-                                    progressDescription={circle.description}
-                                    width="30%"
-                                    height="60%"
-                                    textColor="rgb(232, 51, 35)"
-                                    pathColor="rgb(232, 51, 35)"
-                                />
-                            )
-                        })
-                    }
-                </SquareProgressCircular> */}
             </LastContainer>
         </PrepaidBusinessContainer>
     )
