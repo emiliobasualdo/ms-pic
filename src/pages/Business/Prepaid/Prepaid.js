@@ -10,8 +10,7 @@ import {
     CircularProgressContainer,
     CircularProgressCard,
     SimpleTable,
-    SquareProgressBars,
-    SquareAreaChart,
+    SquareMetabaseGraphic,
     SquareProgressCircular
 } from '../../../components/';
 import {
@@ -131,9 +130,43 @@ const Prepaid = () => {
                 
             />
             <LastContainer>
-                <SquareProgressBars width="28%" iframeWidth="100%" iframeHeight="85%"/>
-                <SquareAreaChart width="28%" iframeWidth="100%" iframeHeight="85%"/>
-                <SquareProgressCircular width="28%" title="Origen de Recargas">
+                <SquareMetabaseGraphic width="28%" link="/zonas/total">
+                    <iframe
+                        title="Cantidad de recargas por zona geográfica"
+                        src="http://metabase.piux.com.ar/public/question/a0e33560-6e70-43f0-805d-ee929c4a9549"
+                        frameborder="0"
+                        width="100%"
+                        height="85%"
+                        allowtransparency
+                    ></iframe>
+                </SquareMetabaseGraphic>
+                <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
+                    <iframe
+                        title="Volumen de recargas por zona"
+                        src="http://metabase.piux.com.ar/public/question/bcb5939f-17ae-4879-9ca8-e301523a93ff"
+                        frameborder="0"
+                        width="100%"
+                        height="85%"
+                        allowtransparency
+                    ></iframe>
+                </SquareMetabaseGraphic>
+                <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
+                    <iframe
+                        src="http://metabase.piux.com.ar/public/question/095fa0ae-5983-4c10-af6d-f14220c387c8"
+                        frameborder="0"
+                        width="100%"
+                        height="40%"
+                        allowtransparency
+                    ></iframe>
+                    <iframe
+                        src="http://metabase.piux.com.ar/public/question/e29ddc6f-5c50-4804-bb2d-df6d077704db"
+                        frameborder="0"
+                        width="100%"
+                        height="40%"
+                        allowtransparency
+                    ></iframe>
+                </SquareMetabaseGraphic>
+                {/* <SquareProgressCircular width="28%" title="Origen de Recargas">
                     {
                         rechargesOriginData.map((circle, index) => {
                             return(
@@ -149,7 +182,7 @@ const Prepaid = () => {
                             )
                         })
                     }
-                </SquareProgressCircular>
+                </SquareProgressCircular> */}
             </LastContainer>
         </PrepaidBusinessContainer>
     )

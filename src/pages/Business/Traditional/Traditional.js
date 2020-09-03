@@ -10,7 +10,7 @@ import {
     CircularProgressContainer,
     CircularProgressCard,
     SimpleTable,
-    SquareProgressBars,
+    SquareMetabaseGraphic,
     SquareAreaChart,
     SquareProgressCircular
 } from '../../../components/';
@@ -128,7 +128,9 @@ const Traditional = () => {
                 header15="%"
             />
             <LastContainer>
-                <SquareProgressBars width="28%" title="Consumo Tradicional por Zona"/>
+                <SquareMetabaseGraphic width="28%" title="Consumo Tradicional por Zona">
+                    
+                </SquareMetabaseGraphic>
                 <SquareAreaChart width="28%" title="Transacciones de Consumos"/>
                 <SquareProgressCircular width="28%" title="Origen de Consumos">
                     {
