@@ -1,5 +1,6 @@
 import BarGraphCard from './BarGraphCard/BarGraphCard';
 import Button from './Button/Button';
+import Button2 from './Button2/Button2';
 import Card from './Card/Card';
 import CircularProgressContainer from './CircularProgressContainer/CircularProgressContainer';
 import CircularProgressCard from './CircularProgressCard/CircularProgressCard';
@@ -15,6 +16,7 @@ import LargeColumnData from "./LargeColumnData/LargeColumnData";
 
 export {
     Button,
+    Button2,
     BarGraphCard,
     Card,
     CircularProgressContainer,

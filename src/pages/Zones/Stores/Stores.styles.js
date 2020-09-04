@@ -16,7 +16,7 @@ export const ZonesStoresContent = styled.div`
 
 export const StoresSelectionContainer = styled.div`
     background-color: #fff;
-    width: 100%;
+    width: auto;
     animation: ${fadeIn} .5s .2s ease-in backwards;
     padding: 2rem;
 `;
@@ -27,7 +27,6 @@ export const Stores = styled.div`
     margin-top: 1rem;
     & button {
         font-weight: 400;
-        width: ${props => 100 / props.storesLength}rem;
     }
 `;
 

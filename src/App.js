@@ -45,7 +45,7 @@ const GlobalStyle = createGlobalStyle(({theme}) => {
         *{
             margin: 0;
             padding: 0;
-            font-family: ${theme.typography.fonts.primary};
+            font-family: -apple-system, BlinkMacSystemFont, ${theme.typography.fonts.primary};
         }
     `;
 });

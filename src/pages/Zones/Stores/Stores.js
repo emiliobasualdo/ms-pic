@@ -3,7 +3,7 @@ import StoreIcon from '@material-ui/icons/Store';
 //Components
 import {
     TitleCard,
-    Button,
+    Button2,
     SquareProgressCircular,
     CircularProgressContainer
 } from '../../../components';
@@ -25,9 +25,16 @@ import{
 
 const ZonesStores = () => {
     const [storeSelected, setStoreSelected] = useState(null);
+    const [keyActive, setKeyActive] = useState(false);
 
     const handleStoreSelected = (storeNumber) => {
-        setStoreSelected(storeNumber);
+        if(!storeSelected && !keyActive){
+            setStoreSelected(storeNumber);
+            setKeyActive(true);
+        } else {
+            setStoreSelected(!storeSelected);
+            setKeyActive(false);
+        }
     }
 
     const rows = [
@@ -113,11 +120,16 @@ const ZonesStores = () => {
             />
             <StoresSelectionContainer>
                 <h3>Seleccione el número de comercio</h3>
-                <Stores storesLength={zonesStoresData.length}>
+                <Stores>
                     {
                         zonesStoresData.map((item, index) => {
                             return (
-                                <Button key={index} buttonName={item.store} isSubmit={false} onButtonClicked={() => handleStoreSelected(index + 1)}/>
+                                <Button2
+                                    key={index}
+                                    name={item.store}
+                                    active={storeSelected === index ? true : false}
+                                    onClick={() => handleStoreSelected(index + 1)}
+                                />
                             )
                         })
                     }
@@ -127,14 +139,14 @@ const ZonesStores = () => {
                 <StoreSelectedContainer>
                     <MapAndZones>
                         <MapData>
-                            <p>{ zonesStoresData[storeSelected - 1].store } - Mapa aqui</p>
+                            <p>{zonesStoresData[storeSelected - 1].store} - Mapa aqui</p>
                             <Map />
                         </MapData>
                         <Zones>
                             <h4>Comparado por Zona</h4>
                             <SquareProgressCircular width="100%">
                                 {zonesStoresData[storeSelected - 1].data.zones.map((item, index) => {
-                                    return (
+                                    return(
                                         <CircularProgressContainer
                                             key={index}
                                             percentage={item.value}
@@ -152,9 +164,7 @@ const ZonesStores = () => {
                     <StoresTable>
                         <thead>
                             <tr>
-                                <th>
-                                    Variables
-                                </th>
+                                <th>Variables</th>
                                 {
                                     zonesStoresData.map((item, index) => {
                                         return storeSelected - 1 === index && (
