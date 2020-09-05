@@ -10,7 +10,8 @@ import {
     CircularProgressContainer,
     CircularProgressCard,
     SimpleTable,
-    SquareMetabaseGraphic
+    SquareMetabaseGraphic,
+    MetabaseGraph
 } from '../../../components/';
 import {
     PrepaidBusinessContainer,
@@ -143,14 +144,9 @@ const Prepaid = () => {
             />
             <LastContainer>
                 <SquareMetabaseGraphic width="28%" link="/zonas/total">
-                    <iframe
-                        title="Cantidad de recargas por zona geográfica"
-                        src="http://metabase.piux.com.ar/public/question/a0e33560-6e70-43f0-805d-ee929c4a9549"
-                        frameborder="0"
-                        width="100%"
-                        height="85%"
-                        allowtransparency
-                    ></iframe>
+                    <MetabaseGraph title={"Caaantidad de recargas por zona geográfica"}
+                                   graphId={"a0e33560-6e70-43f0-805d-ee929c4a9549"}
+                                   width={"100%"} height={"85%"} />
                 </SquareMetabaseGraphic>
                 <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
                     <iframe

@@ -14,6 +14,7 @@ import LargeCircularProgressCard from './LargeCircularProgressCard/LargeCircular
 import LargeColumnData from "./LargeColumnData/LargeColumnData";
 import RankingCard from './RankingCard/RankingCard';
 import ProcessValidationCard from './ProcessValidationCard/ProcessValidationCard';
+import MetabaseGraph from './MetabaseGraph/MetabaseGraph';
 
 export {
     Button,
@@ -31,5 +32,6 @@ export {
     TitleCard,
     TwoCircularProgressCard,
     LargeCircularProgressCard,
-    LargeColumnData
+    LargeColumnData,
+    MetabaseGraph
 }
