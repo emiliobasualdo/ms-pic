@@ -1,0 +1,162 @@
+[
+    [
+        {
+        "clients": "C001",
+        "percentage": "Alta de nuevo número de CUIT",
+        "selection": false
+        },
+        {
+        "clients": "C002",
+        "percentage": "Asociar a un número de CUit existente",
+        "selection": false
+        },
+        {
+        "clients": "C003",
+        "percentage": "Alta de un nuevo número de comercio",
+        "selection": false
+        },
+        {
+        "clients": "C004",
+        "percentage": "Asociar a un nuevo número de comercio",
+        "selection": false
+        },
+        {
+        "clients": "C005",
+        "percentage": "Alta de una línea de caja",
+        "selection": false
+        },
+        {
+        "clients": "C006",
+        "percentage": "Alta de un/a veneder/a",
+        "selection": false
+        },
+        {
+        "clients": "C000",
+        "percentage": "Otra metodología",
+        "selection": false
+        },
+        {
+            "buttonName": "Comercio"
+        }
+    ],
+    [
+        {
+        "clients": "MC01",
+        "percentage": "QR Dinámico",
+        "selection": false
+        },
+        {
+        "clients": "MC02",
+        "percentage": "QR Estático",
+        "selection": false
+        },
+        {
+        "clients": "MC03",
+        "percentage": "Ecommerce",
+        "selection": false
+        },
+        {
+        "clients": "MC04",
+        "percentage": "Mpos - Selección del Modelo",
+        "selection": false
+        },
+        {
+        "clients": "MC05",
+        "percentage": "Pos - Selección del Modelo",
+        "selection": false
+        },
+        {
+        "clients": "MC06",
+        "percentage": "PinPads - Selección del Modelo",
+        "selection": false
+        },
+        {
+        "clients": "C000",
+        "percentage": "Otra metodología",
+        "selection": false
+        },
+        {
+            "buttonName": "Capacitación"
+        }
+    ],
+    [
+        {
+        "clients": "MP01",
+        "percentage": "Alta de Recargas",
+        "selection": false
+        },
+        {
+        "clients": "MP02",
+        "percentage": "Alta de todas las marcas de Crédito",
+        "selection": false
+        },
+        {
+        "clients": "MP03",
+        "percentage": "Alta de todas las marcas de Débito",
+        "selection": false
+        },
+        {
+        "clients": "MP04",
+        "percentage": "Igualar los métodos del resto de los comercios",
+        "selection": false
+        },
+        {
+        "clients": "MP05",
+        "percentage": "Mix de Visa",
+        "selection": false
+        },
+        {
+        "clients": "MP06",
+        "percentage": "Mix de Mastercard",
+        "selection": false
+        },
+        {
+        "clients": "MP07",
+        "percentage": "Mix de Cabal",
+        "selection": false
+        },
+        {
+            "buttonName": "Aceptación"
+        }
+    ],
+    [
+        {
+        "clients": "BP01",
+        "percentage": "Acreditación de Fondos en Santader",
+        "selection": false
+        },
+        {
+        "clients": "BP02",
+        "percentage": "Acreditación de Fondos en Banco Nación",
+        "selection": false
+        },
+        {
+        "clients": "BP03",
+        "percentage": "Alta de un nuevo banco pagador",
+        "selection": false
+        },
+        {
+        "clients": "AL01",
+        "percentage": "Contrato Digital",
+        "selection": false
+        },
+        {
+        "clients": "AL02",
+        "percentage": "Situación del IVA",
+        "selection": false
+        },
+        {
+        "clients": "AL03",
+        "percentage": "Constancia de IIBB",
+        "selection": false
+        },
+        {
+        "clients": "AL04",
+        "percentage": "Información Respaldatoria",
+        "selection": false
+        },
+        {
+            "buttonName": "Archivos"
+        }
+    ]
+]

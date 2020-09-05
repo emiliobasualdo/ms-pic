@@ -13,12 +13,12 @@ import {
     RankingListItem
 } from './RankingCard.styles';
 
-const RankingCard = ({data, structureData}) => {
+const RankingCard = ({data, structureData, buttonName}) => {
     const handleChange = () => {
         console.log('checked');
     }
 
-    return (
+    return(
         <RankingCardContainer>
             <CardHeader>
                 <IconContainer>
@@ -53,7 +53,7 @@ const RankingCard = ({data, structureData}) => {
                 </RankingListItem>
                 <RankingListItem>
                     <h3>{structureData.columnFour}</h3>
-                    { data.map((item, index) => {
+                    {data.map((item, index) => {
                         return (
                             <div key={index}>
                                 <Checkbox color="primary" type="checkbox" onChange={() => handleChange()}/>
@@ -62,9 +62,15 @@ const RankingCard = ({data, structureData}) => {
                     }) }
                 </RankingListItem>
             </RankingLists>
-            <Button buttonName="Más Detalles" isSubmit={false}/>
+            {
+                data.map((item, index) => {
+                    return(
+                        <Button key={index} buttonName={item.buttonName} isSubmit={false} margin="0"/>
+                    )
+                })
+            }
         </RankingCardContainer>
-    )
+    );
 }
 
 export default RankingCard;

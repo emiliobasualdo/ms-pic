@@ -64,17 +64,23 @@ const CustomersProfiles = () => {
             />
             <ProfileForm formContent={profileForm} triggered={actionTrigger}/>
             <TitleCard
-                icon={<UpdateIcon fontSize="large" />}
+                icon={<UpdateIcon fontSize="large"/>}
                 title="Consultas recurrentes"
             />
             <RankingsRow>
                 {profileRankings.map((item, index) => {
-                    return <RankingCard key={index} data={item} structureData={RankingCardStructureData[index]} />
+                    return(
+                        <RankingCard
+                            key={index}
+                            data={item}
+                            structureData={RankingCardStructureData[index]}
+                            buttonName={profileRankings[index].buttonName}
+                        />
+                    )
                 })}
             </RankingsRow>
         </CustomersProfilesContent>
-
-    )
+    );
 }
 
 export default CustomersProfiles;

@@ -1,12 +1,12 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-export const RankingCardContainer = styled.div`
+export const ProcessValidationContainer = styled.div`
     height: auto;
-    width: 48%;
+    width: 100%;
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: space-around;
+    align-items: space-between;
     margin: 2rem 0;
 `;
 
@@ -32,35 +32,8 @@ export const Title = styled.h2`
 
 export const SecondaryText = styled.div`
     margin-top: 1rem;
-    & h3,
-    & p {
+    & h3{
         font-size: 1rem;
-    }
-    & h3 {
         font-weight: 400;
-    }
-    & p {
-        font-weight: 800;
-    }
-`;
-
-export const RankingLists = styled.div`
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-around;
-    min-width: 100%;
-    height: auto;
-`;
-
-export const RankingListItem = styled.ul`
-    list-style: none;
-    & h3 {
-        font-size: 1rem;
-    }
-    & li {
-        padding: 1rem 0;
-    }
-    & div {
-        padding: .25rem 0;
     }
 `;

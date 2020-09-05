@@ -12,7 +12,8 @@ import TitleCard from './TitleCard/TitleCard';
 import TwoCircularProgressCard from './TwoCircularProgressCard/TwoCircularProgress';
 import LargeCircularProgressCard from './LargeCircularProgressCard/LargeCircularProgress';
 import LargeColumnData from "./LargeColumnData/LargeColumnData";
-
+import RankingCard from './RankingCard/RankingCard';
+import ProcessValidationCard from './ProcessValidationCard/ProcessValidationCard';
 
 export {
     Button,
@@ -21,6 +22,8 @@ export {
     Card,
     CircularProgressContainer,
     CircularProgressCard,
+    ProcessValidationCard,
+    RankingCard,
     SimpleTable,
     SquareMetabaseGraphic,
     SquareAreaChart,

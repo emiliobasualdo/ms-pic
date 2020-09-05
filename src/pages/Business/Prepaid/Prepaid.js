@@ -3,6 +3,7 @@ import prepaidBusinessData from '../../../mocks/business/prepaid/prepaidBusiness
 import customersRecharges from '../../../mocks/business/prepaid/customersRecharges.json';
 import volumeRecharges from '../../../mocks/business/prepaid/volumeRecharges.json';
 import greenCircularProgress from '../../../mocks/business/prepaid/greenCircularProgress.json';
+import tableData from '../../../mocks/business/prepaid/tableData.json';
 import PaymentOutlinedIcon from '@material-ui/icons/PaymentOutlined';
 import {
     Card,
@@ -20,6 +21,20 @@ import {
 } from './Prepaid.styles';
 
 const Prepaid = () => {
+
+    const createData = (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen) => {
+        return {one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen};
+    }
+    
+    const rows = [
+        createData('0-1000', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
+        createData('1001-3000', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
+        createData('3001-5000', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
+        createData('5001-7500', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
+        createData('+7500', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
+        createData('Total', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
+    ];
+    
     return(
         <PrepaidBusinessContainer>
             {
@@ -125,7 +140,6 @@ const Prepaid = () => {
                 header13="%"
                 header14="V.Recargas"
                 header15="%"
-                
             />
             <LastContainer>
                 <SquareMetabaseGraphic width="28%" link="/zonas/total">

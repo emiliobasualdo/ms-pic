@@ -13,3 +13,9 @@ export const ZonesRegistrationContent = styled.div`
     width: auto;
     animation: ${fadeIn} .5s .2s ease-in backwards;
 `;
+
+export const RankingsRow = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+`;
