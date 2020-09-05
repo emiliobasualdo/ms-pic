@@ -144,37 +144,29 @@ const Prepaid = () => {
             />
             <LastContainer>
                 <SquareMetabaseGraphic width="28%" link="/zonas/total">
-                    <MetabaseGraph title={"Caaantidad de recargas por zona geográfica"}
-                                   graphId={"a0e33560-6e70-43f0-805d-ee929c4a9549"}
-                                   width={"100%"} height={"85%"} />
+                    <MetabaseGraph
+                        title={"Caaantidad de recargas por zona geográfica"}
+                        graphId={"a0e33560-6e70-43f0-805d-ee929c4a9549"}
+                        width={"100%"} height={"85%"} />
                 </SquareMetabaseGraphic>
                 <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
-                    <iframe
-                        title="Volumen de recargas por zona"
-                        src="http://metabase.piux.com.ar/public/question/bcb5939f-17ae-4879-9ca8-e301523a93ff"
-                        frameborder="0"
-                        width="100%"
-                        height="85%"
-                        allowtransparency
-                    ></iframe>
+                    <MetabaseGraph
+                        title={"Volumen de recargas por zona"}
+                        graphId={"bcb5939f-17ae-4879-9ca8-e301523a93ff"}
+                        width={"100%"} height={"85%"}
+                    />
                 </SquareMetabaseGraphic>
                 <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
-                    <iframe
-                        title="Porcentaje de recargas por medio de pago"
-                        src="http://metabase.piux.com.ar/public/question/095fa0ae-5983-4c10-af6d-f14220c387c8"
-                        frameborder="0"
-                        width="100%"
-                        height="40%"
-                        allowtransparency
-                    ></iframe>
-                    <iframe
-                        title="Porcentaje de recargas por marca"
-                        src="http://metabase.piux.com.ar/public/question/e29ddc6f-5c50-4804-bb2d-df6d077704db"
-                        frameborder="0"
-                        width="100%"
-                        height="40%"
-                        allowtransparency
-                    ></iframe>
+                    <MetabaseGraph
+                        title={"Porcentaje de recargas por medio de pago"}
+                        graphId={"095fa0ae-5983-4c10-af6d-f14220c387c8"}
+                        width={"100%"} height={"40%"}
+                    />
+                    <MetabaseGraph
+                        title={"Porcentaje de recargas por marca"}
+                        graphId={"e29ddc6f-5c50-4804-bb2d-df6d077704db"}
+                        width={"100%"} height={"40%"}
+                    />
                 </SquareMetabaseGraphic>
             </LastContainer>
         </PrepaidBusinessContainer>
