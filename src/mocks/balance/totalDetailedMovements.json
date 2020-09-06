@@ -1,0 +1,51 @@
+[
+  {
+    "date": "06/05/2020",
+    "liqB": 12994601,
+    "discounts": 580898,
+    "liqN": 12363703,
+    "bank": "Santander - BNA"
+  },
+  {
+    "date": "07/05/2020",
+    "liqB": 13459821,
+    "discounts": 604019,
+    "liqN": 12855802,
+    "bank": "Santander - BNA"
+  },
+  {
+    "date": "08/05/2020",
+    "liqB": 13308247,
+    "discounts": 597217,
+    "liqN": 12711030,
+    "bank": "Santander - BNA"
+  },
+  {
+    "date": "09/05/2020",
+    "liqB": 13951130,
+    "discounts": 626067,
+    "liqN": 13325063,
+    "bank": "Santander - BNA"
+  },
+  {
+    "date": "10/05/2020",
+    "liqB": 13311363,
+    "discounts": 597357,
+    "liqN": 12714006,
+    "bank": "Santander - BNA"
+  },
+  {
+    "date": "11/05/2020",
+    "liqB": 13228324,
+    "discounts": 593630,
+    "liqN": 12634694,
+    "bank": "Santander - BNA"
+  },
+  {
+    "date": "12/05/2020",
+    "liqB": 13569615,
+    "discounts": 608946,
+    "liqN": 12960669,
+    "bank": "Santander - BNA"
+  }
+]

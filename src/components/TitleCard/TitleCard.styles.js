@@ -79,5 +79,13 @@ export const Item = styled.button(({theme}) => {
 export const ThirdContainer = styled.div`
     display: flex;
     flex-direction: row;
-    background-color: red;
+`;
+
+export const Input = styled.div`
+    margin: 0 1rem;
+    & p {
+        font-weight: 800;
+        text-align: right;
+        margin-right: 1rem;
+    }
 `;

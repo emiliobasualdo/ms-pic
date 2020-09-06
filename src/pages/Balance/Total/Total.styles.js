@@ -13,3 +13,7 @@ export const BalanceTotalContent = styled.div`
     width: auto;
     animation: ${fadeIn} .5s .2s ease-in backwards;
 `;
+
+export const MovementsWrapper = styled.div`
+    display: flex;
+`;

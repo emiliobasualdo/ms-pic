@@ -5,10 +5,22 @@ import {
     TitleContainer,
     Title,
     SecondContainer,
-    Item
+    Item,
+    ThirdContainer,
+    Input
 } from './TitleCard.styles';
+import 'date-fns';
+import Grid from '@material-ui/core/Grid';
+import DateFnsUtils from '@date-io/date-fns';
+import { MuiPickersUtilsProvider, KeyboardDatePicker, } from '@material-ui/pickers';
 
 const TitleCard = (props) => {
+    const [selectedDate, setSelectedDate] = React.useState(new Date());
+
+    const handleDateChange = (date) => {
+        setSelectedDate(date);
+    };
+
     return(
         <TitleCardContainer>
             <FirstContainer>
@@ -18,20 +30,69 @@ const TitleCard = (props) => {
                     <p>{props.description}</p>
                 </TitleContainer>
             </FirstContainer>
-            <SecondContainer>
-                { (props.diary && props.weekly && props.monthly) && (
-                    <>
-                        <Item>{props.diary}</Item>
-                        <Item>{props.weekly}</Item>
-                        <Item>{props.monthly}</Item>
-                    </>
-                ) }
-                { props.action && (
-                    <Item onClick={props.onClick}>
-                        {props.action}
-                    </Item>
-                ) }
-            </SecondContainer>
+            {
+                !props.search && (
+                    <SecondContainer>
+                        { (props.diary && props.weekly && props.monthly) && (
+                            <>
+                                <Item>{props.diary}</Item>
+                                <Item>{props.weekly}</Item>
+                                <Item>{props.monthly}</Item>
+                            </>
+                        ) }
+                        { props.action && (
+                            <Item onClick={props.onClick}>
+                                {props.action}
+                            </Item>
+                        ) }
+                    </SecondContainer>
+                )
+            }
+            {
+                props.search && (
+                    <ThirdContainer>
+                        <Input>
+                            <p>Desde</p>
+                            <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                                <Grid container justify="space-around">
+                                    <KeyboardDatePicker
+                                        disableToolbar
+                                        variant="inline"
+                                        format="dd/MM/yyyy"
+                                        margin="normal"
+                                        id="date-picker-inline"
+                                        value={selectedDate}
+                                        onChange={handleDateChange}
+                                        KeyboardButtonProps={{
+                                            'aria-label': 'change date',
+                                        }}
+                                    />
+                                </Grid>
+                            </MuiPickersUtilsProvider>
+                        </Input>
+                        <Input>
+                            <p>Hasta</p>
+                            <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                                <Grid container justify="space-around">
+                                    <KeyboardDatePicker
+                                        disableToolbar
+                                        variant="inline"
+                                        format="dd/MM/yyyy"
+                                        margin="normal"
+                                        id="date-picker-inline"
+                                        value={selectedDate}
+                                        onChange={handleDateChange}
+                                        KeyboardButtonProps={{
+                                            'aria-label': 'change date',
+                                        }}
+                                    />
+                                </Grid>
+                            </MuiPickersUtilsProvider>
+                        </Input>
+                    </ThirdContainer>
+                )
+            }
+
         </TitleCardContainer>
     );
 }
