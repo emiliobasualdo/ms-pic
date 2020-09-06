@@ -4,9 +4,10 @@ export const LastMovementsContainer = styled.div`
     background-color: #fff;
     box-sizing: border-box;
     padding: 2rem;
-    width: 75%;
+    width: ${props => props.title === 'Últimos Movimientos' ? 75 : 100}%;
     height: auto;
-    margin-left: 1rem;
+    margin-left: ${props => props.title === 'Últimos Movimientos' ? 1 : 0}rem;
+    margin-top: ${props => props.title === 'Últimos Movimientos' ? 0 : 2}rem;
 `;
 
 export const LastMovementsHeadings = styled.div`
@@ -19,8 +20,6 @@ export const LastMovementsHeadings = styled.div`
         font-size: .9rem;
     }
 `;
-
-export const LastMovementsItems = styled.div``;
 
 export const Table = styled.table`
     width: 100%;

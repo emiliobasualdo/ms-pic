@@ -1,21 +1,20 @@
 import React from 'react';
-import { LastMovementsContainer, LastMovementsHeadings, LastMovementsItems, Table} from "./LastMovements.styles";
+import { LastMovementsContainer, LastMovementsHeadings, Table} from "./LastMovements.styles";
 import Button from "../Button/Button";
 
-const LastMovements = ({ title, subtitle, items }) => {
-    const tableHeadings = ['Fecha', 'Liquidación Bruta', 'Descuentos', 'Liquidación Neta', 'Banco', 'Detalle']
+const LastMovements = ({ title, subtitle, headings, items }) => {
     return (
-        <LastMovementsContainer>
+        <LastMovementsContainer title={title}>
             <LastMovementsHeadings>
                 <h2>{ title }</h2>
                 <h3>{ subtitle }</h3>
             </LastMovementsHeadings>
-            <LastMovementsItems>
+            <div>
                 <Table>
                     <thead>
                         <tr>
                             {
-                                tableHeadings.map((item, index) => {
+                                headings.map((item, index) => {
                                     return <th key={index}>{item}</th>
                                 })
                             }
@@ -47,7 +46,7 @@ const LastMovements = ({ title, subtitle, items }) => {
                         }
                     </tbody>
                 </Table>
-            </LastMovementsItems>
+            </div>
         </LastMovementsContainer>
     )
 }

@@ -1,0 +1,106 @@
+[
+  [
+    {
+      "label": "Banco Pagador",
+      "options": [
+        "Santander",
+        "Banco Nación",
+        "Todos"
+      ]
+    },
+    {
+      "label": "Cuits",
+      "options": [
+        "Cuit 1",
+        "Cuit 2",
+        "Cuit 3",
+        "Cuit 4",
+        "Cuit 5",
+        "Cuit 6",
+        "Todos"
+      ]
+    },
+    {
+      "label": "Zona Geográfica",
+      "options": [
+        "CABA",
+        "Córdoba",
+        "Corrientes",
+        "Entre Rios",
+        "GBA",
+        "Santa Fe",
+        "Todos"
+      ]
+    },
+    {
+      "label": "Comercios",
+      "options": [
+        "Comercio 1",
+        "Comercio 2",
+        "Comercio 3"
+      ]
+    },
+    {
+      "label": "Línea de Caja",
+      "options": [
+        "Línea 1",
+        "Línea 2",
+        "Línea 3"
+      ]
+    }
+  ],
+  [
+    {
+      "label": "Medios de Pago",
+      "options": [
+        "Prepaga",
+        "Débito",
+        "Crédito",
+        "CBU - CVU",
+        "Todos"
+      ]
+    },
+    {
+      "label": "Medios de Captura",
+      "options": [
+        "QR",
+        "Mpos",
+        "Pos",
+        "Ecommerce",
+        "Pin Pads",
+        "Todos"
+      ]
+    },
+    {
+      "label": "Crédito",
+      "options": [
+        "Visa",
+        "Mastercard",
+        "American Express",
+        "Naranja",
+        "Cabal",
+        "Privadas",
+        "Cencosud",
+        "Todas"
+      ]
+    },
+    {
+      "label": "Débito",
+      "options": [
+        "Visa Débito",
+        "Maestro",
+        "Cabal Débito",
+        "Todos"
+      ]
+    },
+    {
+      "label": "Otros",
+      "options": [
+        "CBU",
+        "CVU",
+        "Otros",
+        "Todos"
+      ]
+    }
+  ]
+]

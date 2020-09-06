@@ -1,0 +1,90 @@
+[
+  {
+    "date": "06/05/2020",
+    "bank": "Santander",
+    "liq": "00001214",
+    "cuit": "Cuit 1",
+    "store": "Comercio 20",
+    "coupons": "156",
+    "ammount": 175724,
+    "discounts": 2635,
+    "total": 173088
+  },
+  {
+    "date": "06/05/2020",
+    "bank": "BNA",
+    "liq": "00001215",
+    "cuit": "Cuit 2",
+    "store": "Comercio 10",
+    "coupons": "147",
+    "ammount": 166143,
+    "discounts": 2492,
+    "total": 163652
+  },
+  {
+    "date": "06/05/2020",
+    "bank": "BNA",
+    "liq": "00001216",
+    "cuit": "Cuit 2",
+    "store": "Comercio 1",
+    "coupons": "155",
+    "ammount": 190930,
+    "discounts": 2864,
+    "total": 188066
+  },
+  {
+    "date": "06/05/2020",
+    "bank": "Santander",
+    "liq": "00001217",
+    "cuit": "Cuit 1",
+    "store": "Comercio 8",
+    "coupons": "179",
+    "ammount": 221550,
+    "discounts": 3323,
+    "total": 218227
+  },
+  {
+    "date": "06/05/2020",
+    "bank": "BNA",
+    "liq": "00001218",
+    "cuit": "Cuit 1",
+    "store": "Comercio 17",
+    "coupons": "221",
+    "ammount": 265026,
+    "discounts": 3975,
+    "total": 261051
+  },
+  {
+    "date": "06/05/2020",
+    "bank": "Santander",
+    "liq": "00001219",
+    "cuit": "Cuit 2",
+    "store": "Comercio 18",
+    "coupons": "362",
+    "ammount": 429640,
+    "discounts": 6445,
+    "total": 423195
+  },
+  {
+    "date": "06/05/2020",
+    "bank": "BNA",
+    "liq": "00001220",
+    "cuit": "Cuit 2",
+    "store": "Comercio 19",
+    "coupons": "167",
+    "ammount": 187415,
+    "discounts": 2811,
+    "total": 184603
+  },
+  {
+    "date": "06/05/2020",
+    "bank": "BNA",
+    "liq": "00001221",
+    "cuit": "Cuit 2",
+    "store": "Comercio 6",
+    "coupons": "199",
+    "ammount": 255923,
+    "discounts": 3839,
+    "total": 252084
+  }
+]
