@@ -31,7 +31,7 @@ export const Table = styled.table`
         justify-content: space-between;
     }
     & th {
-        font-size: .9rem;
+        font-size: .8rem;
         padding: 1rem 0;
         width: 8rem;
         text-align: center;
@@ -45,7 +45,7 @@ export const Table = styled.table`
             align-items: center;
             justify-content: center;
             padding: 1rem 0;
-            font-size: .9rem;
+            font-size: .8rem;
             width: 8rem;
         }
     }

@@ -1,0 +1,92 @@
+[
+  {
+    "date": "01/05/2020",
+    "ammount": 212294,
+    "ivaCfa": 44582,
+    "discount": 64780,
+    "ivaDfo": 6802,
+    "iibb": 215933,
+    "bankDiscount": 0,
+    "totalTaxes": 544390
+  },
+  {
+    "date": "02/05/2020",
+    "ammount": 207507,
+    "ivaCfa": 43576,
+    "discount": 63319,
+    "ivaDfo": 6649,
+    "iibb": 211064,
+    "bankDiscount": 0,
+    "totalTaxes": 532115
+  },
+  {
+    "date": "03/05/2020",
+    "ammount": 220141,
+    "ivaCfa": 46230,
+    "discount": 67174,
+    "ivaDfo": 7053,
+    "iibb": 223915,
+    "bankDiscount": 0,
+    "totalTaxes": 564513
+  },
+  {
+    "date": "04/05/2020",
+    "ammount": 223508,
+    "ivaCfa": 46937,
+    "discount": 68202,
+    "ivaDfo": 7161,
+    "iibb": 227339,
+    "bankDiscount": 0,
+    "totalTaxes": 573147
+  },
+  {
+    "date": "05/05/2020",
+    "ammount": 224653,
+    "ivaCfa": 47177,
+    "discount": 68551,
+    "ivaDfo": 7198,
+    "iibb": 228504,
+    "bankDiscount": 0,
+    "totalTaxes": 576084
+  },
+  {
+    "date": "06/05/2020",
+    "ammount": 226531,
+    "ivaCfa": 47571,
+    "discount": 69124,
+    "ivaDfo": 7258,
+    "iibb": 230414,
+    "bankDiscount": 0,
+    "totalTaxes": 580898
+  },
+  {
+    "date": "07/05/2020",
+    "ammount": 235547,
+    "ivaCfa": 49465,
+    "discount": 71875,
+    "ivaDfo": 7547,
+    "iibb": 239585,
+    "bankDiscount": 0,
+    "totalTaxes": 604019
+  },
+  {
+    "date": "08/05/2020",
+    "ammount": 232894,
+    "ivaCfa": 48908,
+    "discount": 71066,
+    "ivaDfo": 7462,
+    "iibb": 236887,
+    "bankDiscount": 0,
+    "totalTaxes": 597217
+  },
+  {
+    "date": "09/05/2020",
+    "ammount": 244145,
+    "ivaCfa": 51270,
+    "discount": 74499,
+    "ivaDfo": 7822,
+    "iibb": 248330,
+    "bankDiscount": 0,
+    "totalTaxes": 626067
+  }
+]
