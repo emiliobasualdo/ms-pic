@@ -14,7 +14,7 @@ import balanceLiqForm from '../../../mocks/balance/balanceLiqForm.json';
 import balanceLiqMovements from '../../../mocks/balance/balanceLiqMovements.json';
 
 const BalanceSettlements = () => {
-    const tableHeadings = ['Fecha', 'Banco Pagador', 'Liquidación', 'Cuit', 'Comercio', 'Cupones', 'Importe Bruto', 'Descuentos', 'Total Neto', 'Detalle']
+    const tableHeadings = ['Fecha', 'Banco Pagador', 'Liquidación', 'Cuit', 'Comercio', 'Cupones', 'Importe Bruto', 'Descuentos', 'Total Neto', '']
     const [actionTrigger, setActionTrigger] = useState(null);
 
     const handleClick = () => {

@@ -12,7 +12,7 @@ import totalTaxes from '../../../mocks/balance/totalTaxes.json';
 import detailedTaxes from '../../../mocks/balance/detailedTaxes.json';
 
 const BalanceTaxes = () => {
-    const tableHeadings = ['Fecha', 'Arancel', 'IVA C.F.A. (21%)', 'Dto. F. O.', 'IVA D.F.O. (10.5%)', 'II.BB', 'Desc. Bancario', 'Total Retenciones', 'Liquidaciones']
+    const tableHeadings = ['Fecha', 'Arancel', 'IVA C.F.A. (21%)', 'Dto. F. O.', 'IVA D.F.O. (10.5%)', 'II.BB', 'Desc. Bancario', 'Total Retenciones', '']
 
     return(
         <BalanceTaxesContent>

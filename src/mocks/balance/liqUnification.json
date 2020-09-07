@@ -1,0 +1,92 @@
+[
+  {
+    "date": "01/05/2020",
+    "liq": "1025",
+    "payingBank": "Santander",
+    "liqB": 9435945,
+    "taxes": 423445,
+    "bankDiscount": 0,
+    "liqN": 9012501
+  },
+  {
+    "date": "01/05/2020",
+    "liq": "1026",
+    "payingBank": "BNA",
+    "liqB": 2695127,
+    "taxes": 120946,
+    "bankDiscount": 0,
+    "liqN": 2574182
+  },
+  {
+    "date": "02/05/2020",
+    "liq": "1027",
+    "payingBank": "Santander",
+    "liqB": 8578865,
+    "taxes": 384983,
+    "bankDiscount": 0,
+    "liqN": 8193883
+  },
+  {
+    "date": "02/05/2020",
+    "liq": "1028",
+    "payingBank": "BNA",
+    "liqB": 3278654,
+    "taxes": 147132,
+    "bankDiscount": 0,
+    "liqN": 3131523
+  },
+  {
+    "date": "03/05/2020",
+    "liq": "1029",
+    "payingBank": "Santander",
+    "liqB": 8974982,
+    "taxes": 402759,
+    "bankDiscount": 0,
+    "liqN": 8572224
+  },
+  {
+    "date": "03/05/2020",
+    "liq": "1030",
+    "payingBank": "BNA",
+    "liqB": 3604503,
+    "taxes": 161755,
+    "bankDiscount": 0,
+    "liqN": 3442749
+  },
+  {
+    "date": "04/05/2020",
+    "liq": "1031",
+    "payingBank": "Santander",
+    "liqB": 9102464,
+    "taxes": 408479,
+    "bankDiscount": 0,
+    "liqN": 8693985
+  },
+  {
+    "date": "04/05/2020",
+    "liq": "1032",
+    "payingBank": "BNA",
+    "liqB": 3669416,
+    "taxes": 164668,
+    "bankDiscount": 0,
+    "liqN": 3504749
+  },
+  {
+    "date": "05/05/2020",
+    "liq": "1033",
+    "payingBank": "Santander",
+    "liqB": 9138371,
+    "taxes": 410091,
+    "bankDiscount": 0,
+    "liqN": 8728280
+  },
+  {
+    "date": "05/05/2020",
+    "liq": "1034",
+    "payingBank": "BNA",
+    "liqB": 3698951,
+    "taxes": 165995,
+    "bankDiscount": 0,
+    "liqN": 3532958
+  }
+]

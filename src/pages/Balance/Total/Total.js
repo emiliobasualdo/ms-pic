@@ -13,7 +13,7 @@ import totalMovements from '../../../mocks/balance/totalMovements.json';
 import totalDetailedMovements from '../../../mocks/balance/totalDetailedMovements.json';
 
 const BalanceTotal = () => {
-    const tableHeadings = ['Fecha', 'Liquidación Bruta', 'Descuentos', 'Liquidación Neta', 'Banco', 'Detalle']
+    const tableHeadings = ['Fecha', 'Liquidación Bruta', 'Descuentos', 'Liquidación Neta', 'Banco', '']
     return(
         <BalanceTotalContent>
             <TitleCard

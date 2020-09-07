@@ -2,7 +2,7 @@ import React from 'react';
 import { LastMovementsContainer, LastMovementsHeadings, Table} from "./LastMovements.styles";
 import Button from "../Button/Button";
 
-const LastMovements = ({ title, subtitle, headings, items }) => {
+const LastMovements = ({ title, subtitle, headings, items, difference }) => {
     return (
         <LastMovementsContainer title={title}>
             <LastMovementsHeadings>
@@ -40,6 +40,7 @@ const LastMovements = ({ title, subtitle, headings, items }) => {
                                             })
                                         }
                                         <td><Button buttonName="Detalle" onButtonClicked={() => console.log('MOVIMIENTO:', movement)} /></td>
+                                        { difference && <td>Difference here</td>}
                                     </tr>
                                 )
                             })
