@@ -143,31 +143,11 @@ const Prepaid = () => {
                 header15="%"
             />
             <LastContainer>
-                <SquareMetabaseGraphic width="28%" link="/zonas/total">
-                    <MetabaseGraph
-                        title={"Caaantidad de recargas por zona geográfica"}
-                        graphId={"a0e33560-6e70-43f0-805d-ee929c4a9549"}
-                        width={"100%"} height={"85%"} />
-                </SquareMetabaseGraphic>
-                <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
-                    <MetabaseGraph
-                        title={"Volumen de recargas por zona"}
-                        graphId={"bcb5939f-17ae-4879-9ca8-e301523a93ff"}
-                        width={"100%"} height={"85%"}
-                    />
-                </SquareMetabaseGraphic>
-                <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
-                    <MetabaseGraph
-                        title={"Porcentaje de recargas por medio de pago"}
-                        graphId={"095fa0ae-5983-4c10-af6d-f14220c387c8"}
-                        width={"100%"} height={"40%"}
-                    />
-                    <MetabaseGraph
-                        title={"Porcentaje de recargas por marca"}
-                        graphId={"e29ddc6f-5c50-4804-bb2d-df6d077704db"}
-                        width={"100%"} height={"40%"}
-                    />
-                </SquareMetabaseGraphic>
+                <MetabaseGraph
+                    title={"Cantidad de recargas por zona geográfica"}
+                    graphId={"749c8028-a099-4adf-a838-eda4eb7d004e"}
+                    width={"100%"} height={"100%"}
+                    dashboard={true}/>
             </LastContainer>
         </PrepaidBusinessContainer>
     )

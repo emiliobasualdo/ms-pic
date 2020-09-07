@@ -39,7 +39,7 @@ export const HorizontalContainer = styled.div`
 
 export const LastContainer = styled.div`
     width: 100%;
-    height: 75vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     margin-top: 3rem;
