@@ -10,11 +10,11 @@ export const Butt = styled.button(({theme, active}) => {
         border: none;
         outline: none;
         font-weight: bold;
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
         &:hover{
             cursor: pointer;
-            color: ${theme.colors['light-green']};
-            background-color: ${theme.colors['light-grey']};
+            color: ${theme.colors.lightGreen};
+            background-color: ${theme.colors.lightGrey};
             transition: .5s;
             border-radius: 5px;
         }

@@ -5,44 +5,34 @@ import zonesRegistrationValidationData from '../../../mocks/zones/zonesRegistrat
 //Components
 import {
     TitleCard,
-    RankingCard,
+    Form,
     ProcessValidationCard
 } from '../../../components';
 //Styles
-import {ZonesRegistrationContent, RankingsRow} from './Registration.styles';
+import {ZonesRegistrationContent, FormsContainer} from './Registration.styles';
 
 const ZonesRegistration = () => {
 
     const RankingCardStructureData = [
         {
             heading: 'Alta de Comercio',
-            subheading: 'Proceso Estructurado',
-            columnTwo: 'ID',
-            columnThree: 'Tipología',
-            columnFour: 'Selección'
+            subheading: 'Proceso Estructurado'
         },
         {
             heading: 'Alta de métodos de captura',
-            subheading: 'Digital & Presencial',
-            columnTwo: 'ID',
-            columnThree: 'Tipología',
-            columnFour: 'Selección'
+            subheading: 'Digital & Presencial'
         },
         {
             heading: 'Alta de aceptación',
-            subheading: 'Selección del tipo de medio de pago',
-            columnTwo: 'ID',
-            columnThree: 'Tipología',
-            columnFour: 'Selección'
+            subheading: 'Selección del tipo de medio de pago'
         },
         {
             heading: 'Banco Pagador & Aspectos Legales',
-            subheading: 'Selección de acreditación de Fondos & Formularios Legales',
-            columnTwo: 'ID',
-            columnThree: 'Tipología',
-            columnFour: 'Selección'
+            subheading: 'Selección de acreditación de Fondos & Formularios Legales'
         }
     ]
+
+    const formHeaders = ["Tipología", "Fecha", "Selección"]
 
     const headerData = {
             heading: 'Validación de Procesos',
@@ -50,6 +40,8 @@ const ZonesRegistration = () => {
         }
     
     const tableHeader = ["Tipología", "Fecha", "Validación"]
+
+    const buttonsName = ["Comercio", "Captación", "Aceptación", "Archivos"]
 
     return(
         <ZonesRegistrationContent>
@@ -61,18 +53,19 @@ const ZonesRegistration = () => {
                 weekly="Baja"
                 monthly="Modificación"
             />
-            <RankingsRow>
+            <FormsContainer>
                 {zonesRegistrationData.map((item, index) => {
                     return(
-                        <RankingCard
+                        <Form
                             key={index}
-                            data={item}
                             structureData={RankingCardStructureData[index]}
-                            buttonName={zonesRegistrationData[index].buttonName}
+                            headers={formHeaders}
+                            rows={item}
+                            buttonName={buttonsName[index]}
                         />
                     )
                 })}
-            </RankingsRow>
+            </FormsContainer>
             <ProcessValidationCard
                 heading={headerData.heading}
                 subheading={headerData.subheading}

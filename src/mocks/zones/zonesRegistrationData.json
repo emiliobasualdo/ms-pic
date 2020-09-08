@@ -34,9 +34,6 @@
         "clients": "C000",
         "percentage": "Otra metodología",
         "selection": false
-        },
-        {
-            "buttonName": "Comercio"
         }
     ],
     [
@@ -74,9 +71,6 @@
         "clients": "C000",
         "percentage": "Otra metodología",
         "selection": false
-        },
-        {
-            "buttonName": "Capacitación"
         }
     ],
     [
@@ -114,9 +108,6 @@
         "clients": "MP07",
         "percentage": "Mix de Cabal",
         "selection": false
-        },
-        {
-            "buttonName": "Aceptación"
         }
     ],
     [
@@ -154,9 +145,6 @@
         "clients": "AL04",
         "percentage": "Información Respaldatoria",
         "selection": false
-        },
-        {
-            "buttonName": "Archivos"
         }
     ]
 ]

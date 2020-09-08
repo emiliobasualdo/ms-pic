@@ -15,13 +15,13 @@ export const BarGraphContainer = styled.div(({theme}) => {
 export const StyledH3 = styled.h3(({theme}) => {
     return css`
         font-family: ${theme.typography.fonts.secondary};
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
     `;
 });
 
 export const StyledP = styled.p(({theme}) => {
     return css`
         font-family: ${theme.typography.fonts.secondary};
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
     `;
 });

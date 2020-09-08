@@ -47,7 +47,7 @@ export const SecondaryContainer = styled.ul(({theme}) => {
         height: 3rem;
         list-style: none;
         padding: 0 5rem;
-        border-bottom: 1px solid ${theme.colors['light-grey']};
+        border-bottom: 1px solid ${theme.colors.lightGrey};
         background-color: transparent;
     `;
 });
@@ -68,9 +68,9 @@ export const Item = styled.button(({theme}) => {
         margin-right: 15px;
         outline: none;
         &:hover{
-            background-color: ${theme.colors['light-grey']};
+            background-color: ${theme.colors.lightGrey};
             transition: 0.4s;
-            color: ${theme.colors['light-green']};
+            color: ${theme.colors.lightGreen};
         }
     `;
 });

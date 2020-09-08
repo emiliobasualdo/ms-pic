@@ -13,7 +13,7 @@ export const RechargesOriginContainer = styled.div(({theme}) => {
 
 export const RechargesTitle = styled.h3(({theme}) => {
     return css`
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
     `;
 });
 

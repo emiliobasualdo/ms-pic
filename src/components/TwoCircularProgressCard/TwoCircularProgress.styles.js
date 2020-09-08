@@ -14,7 +14,7 @@ export const TwoCircularProgressContainer = styled.div(({theme}) => {
 
 export const StyledH3 = styled.h3(({theme}) => {
     return css`
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
         font-family: ${theme.typography.fonts.secondary};
         height: 100%;
         padding: 0 1rem;

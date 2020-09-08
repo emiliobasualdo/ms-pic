@@ -5,15 +5,14 @@ export const TheButton = styled.button(({theme}) => {
         align-self: center;
         background-color: transparent;
         width: auto;
-        height: auto;
         padding: 0.5rem;
         border: none;
         outline: none;
         font-weight: bold;
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
         &:hover{
             cursor: pointer;
-            color: ${theme.colors['light-green']};
+            color: ${theme.colors.lightGreen};
             transition: .5s;
         }
     `;

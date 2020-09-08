@@ -14,7 +14,7 @@ export const CustomersProfilesContent = styled.div`
     animation: ${fadeIn} .5s .2s ease-in backwards;
 `;
 
-export const RankingsRow = styled.div`
+export const FormsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

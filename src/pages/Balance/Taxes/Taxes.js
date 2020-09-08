@@ -3,7 +3,8 @@ import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 //Components
 import {
     TitleCard,
-    MovementsColumnData, LastMovements
+    MovementsColumnData,
+    Table2
 } from '../../../components';
 //Styles
 import {BalanceTaxesContent, MovementsWrapper} from './Taxes.styles';
@@ -39,7 +40,7 @@ const BalanceTaxes = () => {
                     subtitle="Detalle de movimientos"
                     movements={totalTaxes}
                 />
-                <LastMovements
+                <Table2
                     title="Últimos Movimientos"
                     subtitle="Detalle de movimientos"
                     headings={tableHeadings}

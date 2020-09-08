@@ -2,38 +2,44 @@ import BarGraphCard from './BarGraphCard/BarGraphCard';
 import Button from './Button/Button';
 import Button2 from './Button2/Button2';
 import Card from './Card/Card';
-import CircularProgressContainer from './CircularProgressContainer/CircularProgressContainer';
 import CircularProgressCard from './CircularProgressCard/CircularProgressCard';
-import SimpleTable from './Table/Table';
-import SquareAreaChart from './SquareAreaChart/SquareAreaChart';
-import SquareProgressCircular from './SquareProgressCircular/SquareProgressCircular';
-import TitleCard from './TitleCard/TitleCard';
-import TwoCircularProgressCard from './TwoCircularProgressCard/TwoCircularProgress';
+import CircularProgressContainer from './CircularProgressContainer/CircularProgressContainer';
+import Form from './Form/Form';
 import LargeCircularProgressCard from './LargeCircularProgressCard/LargeCircularProgress';
 import LargeColumnData from "./LargeColumnData/LargeColumnData";
-import RankingCard from './RankingCard/RankingCard';
-import ProcessValidationCard from './ProcessValidationCard/ProcessValidationCard';
 import MetabaseGraph from './MetabaseGraph/MetabaseGraph';
 import MovementsColumnData from "./MovementsColumnData/MovementsColumnData";
-import LastMovements from "./LastMovements/LastMovements";
+import ProcessValidationCard from './ProcessValidationCard/ProcessValidationCard';
+import ProfileForm from './ProfileForm/ProfileForm';
+import SquareAreaChart from './SquareAreaChart/SquareAreaChart';
+import SquareProgressCircular from './SquareProgressCircular/SquareProgressCircular';
+import SummaryAccordion from './SummaryAccordion/SummaryAccordion';
+import SummaryAccordionItem from './SummaryAccordionItem/SumaryAccordionItem';
+import Table from './Table/Table';
+import Table2 from "./Table2/Table2";
+import TitleCard from './TitleCard/TitleCard';
+import TwoCircularProgressCard from './TwoCircularProgressCard/TwoCircularProgress';
 
 export {
+    BarGraphCard,
     Button,
     Button2,
-    BarGraphCard,
     Card,
-    CircularProgressContainer,
     CircularProgressCard,
-    ProcessValidationCard,
-    RankingCard,
-    SimpleTable,
-    SquareAreaChart,
-    SquareProgressCircular,
-    TitleCard,
-    TwoCircularProgressCard,
+    CircularProgressContainer,
+    Form,
     LargeCircularProgressCard,
     LargeColumnData,
     MetabaseGraph,
     MovementsColumnData,
-    LastMovements
+    ProcessValidationCard,
+    ProfileForm,
+    Table,
+    Table2,
+    SquareAreaChart,
+    SquareProgressCircular,
+    SummaryAccordion,
+    SummaryAccordionItem,
+    TitleCard,
+    TwoCircularProgressCard
 }

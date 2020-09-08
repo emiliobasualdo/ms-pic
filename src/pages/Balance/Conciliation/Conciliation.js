@@ -3,7 +3,7 @@ import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
 //Components
 import {
     TitleCard,
-    LastMovements
+    Table2
 } from '../../../components';
 //Styles
 import {BalanceConciliationContent} from './Conciliation.styles';
@@ -32,7 +32,7 @@ const BalanceConciliation = () => {
                 description="Validación de Liquidaciones"
                 search={true}
             />
-            <LastMovements
+            <Table2
                 title="Unificación de Liquidaciones"
                 headings={tableHeadings}
                 items={liqUnification}

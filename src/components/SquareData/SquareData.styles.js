@@ -25,7 +25,7 @@ export const SquareDataContainer = styled.div(({theme}) => {
 export const StyledTitle = styled.div(({theme}) => {
     return css`
         font-family: ${theme.typography.fonts.secondary};
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
         font-size: 0.9rem;
         margin-left: 1rem;
     `;
@@ -62,7 +62,7 @@ export const StyledDiv = styled.div(({theme}) => {
     return css`
         padding: 0.5rem 1.4rem;
         text-align: start;
-        border-top: 1px solid ${theme.colors['light-grey']};
+        border-top: 1px solid ${theme.colors.lightGrey};
         font-size: 0.9rem;
     `;
 });

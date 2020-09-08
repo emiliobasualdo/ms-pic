@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import ProfileForm from "../../../components/ProfileForm/ProfileForm";
-import TitleCard from "../../../components/TitleCard/TitleCard";
-import RankingCard from "../../../components/RankingCard/RankingCard";
-import { CustomersProfilesContent, RankingsRow } from "./Profiles.styles";
+import React, {useState} from 'react';
+import {ProfileForm, Form, TitleCard} from '../../../components';
+import {CustomersProfilesContent, FormsContainer} from "./Profiles.styles";
 import FingerprintIcon from '@material-ui/icons/Fingerprint';
 import UpdateIcon from '@material-ui/icons/Update';
 import profileForm from '../../../mocks/customers/profileForm.json';
@@ -19,39 +17,30 @@ const CustomersProfiles = () => {
         {
             heading: 'Volumen operado',
             subheading: 'Ranking - Mayor volumen operado por Cliente',
-            subheadingTwo: 'Todas las variables',
-            columnOne: 'Perfil',
-            columnTwo: 'Clientes',
-            columnThree: '% VO',
-            columnFour: 'Campaña'
+            subheadingTwo: 'Todas las variables'
         },
         {
             heading: 'Promociones',
             subheading: 'Ranking - Ahorros promedio por Cliente',
-            subheadingTwo: 'Todas las variables',
-            columnOne: 'Perfil',
-            columnTwo: 'Clientes',
-            columnThree: '%',
-            columnFour: 'Campaña'
+            subheadingTwo: 'Todas las variables'
         },
         {
             heading: 'Consumo Promedio',
             subheading: 'Ranking - Volumen del Ticket Promedio por Cliente',
-            subheadingTwo: 'Todas las variables',
-            columnOne: 'Perfil',
-            columnTwo: 'Clientes',
-            columnThree: 'TIcket P.',
-            columnFour: 'Campaña'
+            subheadingTwo: 'Todas las variables'
         },
         {
             heading: 'Transacciones Promedio',
             subheading: 'Ranking - Cantidad de Transacciones promedio por Cliente',
-            subheadingTwo: 'Todas las variables',
-            columnOne: 'Perfil',
-            columnTwo: 'Clientes',
-            columnThree: 'Txt P.',
-            columnFour: 'Campaña'
+            subheadingTwo: 'Todas las variables'
         }
+    ]
+
+    const formHeaders = [
+        ["Perfil", "Clientes", "%VO", "Campaña"],
+        ["Perfil", "Clientes", "%", "Campaña"],
+        ["Perfil", "Clientes", "Ticket P.", "Campaña"],
+        ["Perfil", "Clientes", "Txt P.", "Campaña"]
     ]
 
     return (
@@ -67,18 +56,19 @@ const CustomersProfiles = () => {
                 icon={<UpdateIcon fontSize="large"/>}
                 title="Consultas recurrentes"
             />
-            <RankingsRow>
+            <FormsContainer>
                 {profileRankings.map((item, index) => {
                     return(
-                        <RankingCard
+                        <Form
                             key={index}
-                            data={item}
                             structureData={RankingCardStructureData[index]}
-                            buttonName={profileRankings[index].buttonName}
+                            headers={formHeaders[index]}
+                            rows={item}
+                            buttonName="Más Detalles"
                         />
                     )
                 })}
-            </RankingsRow>
+            </FormsContainer>
         </CustomersProfilesContent>
     );
 }

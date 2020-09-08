@@ -3,9 +3,9 @@ import RoomIcon from '@material-ui/icons/Room';
 //Components
 import {
     LargeColumnData,
-    TitleCard,
+    SummaryAccordion,
+    TitleCard
 } from '../../../components';
-import SummaryAccordion from "../../../components/SummaryAccordion/SummaryAccordion";
 // Mock
 import zonesProvincesData from '../../../mocks/zones/zonesProvincesData.json';
 import PersonPinCircleOutlinedIcon from "@material-ui/icons/PersonPinCircleOutlined";
@@ -73,7 +73,7 @@ const ZonesProvinces = () => {
                             zoneVFloatPercentageAmmount={item.zoneVFloatPercentageAmmount}
                             buttonName="Más Detalles"
                         />
-                    )
+                    );
                 })}
             </ProvincesDataContainer>
             <Card>

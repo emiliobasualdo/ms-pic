@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const RankingCardContainer = styled.div`
+export const MainContainer = styled.div`
     height: auto;
     width: 48%;
     background-color: #fff;
@@ -8,13 +8,13 @@ export const RankingCardContainer = styled.div`
     flex-direction: column;
     align-items: space-around;
     margin: 2rem 0;
+    padding: 1rem 0;
 `;
 
 export const CardHeader = styled.div`
     display: flex;
     align-items: center;
-    padding-top: 1.5rem;
-    align-self: flex-start;
+    padding-bottom: 1rem;
 `;
 
 export const IconContainer = styled.div`
@@ -44,23 +44,11 @@ export const SecondaryText = styled.div`
     }
 `;
 
-export const RankingLists = styled.div`
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-around;
-    min-width: 100%;
-    height: auto;
+export const Table = styled.table`
+    margin: 1rem 0;
+    width: 100%;
 `;
 
-export const RankingListItem = styled.ul`
-    list-style: none;
-    & h3 {
-        font-size: 1rem;
-    }
-    & li {
-        padding: 1rem 0;
-    }
-    & div {
-        padding: .25rem 0;
-    }
+export const StyledTd = styled.td`
+    text-align: center;
 `;

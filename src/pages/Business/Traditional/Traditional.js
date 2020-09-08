@@ -9,8 +9,7 @@ import {
     Card,
     CircularProgressContainer,
     CircularProgressCard,
-    SimpleTable,
-    SquareMetabaseGraphic,
+    Table,
     MetabaseGraph
 } from '../../../components/';
 import {
@@ -128,7 +127,7 @@ const Traditional = () => {
                     </CircularProgressCard>
                 </HorizontalContainer>
             </CircularGraphicsContainer>
-            <SimpleTable
+            <Table
                 headers={tableHeaders}
                 rows={tableData}
             />

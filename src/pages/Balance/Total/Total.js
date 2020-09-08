@@ -4,7 +4,7 @@ import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import {
     TitleCard,
     MovementsColumnData,
-    LastMovements
+    Table2
 } from '../../../components';
 //Styles
 import {BalanceTotalContent, MovementsWrapper} from './Total.styles';
@@ -23,8 +23,17 @@ const BalanceTotal = () => {
                 search={true}
             />
             <MovementsWrapper>
-                <MovementsColumnData title="Conciliación de Balances" subtitle="Detalle de movimientos" movements={totalMovements} />
-                <LastMovements title="Últimos Movimientos" subtitle="Detalle de movimientos" headings={tableHeadings} items={totalDetailedMovements} />
+                <MovementsColumnData
+                    title="Conciliación de Balances"
+                    subtitle="Detalle de movimientos"
+                    movements={totalMovements}
+                />
+                <Table2
+                    title="Últimos Movimientos"
+                    subtitle="Detalle de movimientos"
+                    headings={tableHeadings}
+                    items={totalDetailedMovements}
+                />
             </MovementsWrapper>
         </BalanceTotalContent>
     );

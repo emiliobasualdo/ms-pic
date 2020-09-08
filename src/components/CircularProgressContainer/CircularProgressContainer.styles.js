@@ -8,7 +8,7 @@ export const TheContainer = styled.div`
 
 export const StyledP = styled.p(({theme}) => {
     return css`
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
         font-size: 0.8rem;
         margin: .7rem 0;
     `;

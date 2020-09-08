@@ -19,7 +19,7 @@ export const CirclesContainer = styled.div`
 
 export const StyledH4 = styled.h5(({theme}) => {
     return css`
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
         text-align: start;
     `;
 });

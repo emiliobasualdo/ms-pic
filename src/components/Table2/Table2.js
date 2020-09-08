@@ -1,8 +1,9 @@
 import React from 'react';
-import { LastMovementsContainer, LastMovementsHeadings, Table} from "./LastMovements.styles";
+import {LastMovementsContainer, LastMovementsHeadings, Table} from "./Table2.styles";
 import Button from "../Button/Button";
 
-const LastMovements = ({ title, subtitle, headings, items, difference }) => {
+const Table2 = ({ title, subtitle, headings, items, difference }) => {
+
     return (
         <LastMovementsContainer title={title}>
             <LastMovementsHeadings>
@@ -39,8 +40,13 @@ const LastMovements = ({ title, subtitle, headings, items, difference }) => {
                                                 )
                                             })
                                         }
-                                        <td><Button buttonName="Detalle" onButtonClicked={() => console.log('MOVIMIENTO:', movement)} /></td>
-                                        { difference && <td>Difference here</td>}
+                                        <td>
+                                            <Button
+                                                buttonName="Detalle"
+                                                onButtonClicked={() => console.log('MOVIMIENTO:', movement)}
+                                            />
+                                        </td>
+                                        {difference && <td>Difference here</td>}
                                     </tr>
                                 )
                             })
@@ -49,7 +55,7 @@ const LastMovements = ({ title, subtitle, headings, items, difference }) => {
                 </Table>
             </div>
         </LastMovementsContainer>
-    )
+    );
 }
 
-export default LastMovements;
+export default Table2;

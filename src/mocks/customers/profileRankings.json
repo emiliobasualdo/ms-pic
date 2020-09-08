@@ -53,9 +53,6 @@
       "clients": 1.268,
       "percentage": 1.7,
       "campaign": false
-    },
-    {
-      "buttonName": "Más Detalles"
     }
   ],
   [
@@ -112,9 +109,6 @@
       "clients": 191,
       "percentage": 0.34,
       "campaign": false
-    },
-    {
-      "buttonName": "Más Detalles"
     }
   ],
   [
@@ -171,9 +165,6 @@
       "clients": 119,
       "percentage": 1897,
       "campaign": false
-    },
-    {
-      "buttonName": "Más Detalles"
     }
   ],
   [
@@ -230,9 +221,6 @@
       "clients": 4.637,
       "percentage": 4.76,
       "campaign": false
-    },
-    {
-      "buttonName": "Más Detalles"
     }
   ]
 ]

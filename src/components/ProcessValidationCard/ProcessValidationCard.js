@@ -1,5 +1,5 @@
 import React from 'react';
-import {SimpleTable} from '../index';
+import {Table} from '../index';
 import {
     ProcessValidationContainer,
     CardHeader,
@@ -25,7 +25,7 @@ const ProcessValidationCard = (props) => {
                     </SecondaryText>
                 </TextContainer>
             </CardHeader>
-            <SimpleTable
+            <Table
                 headers={props.headers}
                 rows={props.rows}
                 buttonName={props.buttonName}

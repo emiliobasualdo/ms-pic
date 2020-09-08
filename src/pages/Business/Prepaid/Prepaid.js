@@ -9,8 +9,7 @@ import {
     Card,
     CircularProgressContainer,
     CircularProgressCard,
-    SimpleTable,
-    SquareMetabaseGraphic,
+    Table,
     MetabaseGraph
 } from '../../../components/';
 import {
@@ -130,7 +129,7 @@ const Prepaid = () => {
                     </CircularProgressCard>
                 </HorizontalContainer>
             </CircularGraphicsContainer>
-            <SimpleTable
+            <Table
                 headers={tableHeaders}
                 rows={tableData}
             />

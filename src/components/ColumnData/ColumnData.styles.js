@@ -28,7 +28,7 @@ export const StyledDiv = styled.div`
 
 export const StyledP = styled.p(({theme}) => {
     return css `
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
         font-family: ${theme.typography.fonts.secondary};
         font-size: 0.9rem;
     `;
@@ -36,7 +36,7 @@ export const StyledP = styled.p(({theme}) => {
 
 export const StyledSpan = styled.span(({theme}) => {
     return css `
-        color: ${theme.colors['dark-grey']};
+        color: ${theme.colors.darkGrey};
         font-weight: ${theme.typography.weights.bold};
         font-family: ${theme.typography.fonts.secondary};
         font-size: 1.2rem;

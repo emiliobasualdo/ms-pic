@@ -5,7 +5,7 @@ const MetabaseGraph = ({title, graphId, width, height, dashboard, showNativeTitl
   const type = dashboard? "dashboard/" : "question/";
   const options = "#bordered=true&titled="+ !!showNativeTitle;
   const src = baseUrl + type + graphId + options;
-  console.log(src);
+  console.log("src: " + src);
   return (
     <iframe
       title={title}
