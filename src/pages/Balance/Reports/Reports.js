@@ -3,9 +3,10 @@ import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 //Components
 import {
     TitleCard,
+    MetabaseGraph
 } from '../../../components';
 //Styles
-import {BalanceReportsContent} from './Reports.styles';
+import {BalanceReportsContent, LastContainer} from './Reports.styles';
 
 const BalanceReports = () => {
     return(
@@ -14,10 +15,16 @@ const BalanceReports = () => {
                 icon={<LibraryBooksIcon fontSize="large"/>}
                 title="Reportes"
                 description="Información recurrentes"
-                diary="Desde"
-                weekly="Hasta"
-                monthly=""
+                search={true}
             />
+            <LastContainer>
+                <MetabaseGraph
+                    title={"Reportes Balance"}
+                    graphId={"6a05725b-3dae-4b6b-bb1e-6163d4264484"}
+                    width={"100%"} height={"100%"}
+                    dashboard={true}
+                />
+            </LastContainer>
         </BalanceReportsContent>
     );
 }

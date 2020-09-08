@@ -11,7 +11,19 @@ import {BalanceConciliationContent} from './Conciliation.styles';
 import liqUnification from '../../../mocks/balance/liqUnification.json';
 
 const BalanceConciliation = () => {
-    const tableHeadings = ['Fecha', 'Liquidación', 'Banco Pagador', 'Liquidación Bruta', 'Retenciones', 'Desc. Bancario', 'Liquidación Neta', 'Up Load Mov. Bancario', 'Diferencia']
+
+    const tableHeadings = [
+        'Fecha',
+        'Liquidación',
+        'Banco Pagador',
+        'Liquidación Bruta',
+        'Retenciones',
+        'Desc. Bancario',
+        'Liquidación Neta',
+        'Up Load Mov. Bancario',
+        'Diferencia'
+    ]
+    
     return(
         <BalanceConciliationContent>
             <TitleCard
@@ -20,7 +32,12 @@ const BalanceConciliation = () => {
                 description="Validación de Liquidaciones"
                 search={true}
             />
-            <LastMovements title="Unificación de Liquidaciones" headings={tableHeadings} items={liqUnification} difference={true} />
+            <LastMovements
+                title="Unificación de Liquidaciones"
+                headings={tableHeadings}
+                items={liqUnification}
+                difference={true}
+            />
         </BalanceConciliationContent>
     );
 }

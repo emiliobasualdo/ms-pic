@@ -1,6 +1,7 @@
 import React from 'react';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import zonesRegistrationData from '../../../mocks/zones/zonesRegistrationData.json';
+import zonesRegistrationValidationData from '../../../mocks/zones/zonesRegistration&ValidationData.json';
 //Components
 import {
     TitleCard,
@@ -48,6 +49,7 @@ const ZonesRegistration = () => {
             subheading: 'Compruebe que todos los pasos estan validados'
         }
     
+    const tableHeader = ["Tipología", "Fecha", "Validación"]
 
     return(
         <ZonesRegistrationContent>
@@ -74,9 +76,8 @@ const ZonesRegistration = () => {
             <ProcessValidationCard
                 heading={headerData.heading}
                 subheading={headerData.subheading}
-                header1="Tipología"
-                header2="Fecha"
-                header3="Validación"
+                headers={tableHeader}
+                rows={zonesRegistrationValidationData}
                 buttonName="Implementación"
             />
         </ZonesRegistrationContent>

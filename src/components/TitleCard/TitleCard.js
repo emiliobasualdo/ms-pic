@@ -1,4 +1,8 @@
 import React from 'react';
+import 'date-fns';
+import Grid from '@material-ui/core/Grid';
+import DateFnsUtils from '@date-io/date-fns';
+import {MuiPickersUtilsProvider, KeyboardDatePicker} from '@material-ui/pickers';
 import {
     TitleCardContainer,
     FirstContainer,
@@ -9,10 +13,6 @@ import {
     ThirdContainer,
     Input
 } from './TitleCard.styles';
-import 'date-fns';
-import Grid from '@material-ui/core/Grid';
-import DateFnsUtils from '@date-io/date-fns';
-import { MuiPickersUtilsProvider, KeyboardDatePicker, } from '@material-ui/pickers';
 
 const TitleCard = (props) => {
     const [selectedDate, setSelectedDate] = React.useState(new Date());
@@ -33,18 +33,18 @@ const TitleCard = (props) => {
             {
                 !props.search && (
                     <SecondContainer>
-                        { (props.diary && props.weekly && props.monthly) && (
+                        {(props.diary && props.weekly && props.monthly) && (
                             <>
                                 <Item>{props.diary}</Item>
                                 <Item>{props.weekly}</Item>
                                 <Item>{props.monthly}</Item>
                             </>
-                        ) }
-                        { props.action && (
+                        )}
+                        {props.action && (
                             <Item onClick={props.onClick}>
                                 {props.action}
                             </Item>
-                        ) }
+                        )}
                     </SecondContainer>
                 )
             }
@@ -92,7 +92,6 @@ const TitleCard = (props) => {
                     </ThirdContainer>
                 )
             }
-
         </TitleCardContainer>
     );
 }

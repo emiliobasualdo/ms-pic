@@ -5,7 +5,6 @@ import Card from './Card/Card';
 import CircularProgressContainer from './CircularProgressContainer/CircularProgressContainer';
 import CircularProgressCard from './CircularProgressCard/CircularProgressCard';
 import SimpleTable from './Table/Table';
-import SquareMetabaseGraphic from './SquareMetabaseGraphic/SquareMetabaseGraphic';
 import SquareAreaChart from './SquareAreaChart/SquareAreaChart';
 import SquareProgressCircular from './SquareProgressCircular/SquareProgressCircular';
 import TitleCard from './TitleCard/TitleCard';
@@ -28,7 +27,6 @@ export {
     ProcessValidationCard,
     RankingCard,
     SimpleTable,
-    SquareMetabaseGraphic,
     SquareAreaChart,
     SquareProgressCircular,
     TitleCard,

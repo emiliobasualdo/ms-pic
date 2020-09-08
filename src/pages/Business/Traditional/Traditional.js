@@ -4,6 +4,7 @@ import traditionalBusinessData from '../../../mocks/business/traditional/traditi
 import greenCircularProgress from '../../../mocks/business/traditional/greenCircularProgress.json';
 import customersConsumptions from '../../../mocks/business/traditional/customersConsumptions.json';
 import volumeRecharges from '../../../mocks/business/traditional/volumeRecharges.json';
+import tableData from '../../../mocks/business/traditional/tableData.json';
 import {
     Card,
     CircularProgressContainer,
@@ -21,6 +22,25 @@ import {
 } from './Traditional.styles';
 
 const Traditional = () => {
+
+    const tableHeaders = [
+        "Rango",
+        "Clientes",
+        "%",
+        "Tickets",
+        "%",
+        "V. Consumo",
+        "%",
+        "Tickets C.",
+        "%",
+        "Consumo C.",
+        "%",
+        "Tickets D.",
+        "%",
+        "Consumo D.",
+        "%"
+    ]
+
     return(
         <TraditionalBusinessContainer>
             {traditionalBusinessData.map((item, index) => {
@@ -109,47 +129,28 @@ const Traditional = () => {
                 </HorizontalContainer>
             </CircularGraphicsContainer>
             <SimpleTable
-                header1="Rango"
-                header2="Clientes"
-                header3="%"
-                header4="Tickets"
-                header5="%"
-                header6="V. Consumo"
-                header7="%"
-                header8="Tickets C."
-                header9="%"
-                header10="Consumo C."
-                header11="%"
-                header12="Tickets D."
-                header13="%"
-                header14="Consumo D."
-                header15="%"
+                headers={tableHeaders}
+                rows={tableData}
             />
             <LastContainer>
-                <SquareMetabaseGraphic width="28%" link="/zonas/total">
-                    <MetabaseGraph
-                        title={"Promedio cant. consumo por zona"}
-                        graphId={"cb694264-f56b-4f95-8baf-06d8001f0a8a"}
-                        width={"100%"}
-                        height={"85%"}
-                    />
-                </SquareMetabaseGraphic>
-                <SquareMetabaseGraphic width="28%" link="/cupones/resumen">
-                    <MetabaseGraph
-                        title={"Volumen consumo por zona"}
-                        graphId={"5e1e18e2-c848-43f7-975e-e59ed344ca5a"}
-                        width={"100%"}
-                        height={"85%"}
-                    />
-                </SquareMetabaseGraphic>
-                <SquareMetabaseGraphic width="28%" link="/zonas/total">
-                    <MetabaseGraph
-                        title={"Porcentaje de consumo por marca"}
-                        graphId={"1a64e686-3688-41a6-a8a2-c0d40f0f13c2"}
-                        width={"100%"}
-                        height={"85%"}
-                    />
-                </SquareMetabaseGraphic>
+                <MetabaseGraph
+                    title={"Promedio cant. consumo por zona"}
+                    graphId={"cb694264-f56b-4f95-8baf-06d8001f0a8a"}
+                    width={"32%"}
+                    height={"100%"}
+                />
+                <MetabaseGraph
+                    title={"Volumen consumo por zona"}
+                    graphId={"5e1e18e2-c848-43f7-975e-e59ed344ca5a"}
+                    width={"32%"}
+                    height={"100%"}
+                />
+                <MetabaseGraph
+                    title={"Porcentaje de consumo por marca"}
+                    graphId={"1a64e686-3688-41a6-a8a2-c0d40f0f13c2"}
+                    width={"32%"}
+                    height={"100%"}
+                />
             </LastContainer>
         </TraditionalBusinessContainer>
     );

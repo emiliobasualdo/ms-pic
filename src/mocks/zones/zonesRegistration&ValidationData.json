@@ -1,0 +1,27 @@
+[
+    {
+        "one": "Alta de comercio",
+        "two": "06/05/2020",
+        "three": "Sí"
+    },
+    {
+        "one": "Alta de métodos de captura",
+        "two": "06/05/2020",
+        "three": "Sí"
+    },
+    {
+        "one": "Alta de aceptación",
+        "two": "07/05/2020",
+        "three": "Sí"
+    },
+    {
+        "one": "Banco Pagador & Aspectos Legales",
+        "two": "07/05/2020",
+        "three": "No"
+    },
+    {
+        "one": "Implementación",
+        "two": "10/05/2020",
+        "three": false
+    }
+]

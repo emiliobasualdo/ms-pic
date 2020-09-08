@@ -32,7 +32,7 @@ const BalanceSettlements = () => {
             />
             <ProfileForm formContent={balanceLiqForm} triggered={actionTrigger}/>
             <Button buttonName="Buscar" onButtonClicked={() => handleClick()}/>
-            <LastMovements title="Movimientos" headings={tableHeadings} items={balanceLiqMovements} />
+            <LastMovements title="Movimientos" headings={tableHeadings} items={balanceLiqMovements}/>
         </BalanceSettlementsContent>
     );
 }

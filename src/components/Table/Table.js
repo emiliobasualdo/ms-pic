@@ -7,27 +7,16 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import {Button} from '../index';
 
 const useStyles = makeStyles({
     table: {
         minWidth: 650,
+        fontSize: '0.8rem'
     },
 });
 
 const SimpleTable = (props) => {
-
-    const createData = (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen) => {
-        return {one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen};
-    }
-    
-    const rows = [
-        createData('0-1000', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('1001-3000', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('3001-5000', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('5001-7500', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('+7500', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('Total', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-    ];
 
     const classes = useStyles();
 
@@ -36,45 +25,41 @@ const SimpleTable = (props) => {
             <Table className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell align="center">{props.header1}</TableCell>
-                        <TableCell align="center">{props.header2}</TableCell>
-                        <TableCell align="center">{props.header3}</TableCell>
-                        <TableCell align="center">{props.header4}</TableCell>
-                        <TableCell align="center">{props.header5}</TableCell>
-                        <TableCell align="center">{props.header6}</TableCell>
-                        <TableCell align="center">{props.header7}</TableCell>
-                        <TableCell align="center">{props.header8}</TableCell>
-                        <TableCell align="center">{props.header9}</TableCell>
-                        <TableCell align="center">{props.header10}</TableCell>
-                        <TableCell align="center">{props.header11}</TableCell>
-                        <TableCell align="center">{props.header12}</TableCell>
-                        <TableCell align="center">{props.header13}</TableCell>
-                        <TableCell align="center">{props.header14}</TableCell>
-                        <TableCell align="center">{props.header15}</TableCell>
+                        {
+                            props.headers.map((header, index) => {
+                                return <TableCell align="center" key={index}>{header}</TableCell>
+                            })
+                        }
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {rows.map((row, index) => (
-                        <TableRow key={index}>
-                            <TableCell component="th" scope="row" align="center">
-                                {row.one}
-                            </TableCell>
-                            <TableCell align="center">{row.two}</TableCell>
-                            <TableCell align="center">{row.three}</TableCell>
-                            <TableCell align="center">{row.four}</TableCell>
-                            <TableCell align="center">{row.five}</TableCell>
-                            <TableCell align="center">{row.six}</TableCell>
-                            <TableCell align="center">{row.seven}</TableCell>
-                            <TableCell align="center">{row.eight}</TableCell>
-                            <TableCell align="center">{row.nine}</TableCell>
-                            <TableCell align="center">{row.ten}</TableCell>
-                            <TableCell align="center">{row.eleven}</TableCell>
-                            <TableCell align="center">{row.twelve}</TableCell>
-                            <TableCell align="center">{row.thirteen}</TableCell>
-                            <TableCell align="center">{row.fourteen}</TableCell>
-                            <TableCell align="center">{row.fifteen}</TableCell>
-                        </TableRow>
-                    ))}
+                    {props.rows.map((row, index) => {
+                        return (
+                            <TableRow key={index}>
+                                {Object.values(row).map((eachRow, index) => {
+                                    return(
+                                        <React.Fragment key={index}>
+                                            {typeof eachRow === "number" && (
+                                                <TableCell component="th" scope="row" align="center">
+                                                    ${eachRow}
+                                                </TableCell>
+                                            )}
+                                            {typeof eachRow !== "number" && (
+                                                <TableCell component="th" scope="row" align="center">
+                                                    {eachRow}
+                                                </TableCell>
+                                            )}
+                                            {typeof eachRow === "boolean" && (
+                                                <TableCell component="th" scope="row" align="center">
+                                                    {<Button buttonName={props.buttonName}/>}
+                                                </TableCell>
+                                            )}
+                                        </React.Fragment>
+                                    )}
+                                )}
+                            </TableRow>
+                        )
+                    })}
                 </TableBody>
             </Table>
         </TableContainer>

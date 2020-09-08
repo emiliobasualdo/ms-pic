@@ -12,7 +12,18 @@ import totalTaxes from '../../../mocks/balance/totalTaxes.json';
 import detailedTaxes from '../../../mocks/balance/detailedTaxes.json';
 
 const BalanceTaxes = () => {
-    const tableHeadings = ['Fecha', 'Arancel', 'IVA C.F.A. (21%)', 'Dto. F. O.', 'IVA D.F.O. (10.5%)', 'II.BB', 'Desc. Bancario', 'Total Retenciones', '']
+
+    const tableHeadings = [
+        'Fecha',
+        'Arancel',
+        'IVA C.F.A. (21%)',
+        'Dto. F. O.',
+        'IVA D.F.O. (10.5%)',
+        'II.BB',
+        'Desc. Bancario',
+        'Total Retenciones',
+        ''
+    ]
 
     return(
         <BalanceTaxesContent>
@@ -23,8 +34,17 @@ const BalanceTaxes = () => {
                 search={true}
             />
             <MovementsWrapper>
-                <MovementsColumnData title="Retenciones" subtitle="Detalle de movimientos" movements={totalTaxes} />
-                <LastMovements title="Últimos Movimientos" subtitle="Detalle de movimientos" headings={tableHeadings} items={detailedTaxes} />
+                <MovementsColumnData
+                    title="Retenciones"
+                    subtitle="Detalle de movimientos"
+                    movements={totalTaxes}
+                />
+                <LastMovements
+                    title="Últimos Movimientos"
+                    subtitle="Detalle de movimientos"
+                    headings={tableHeadings}
+                    items={detailedTaxes}
+                />
             </MovementsWrapper>
         </BalanceTaxesContent>
     );

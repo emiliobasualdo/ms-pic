@@ -23,18 +23,23 @@ import {
 
 const Prepaid = () => {
 
-    const createData = (one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen) => {
-        return {one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen};
-    }
-    
-    const rows = [
-        createData('0-1000', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('1001-3000', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('3001-5000', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('5001-7500', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('+7500', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-        createData('Total', 11.387, '20.2%', 21.060, '7.9%', '$12,068,588', '3.8%', 8.952, '6.8%', '$5,179,341', '3.3%', 12.108, '9%', '$6,855,803', '4.2%'),
-    ];
+    const tableHeaders = [
+        "Rango",
+        "Clientes",
+        "%",
+        "Transacciones",
+        "%",
+        "V. Operado",
+        "%",
+        "Tickets",
+        "%",
+        "V. Consumo",
+        "%",
+        "Recargas",
+        "%",
+        "V.Recargas",
+        "%"
+    ]
     
     return(
         <PrepaidBusinessContainer>
@@ -126,28 +131,16 @@ const Prepaid = () => {
                 </HorizontalContainer>
             </CircularGraphicsContainer>
             <SimpleTable
-                header1="Rango"
-                header2="Clientes"
-                header3="%"
-                header4="Transacciones"
-                header5="%"
-                header6="V. Operado"
-                header7="%"
-                header8="Tickets"
-                header9="%"
-                header10="V. Consumo"
-                header11="%"
-                header12="Recargas"
-                header13="%"
-                header14="V.Recargas"
-                header15="%"
+                headers={tableHeaders}
+                rows={tableData}
             />
             <LastContainer>
                 <MetabaseGraph
                     title={"Cantidad de recargas por zona geográfica"}
                     graphId={"749c8028-a099-4adf-a838-eda4eb7d004e"}
                     width={"100%"} height={"100%"}
-                    dashboard={true}/>
+                    dashboard={true}
+                />
             </LastContainer>
         </PrepaidBusinessContainer>
     )
