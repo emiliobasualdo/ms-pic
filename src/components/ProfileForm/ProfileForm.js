@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createRef } from 'react';
-import { FormContainer, Form, ItemLabel, ItemContainer, Select } from './ProfileForm.styles';
+import {FormContainer, Form, ItemLabel, ItemContainer, Select} from './ProfileForm.styles';
 
 const ProfileForm = ({ formContent, triggered }) => {
 
@@ -68,10 +68,17 @@ const ProfileForm = ({ formContent, triggered }) => {
                         )
                     })
                 })}
-                <button hidden={true} ref={theSubmitButton} id="submit-button" onClick={(e) => handleFormSubmit(e)}>Button</button>
+                <button
+                    hidden={true}
+                    ref={theSubmitButton}
+                    id="submit-button"
+                    onClick={(e) => handleFormSubmit(e)}
+                >
+                    Button
+                </button>
             </Form>
         </FormContainer>
-    )
+    );
 }
 
 export default ProfileForm;
