@@ -35,6 +35,8 @@ import BalanceSchedule from './Balance/Schedule/Schedule';
 
 //Coupons
 import Coupons from './Coupons/Coupons';
+import CouponsSummary from './Coupons/Summary/Summary';
+import CouponsOnebyOne from './Coupons/OneByOne/OneByOne';
 
 //Services
 import Services from './Services/Services';
@@ -46,34 +48,41 @@ import Promotions from './Promotions/Promotions';
 import Reports from './Reports/Reports';
 
 export {
-    Balance,
     Business,
     Total,
-    Customers,
     Consumptions,
     Payment,
     Prepaid,
     Recharges,
     Summary,
     Traditional,
-    Zones,
+
+    Customers,
     CustomersTotal,
-    CustomersProfiles,
     Current,
     New,
     CustomersTraditional,
     CustomersPrepaid,
+    CustomersProfiles,
+
+    Zones,
     ZonesTotal,
     ZonesProvinces,
     ZonesStores,
     ZonesRegistration,
+    
+    Balance,
     BalanceTotal,
     BalanceSettlements,
     BalanceReports,
     BalanceTaxes,
     BalanceConciliation,
     BalanceSchedule,
+    
     Coupons,
+    CouponsSummary,
+    CouponsOnebyOne,
+
     Services,
     Promotions,
     Reports

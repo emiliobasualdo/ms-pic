@@ -48,6 +48,7 @@ const BalanceSettlements = () => {
                 title="Movimientos"
                 headings={tableHeadings}
                 items={balanceLiqMovements}
+                buttonName="Detalle"
             />
         </BalanceSettlementsContent>
     );

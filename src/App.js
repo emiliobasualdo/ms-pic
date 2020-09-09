@@ -7,27 +7,27 @@ import {Router, Redirect} from "@reach/router";
 import Layout from './layouts/mainLayout/Layout';
 //Pages
 import {
-    Balance,
     Business,
     Total,
-    Customers,
     Consumptions,
     Payment,
     Prepaid,
     Recharges,
     Summary,
     Traditional,
-    Zones,
+    Customers,
     CustomersTotal,
     Current,
     New,
     CustomersTraditional,
     CustomersPrepaid,
     CustomersProfiles,
+    Zones,
     ZonesTotal,
     ZonesProvinces,
     ZonesStores,
     ZonesRegistration,
+    Balance,
     BalanceTotal,
     BalanceSettlements,
     BalanceReports,
@@ -35,6 +35,8 @@ import {
     BalanceConciliation,
     BalanceSchedule,
     Coupons,
+    CouponsSummary,
+    CouponsOnebyOne,
     Services,
     Promotions,
     Reports
@@ -96,6 +98,8 @@ const App = () => {
                             </Balance>
                             <Coupons exact path="cupones">
                                 <Redirect from ="/" to="resumen" noThrow/>
+                                <CouponsSummary path="resumen"/>
+                                <CouponsOnebyOne path="unoporuno"/>
                             </Coupons>
                             <Services exact path="servicios">
                                 <Redirect from ="/" to="total" noThrow/>

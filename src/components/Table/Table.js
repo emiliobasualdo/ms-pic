@@ -22,6 +22,7 @@ const SimpleTable = (props) => {
 
     return (
         <TableContainer component={Paper}>
+            <h2 style={{margin: '2rem 0 1rem 2rem'}}>{props.title}</h2>
             <Table className={classes.table} aria-label="simple table">
                 <TableHead>
                     <TableRow>

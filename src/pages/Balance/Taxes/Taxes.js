@@ -44,6 +44,7 @@ const BalanceTaxes = () => {
                     title="Últimos Movimientos"
                     subtitle="Detalle de movimientos"
                     headings={tableHeadings}
+                    buttonName="Detalle"
                     items={detailedTaxes}
                 />
             </MovementsWrapper>

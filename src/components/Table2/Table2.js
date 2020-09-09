@@ -2,7 +2,7 @@ import React from 'react';
 import {LastMovementsContainer, LastMovementsHeadings, Table} from "./Table2.styles";
 import Button from "../Button/Button";
 
-const Table2 = ({ title, subtitle, headings, items, difference }) => {
+const Table2 = ({ title, subtitle, headings, items, difference, buttonName }) => {
 
     return (
         <LastMovementsContainer title={title}>
@@ -31,10 +31,10 @@ const Table2 = ({ title, subtitle, headings, items, difference }) => {
                                                 return (
                                                     <React.Fragment key={index}>
                                                         {typeof property === 'number' && (
-                                                            <td align="left">$ {property}</td>
+                                                            <td align="center">$ {property}</td>
                                                         )}
                                                         {typeof property !== 'number' && (
-                                                            <td align="left">{property}</td>
+                                                            <td align="center">{property}</td>
                                                         )}
                                                     </React.Fragment>
                                                 )
@@ -42,7 +42,7 @@ const Table2 = ({ title, subtitle, headings, items, difference }) => {
                                         }
                                         <td>
                                             <Button
-                                                buttonName="Detalle"
+                                                buttonName={buttonName}
                                                 onButtonClicked={() => console.log('MOVIMIENTO:', movement)}
                                             />
                                         </td>

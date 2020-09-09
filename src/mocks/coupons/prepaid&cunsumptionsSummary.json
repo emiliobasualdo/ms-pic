@@ -1,0 +1,73 @@
+[
+    [
+        {
+            "label": "Banco Pagador",
+            "options": [
+                "Santander",
+                "Banco Nación",
+                "Todos"
+            ]
+        },
+        {
+            "label": "Cuits",
+            "options": [
+                "Cuit 1",
+                "Cuit 2",
+                "Cuit 3",
+                "Cuit 4",
+                "Cuit 5",
+                "Cuit 6",
+                "Todos"
+            ]
+        },
+        {
+            "label": "Zona Geográfica",
+            "options": [
+                "CABA",
+                "Córdoba",
+                "Corrientes",
+                "Entre Ríos",
+                "GBA",
+                "Santa Fe",
+                "Todos"
+            ]
+        },
+        {
+            "label": "Comercios",
+            "options": [
+                "Cuit 1",
+                "Cuit 2",
+                "Cuit 3",
+                "Cuit 4",
+                "Cuit 5",
+                "Cuit 6",
+                "Cuit 7",
+                "Cuit 8",
+                "Cuit 9",
+                "Cuit 10",
+                "Cuit 11",
+                "Cuit 12",
+                "Cuit 13",
+                "Cuit 14",
+                "Cuit 15",
+                "Cuit 16",
+                "Cuit 17",
+                "Cuit 18",
+                "Cuit 19",
+                "Cuit 20",
+                "Todos"
+            ]
+        },
+        {
+            "label": "Medios de Captura",
+            "options": [
+                "QR",
+                "Mpos",
+                "Pos",
+                "Ecommerce",
+                "Pin Pads",
+                "Todos"
+            ]
+        }
+    ]
+]

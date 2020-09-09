@@ -73,18 +73,9 @@ const Form = ({structureData, headers, rows, buttonName}) => {
                     }
                 </tbody>
             </Table>
-            <Button buttonName={buttonName} isSubmit={false} margin="0" />
+            <Button buttonName={buttonName} isSubmit={true} margin="0" />
         </MainContainer>
     );
 }
 
 export default Form;
-
-
-
-/*
-
-<Checkbox color="primary" type="checkbox" onChange={() => handleChange()}/>
-<Button key={index} buttonName={item.buttonName} isSubmit={false} margin="0"/>
-
-*/

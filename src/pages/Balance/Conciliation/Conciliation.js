@@ -36,6 +36,7 @@ const BalanceConciliation = () => {
                 title="Unificación de Liquidaciones"
                 headings={tableHeadings}
                 items={liqUnification}
+                buttonName="Detalle"
                 difference={true}
             />
         </BalanceConciliationContent>

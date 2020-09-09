@@ -11,5 +11,6 @@ export const fadeIn = keyframes`
 
 export const BalanceScheduleContent = styled.div`
     width: auto;
+    min-height: 100vh;
     animation: ${fadeIn} .5s .2s ease-in backwards;
 `;

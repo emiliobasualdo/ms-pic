@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import AccountBalanceIcon from '@material-ui/icons/AccountBalance';
+import cashFlowTable from '../../../mocks/balance/cashFlowTable.json';
 import movementsDetailForm from '../../../mocks/balance/movementsDetailForm.json';
 //Components
 import {
+    Table,
     TitleCard,
     ProfileForm
 } from '../../../components';
@@ -17,6 +19,21 @@ const BalanceSchedule = () => {
         setActionTrigger(new Event('submit'));
     }
 
+    const cashFlowHeaders = [
+        "Banco",
+        "Fecha",
+        "01/05",
+        "02/05",
+        "03/05",
+        "04/05",
+        "05/05",
+        "06/05",
+        "07/05",
+        "08/05",
+        "09/05",
+        "10/05"
+    ]
+
     return(
         <BalanceScheduleContent>
             <TitleCard
@@ -25,7 +42,7 @@ const BalanceSchedule = () => {
                 description="Acreditaciones proyectadas"
                 search={true}
             />
-            <div>
+            <div style={{marginBottom: '2rem'}}>
                 <TitleCard
                     title="Bitácora de Segmentación"
                     description="Detalle de movimientos"
@@ -34,6 +51,11 @@ const BalanceSchedule = () => {
                 />
                 <ProfileForm formContent={movementsDetailForm} triggered={actionTrigger}/>
             </div>
+            <Table
+                title="CashFlow"
+                headers={cashFlowHeaders}
+                rows={cashFlowTable}
+            />
         </BalanceScheduleContent>
     );
 }
