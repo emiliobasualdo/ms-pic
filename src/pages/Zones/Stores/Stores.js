@@ -1,41 +1,33 @@
-import React, { useState } from 'react';
+import React from 'react';
 import StoreIcon from '@material-ui/icons/Store';
-//Components
-import {
-    TitleCard,
-    Button2,
-    SquareProgressCircular,
-    CircularProgressContainer
-} from '../../../components';
-//Mock
+import {TitleCard, SelectionCard} from '../../../components';
 import zonesStoresData from '../../../mocks/zones/zonesStoresData.json';
-//Styles
-import{
-    ZonesStoresContent,
-    StoresSelectionContainer,
-    Stores,
-    StoreSelectedContainer,
-    MapAndZones,
-    MapData,
-    Zones,
-    StoresTable,
-    Map,
-    SelectedStoreInTable
-} from './Stores.styles';
+import{ZonesStoresContent} from './Stores.styles';
 
 const ZonesStores = () => {
-    const [storeSelected, setStoreSelected] = useState(null);
-    const [keyActive, setKeyActive] = useState(false);
 
-    const handleStoreSelected = (storeNumber) => {
-        if(!storeSelected && !keyActive){
-            setStoreSelected(storeNumber);
-            setKeyActive(true);
-        } else {
-            setStoreSelected(!storeSelected);
-            setKeyActive(false);
-        }
-    }
+    const storesButtons = [
+        "Comercio001",
+        "Comercio002",
+        "Comercio003",
+        "Comercio004",
+        "Comercio005",
+        "Comercio006",
+        "Comercio007",
+        "Comercio008",
+        "Comercio009",
+        "Comercio010",
+        "Comercio011",
+        "Comercio012",
+        "Comercio013",
+        "Comercio014",
+        "Comercio015",
+        "Comercio016",
+        "Comercio017",
+        "Comercio018",
+        "Comercio019",
+        "Comercio020",
+    ]
 
     const rows = [
         {
@@ -118,91 +110,14 @@ const ZonesStores = () => {
                 weekly="Semanal"
                 monthly="Mensual"
             />
-            <StoresSelectionContainer>
-                <h3>Seleccione el número de comercio</h3>
-                <Stores>
-                    {
-                        zonesStoresData.map((item, index) => {
-                            return (
-                                <Button2
-                                    key={index}
-                                    name={item.store}
-                                    active={storeSelected === index ? true : false}
-                                    onClick={() => handleStoreSelected(index + 1)}
-                                />
-                            )
-                        })
-                    }
-                </Stores>
-            </StoresSelectionContainer>
-            { storeSelected && (
-                <StoreSelectedContainer>
-                    <MapAndZones>
-                        <MapData>
-                            <p>{zonesStoresData[storeSelected - 1].store} - Mapa aqui</p>
-                            <Map />
-                        </MapData>
-                        <Zones>
-                            <h4>Comparado por Zona</h4>
-                            <SquareProgressCircular width="100%">
-                                {zonesStoresData[storeSelected - 1].data.zones.map((item, index) => {
-                                    return(
-                                        <CircularProgressContainer
-                                            key={index}
-                                            percentage={item.value}
-                                            progressDescription={item.title}
-                                            width="25%"
-                                            height="50%"
-                                            textColor="rgb(255, 0, 0)"
-                                            pathColor="rgb(255, 0, 0)"
-                                        />
-                                    )
-                                })}
-                            </SquareProgressCircular>
-                        </Zones>
-                    </MapAndZones>
-                    <StoresTable>
-                        <thead>
-                            <tr>
-                                <th>Variables</th>
-                                {
-                                    zonesStoresData.map((item, index) => {
-                                        return storeSelected - 1 === index && (
-                                            <React.Fragment key={index}>
-                                                {zonesStoresData[storeSelected - 2] && <th>{zonesStoresData[storeSelected - 2].data['storeValues'].title}</th>}
-                                                <th>{item.data['storeValues'].title}</th>
-                                                {zonesStoresData[storeSelected] && <th>{zonesStoresData[storeSelected].data['storeValues'].title}</th>}
-                                            </React.Fragment>
-                                        )
-                                    })
-                                }
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {rows.map((rowItem, rowIndex) => {
-                                return (
-                                    <tr key={rowIndex}>
-                                        <td>
-                                            {rowItem.title}
-                                        </td>
-                                        {
-                                            zonesStoresData.map((storeItem, storeIndex) => {
-                                                return storeSelected - 1 === storeIndex && (
-                                                    <React.Fragment key={storeIndex}>
-                                                        {zonesStoresData[storeSelected - 2] && <td>{zonesStoresData[storeSelected - 2].data['storeValues'][rowItem.value]}</td>}
-                                                        <SelectedStoreInTable>{storeItem.data['storeValues'][rowItem.value]}</SelectedStoreInTable>
-                                                        {zonesStoresData[storeSelected] && <td>{zonesStoresData[storeSelected].data['storeValues'][rowItem.value]}</td>}
-                                                    </React.Fragment>
-                                                )
-                                            })
-                                        }
-                                    </tr>
-                                )
-                            })}
-                        </tbody>
-                    </StoresTable>
-                </StoreSelectedContainer>
-            )}
+            <SelectionCard
+                title="Seleccione el número de comercio"
+                subtitle="Comparado por Zona"
+                header1="Variables"
+                buttons={storesButtons}
+                content={zonesStoresData}
+                rows={rows}
+            />
         </ZonesStoresContent>
     );
 }

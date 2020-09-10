@@ -11,6 +11,7 @@ import MetabaseGraph from './MetabaseGraph/MetabaseGraph';
 import MovementsColumnData from "./MovementsColumnData/MovementsColumnData";
 import ProcessValidationCard from './ProcessValidationCard/ProcessValidationCard';
 import ProfileForm from './ProfileForm/ProfileForm';
+import SelectionCard from './SelectionCard/SelectionCard';
 import SquareAreaChart from './SquareAreaChart/SquareAreaChart';
 import SquareProgressCircular from './SquareProgressCircular/SquareProgressCircular';
 import SummaryAccordion from './SummaryAccordion/SummaryAccordion';
@@ -36,6 +37,7 @@ export {
     ProfileForm,
     Table,
     Table2,
+    SelectionCard,
     SquareAreaChart,
     SquareProgressCircular,
     SummaryAccordion,

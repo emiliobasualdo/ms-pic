@@ -7,10 +7,14 @@ export const Butt = styled.button(({theme, active}) => {
         width: auto;
         padding: 0.5rem;
         margin: 0 0.8rem;
-        border: none;
         outline: none;
         font-weight: bold;
         color: ${theme.colors.darkGrey};
+        border: 0;
+        background-position:50% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
         &:hover{
             cursor: pointer;
             color: ${theme.colors.lightGreen};
@@ -18,8 +22,7 @@ export const Butt = styled.button(({theme, active}) => {
             transition: .5s;
             border-radius: 5px;
         }
-        border-bottom: ${active ? '1px solid #EDEDED' : 'none'};
-        transition: .8s;
-        background-size: 100% 3px;
+        background-image: ${active ? `linear-gradient(${theme.colors.lightGreen}, ${theme.colors.lightGreen})` : 'none'};
+        background-size: ${active ? '100% 2px' : 'none'};
     `;
 });
