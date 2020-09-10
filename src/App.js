@@ -37,6 +37,7 @@ import {
     Coupons,
     CouponsSummary,
     CouponsOnebyOne,
+    CouponsAdvantage,
     Services,
     Promotions,
     Reports
@@ -100,6 +101,7 @@ const App = () => {
                                 <Redirect from ="/" to="resumen" noThrow/>
                                 <CouponsSummary path="resumen"/>
                                 <CouponsOnebyOne path="unoporuno"/>
+                                <CouponsAdvantage path="adelantamiento"/>
                             </Coupons>
                             <Services exact path="servicios">
                                 <Redirect from ="/" to="total" noThrow/>

@@ -50,11 +50,6 @@ const SimpleTable = (props) => {
                                                     {eachRow}
                                                 </TableCell>
                                             )}
-                                            {typeof eachRow === "boolean" && (
-                                                <TableCell component="th" scope="row" align="center">
-                                                    {<Button buttonName={props.buttonName}/>}
-                                                </TableCell>
-                                            )}
                                         </React.Fragment>
                                     )}
                                 )}

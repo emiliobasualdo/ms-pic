@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import ConfirmationNumberIcon from '@material-ui/icons/ConfirmationNumber';
 import movementsTable from '../../../mocks/coupons/movementsTable.json';
 import oneByOneDetailForm from '../../../mocks/coupons/oneByOneDetailForm.json';
-//Styles
 import {CouponsOneByOneContent} from './OneByOne.styles';
 //Components
 import {

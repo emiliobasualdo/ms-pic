@@ -37,6 +37,7 @@ import BalanceSchedule from './Balance/Schedule/Schedule';
 import Coupons from './Coupons/Coupons';
 import CouponsSummary from './Coupons/Summary/Summary';
 import CouponsOnebyOne from './Coupons/OneByOne/OneByOne';
+import CouponsAdvantage from './Coupons/Advantage/Advantage';
 
 //Services
 import Services from './Services/Services';
@@ -82,6 +83,7 @@ export {
     Coupons,
     CouponsSummary,
     CouponsOnebyOne,
+    CouponsAdvantage,
 
     Services,
     Promotions,
