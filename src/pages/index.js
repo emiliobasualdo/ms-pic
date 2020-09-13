@@ -38,6 +38,7 @@ import Coupons from './Coupons/Coupons';
 import CouponsSummary from './Coupons/Summary/Summary';
 import CouponsOnebyOne from './Coupons/OneByOne/OneByOne';
 import CouponsAdvantage from './Coupons/Advantage/Advantage';
+import CouponsContracts from "./Coupons/Contracts/Contracts";
 
 //Services
 import Services from './Services/Services';
@@ -84,6 +85,7 @@ export {
     CouponsSummary,
     CouponsOnebyOne,
     CouponsAdvantage,
+    CouponsContracts,
 
     Services,
     Promotions,

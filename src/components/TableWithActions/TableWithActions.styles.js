@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 export const TableContainer = styled.div`
     background-color: #fff;
@@ -74,3 +74,21 @@ export const Select = styled.select`
     border-bottom: 1px solid #000;
     outline: none;
 `;
+
+export const Button = styled.button(({theme}) => {
+    return css`
+        align-self: center;
+        background-color: transparent;
+        width: auto;
+        padding: 0.5rem;
+        border: none;
+        outline: none;
+        font-weight: bold;
+        color: ${theme.colors.darkGrey};
+        &:hover{
+            cursor: pointer;
+            color: ${theme.colors.lightGreen};
+            transition: .5s;
+        }
+    `;
+});

@@ -1,6 +1,7 @@
 import React from 'react';
 import {LastMovementsContainer, LastMovementsHeadings, Table} from "./Table2.styles";
 import Button from "../Button/Button";
+import GetAppOutlinedIcon from '@material-ui/icons/GetAppOutlined';
 
 const Table2 = ({ title, subtitle, headings, items, difference, buttonName }) => {
 
@@ -23,11 +24,11 @@ const Table2 = ({ title, subtitle, headings, items, difference, buttonName }) =>
                     </thead>
                     <tbody>
                         {
-                            items.map((movement, index) => {
+                            items.map((item, index) => {
                                 return (
                                     <tr key={index}>
                                         {
-                                            Object.values(movement).map((property, index) => {
+                                            Object.values(item).map((property, index) => {
                                                 return (
                                                     <React.Fragment key={index}>
                                                         {typeof property === 'number' && (
@@ -41,10 +42,17 @@ const Table2 = ({ title, subtitle, headings, items, difference, buttonName }) =>
                                             })
                                         }
                                         <td>
-                                            <Button
-                                                buttonName={buttonName}
-                                                onButtonClicked={() => console.log('MOVIMIENTO:', movement)}
-                                            />
+                                            {buttonName === 'state' ? (
+                                                <GetAppOutlinedIcon 
+                                                    fontSize="default"
+                                                    onClick={() => console.log('ICON', item)}
+                                                    style={{ cursor: 'pointer' }}/>
+                                            ) : (
+                                                <Button
+                                                    buttonName={buttonName}
+                                                    onButtonClicked={() => console.log('ITEM:', item)}
+                                                />
+                                            )}
                                         </td>
                                         {difference && <td>Difference here</td>}
                                     </tr>

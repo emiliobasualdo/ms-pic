@@ -1,0 +1,52 @@
+[
+  {
+    "provider": "Opción 1",
+    "brand": "Visa",
+    "transaction": "Crédito",
+    "frequency": "Diaria",
+    "period": "30 días",
+    "initialDate": "11/05/2020",
+    "finalDate": "21/06/2020",
+    "percentage": "28.0"
+  },
+  {
+    "provider": "Opción 2",
+    "brand": "Mastercard",
+    "transaction": "Crédito",
+    "frequency": "Diaria",
+    "period": "30 días",
+    "initialDate": "12/05/2020",
+    "finalDate": "22/06/2020",
+    "percentage": "27.5"
+  },
+  {
+    "provider": "Opción 3",
+    "brand": "Mastercard",
+    "transaction": "Crédito",
+    "frequency": "Semanal",
+    "period": "90 días",
+    "initialDate": "15/05/2020",
+    "finalDate": "15/08/2020",
+    "percentage": "24.5"
+  },
+  {
+    "provider": "Opción 4",
+    "brand": "Visa",
+    "transaction": "Crédito",
+    "frequency": "Quincenal",
+    "period": "120 días",
+    "initialDate": "15/05/2020",
+    "finalDate": "15/11/2020",
+    "percentage": "21.5"
+  },
+  {
+    "provider": "Opción 5",
+    "brand": "Amex",
+    "transaction": "Crédito",
+    "frequency": "Mensual",
+    "period": "120 días",
+    "initialDate": "15/05/2020",
+    "finalDate": "15/11/2020",
+    "percentage": "25.5"
+  }
+]

@@ -33,7 +33,7 @@ const CouponsAdvantage = () => {
                 <ProfileForm formContent={advantageForm} triggered={actionTrigger}/>
             </div>
             <TableWithActions header="Resultado del adelantamiento" subHeader="Mejor Oferta"/>
-            <Table2 title="Detalle de Cupones" headings={ tableHeadings } items={ couponDetails } />
+            <Table2 title="Detalle de Cupones" headings={ tableHeadings } items={ couponDetails } buttonName="Detalle"/>
         </CouponsAdvantageContent>
     );
 }

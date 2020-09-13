@@ -1,5 +1,5 @@
 import React, {useRef} from 'react';
-import { TableContainer, TableHeader, TableIcon, TableHeadings, Table, OptionForm, OptionFormHeading, OptionFormItem, Select } from './TableWithActions.styles';
+import { TableContainer, TableHeader, TableIcon, TableHeadings, Table, OptionForm, OptionFormHeading, OptionFormItem, Select, Button } from './TableWithActions.styles';
 import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 import advantageResults from '../../mocks/coupons/advantageResults.json';
 
@@ -68,7 +68,7 @@ const TableWithActions = ({ header, subHeader }) => {
                                     <OptionFormItem>{ item['total'] }</OptionFormItem>
                                     <hr/>
                                     <OptionFormItem>
-                                        <button>Generar</button>
+                                        <Button>Generar</Button>
                                     </OptionFormItem>
                                     </OptionFormItem>
                                 </form>
@@ -109,7 +109,7 @@ const TableWithActions = ({ header, subHeader }) => {
                                         <OptionFormItem>{ item['total'] }</OptionFormItem>
                                         <hr/>
                                         <OptionFormItem>
-                                            <button>Generar</button>
+                                            <Button>Generar</Button>
                                         </OptionFormItem>
                                     </OptionFormItem>
                                 </form>
