@@ -1,0 +1,34 @@
+[
+  {
+    "couponsQuantity": 153325,
+    "option": "Opción 1",
+    "bank": "Banco A",
+    "percentage": "Tasa 30%",
+    "paymentDate": "Acreditación 21/06",
+    "total": 10629420
+  },
+  {
+    "couponsQuantity": 15631500,
+    "option": "Opción 2",
+    "bank": "Banco B",
+    "percentage": "Tasa 25%",
+    "paymentDate": "Acreditación 22/06",
+    "total": 11410995
+  },
+  {
+    "couponsQuantity": "",
+    "option": "Opción 3",
+    "bank": "Banco C",
+    "percentage": "Tasa 27.5%",
+    "paymentDate": "Acreditación 26/06",
+    "total": 11020208
+  },
+  {
+    "couponsQuantity": "percentages",
+    "option": "Opción 4",
+    "bank": "Banco D",
+    "percentage": "Tasa 28.9%",
+    "paymentDate": "Acreditación 21/06",
+    "total": 10801367
+  }
+]

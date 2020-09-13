@@ -33,6 +33,7 @@ const BalanceTotal = () => {
                     subtitle="Detalle de movimientos"
                     headings={tableHeadings}
                     items={totalDetailedMovements}
+                    buttonName="Detalle"
                 />
             </MovementsWrapper>
         </BalanceTotalContent>
