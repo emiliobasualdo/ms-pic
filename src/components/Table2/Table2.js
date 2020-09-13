@@ -43,7 +43,7 @@ const Table2 = ({ title, subtitle, headings, items, difference, buttonName }) =>
                                         }
                                         <td>
                                             {buttonName === 'state' ? (
-                                                <GetAppOutlinedIcon 
+                                                <GetAppOutlinedIcon
                                                     fontSize="default"
                                                     onClick={() => console.log('ICON', item)}
                                                     style={{ cursor: 'pointer' }}/>
