@@ -23,6 +23,7 @@ const ZonesTotal = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <ZonesDataContainer>
                 {zonesColumnData.map((item, index) => {

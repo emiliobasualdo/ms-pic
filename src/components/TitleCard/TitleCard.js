@@ -32,7 +32,7 @@ const TitleCard = (props) => {
             </FirstContainer>
             {
                 !props.search && (
-                    <SecondContainer>
+                    <SecondContainer borderLine={props.borderLine}>
                         {(props.diary && props.weekly && props.monthly) && (
                             <>
                                 <Item>{props.diary}</Item>

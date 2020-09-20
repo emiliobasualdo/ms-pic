@@ -28,6 +28,7 @@ const ZonesProvinces = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <ProvincesDataContainer>
                 {zonesProvincesData.map((item, index) => {

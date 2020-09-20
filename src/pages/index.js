@@ -42,6 +42,7 @@ import CouponsContracts from "./Coupons/Contracts/Contracts";
 
 //Services
 import Services from './Services/Services';
+import ServicesTotal from './Services/Total/Total';
 
 //Promotions
 import Promotions from './Promotions/Promotions';
@@ -88,6 +89,8 @@ export {
     CouponsContracts,
 
     Services,
+    ServicesTotal,
+
     Promotions,
     Reports
 }

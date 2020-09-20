@@ -109,6 +109,7 @@ const ZonesStores = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <SelectionCard
                 title="Seleccione el número de comercio"

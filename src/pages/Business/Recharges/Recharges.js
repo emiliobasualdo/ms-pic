@@ -28,6 +28,7 @@ const Recharges = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <RechargesBusinessDataContainer>
                 {
@@ -59,6 +60,7 @@ const Recharges = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <SquaredsContainer>
                 {
@@ -139,6 +141,7 @@ const Recharges = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <SquaredsContainer>
                 {

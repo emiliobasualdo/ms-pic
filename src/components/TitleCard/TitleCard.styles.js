@@ -48,7 +48,7 @@ export const SecondContainer = styled.ul(({theme}) => {
         height: 3rem;
         list-style: none;
         padding: 0 5rem;
-        border-bottom: 1px solid ${theme.colors.lightGrey};
+        border-bottom: ${props => props.borderLine && '1px solid #eee'};
         background-color: transparent;
     `;
 });

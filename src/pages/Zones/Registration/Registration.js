@@ -52,6 +52,7 @@ const ZonesRegistration = () => {
                 diary="Alta"
                 weekly="Baja"
                 monthly="Modificación"
+                borderLine={true}
             />
             <FormsContainer>
                 {zonesRegistrationData.map((item, index) => {

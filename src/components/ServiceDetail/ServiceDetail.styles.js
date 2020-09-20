@@ -9,7 +9,7 @@ export const fadeIn = keyframes`
     }
 `;
 
-export const ServicesTotalContainer = styled.div`
+export const ServiceDetailContainer = styled.div`
     width: auto;
     animation: ${fadeIn} .5s .2s ease-in backwards;
 `;

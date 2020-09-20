@@ -49,6 +49,7 @@ const CustomersProfiles = () => {
                 icon={<FingerprintIcon fontSize="large" />}
                 title="Consulta de Perfiles"
                 action="Generar consulta"
+                borderLine={true}
                 onClick={() => handleClick()}
             />
             <ProfileForm formContent={profileForm} triggered={actionTrigger}/>

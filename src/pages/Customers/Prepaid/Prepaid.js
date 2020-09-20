@@ -33,6 +33,7 @@ const CustomersPrepaid = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <BarGraphCardsContainer>
                 {

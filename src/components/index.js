@@ -21,6 +21,8 @@ import Table2 from "./Table2/Table2";
 import TitleCard from './TitleCard/TitleCard';
 import TwoCircularProgressCard from './TwoCircularProgressCard/TwoCircularProgress';
 import TableWithActions from "./TableWithActions/TableWithActions";
+import HorizontalData from "./HorizontalData/HorizontalData";
+import ServiceDetail from "./ServiceDetail/ServiceDetail";
 
 export {
     BarGraphCard,
@@ -45,5 +47,7 @@ export {
     SummaryAccordionItem,
     TitleCard,
     TwoCircularProgressCard,
-    TableWithActions
+    TableWithActions,
+    HorizontalData,
+    ServiceDetail
 }

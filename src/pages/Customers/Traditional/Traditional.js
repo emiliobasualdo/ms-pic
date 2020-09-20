@@ -33,6 +33,7 @@ const CustomersTraditional = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <BarGraphCardsContainer>
                 {

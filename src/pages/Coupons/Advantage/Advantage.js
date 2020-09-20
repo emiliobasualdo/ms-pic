@@ -28,6 +28,7 @@ const CouponsAdvantage = () => {
                     title="Adelantamiento de Cupones"
                     description="Selecciones las variables"
                     action="Eventual"
+                    borderLine={true}
                     onClick={() => handleClick()}
                 />
                 <ProfileForm formContent={advantageForm} triggered={actionTrigger}/>

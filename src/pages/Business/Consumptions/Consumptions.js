@@ -24,6 +24,7 @@ const Consumptions = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <ConsumptionsBusinessDataContainer>
                 {
@@ -55,6 +56,7 @@ const Consumptions = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <SquaredsContainer>
                 {
@@ -99,6 +101,7 @@ const Consumptions = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <SquaredsContainer>
                 {

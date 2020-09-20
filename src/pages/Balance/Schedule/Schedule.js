@@ -47,6 +47,7 @@ const BalanceSchedule = () => {
                     title="Bitácora de Segmentación"
                     description="Detalle de movimientos"
                     action="Generar consulta"
+                    borderLine={true}
                     onClick={() => handleClick()}
                 />
                 <ProfileForm formContent={movementsDetailForm} triggered={actionTrigger}/>

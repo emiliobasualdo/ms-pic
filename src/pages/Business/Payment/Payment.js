@@ -25,6 +25,7 @@ const Payment = () => {
                 diary="Diaria"
                 weekly="Semanal"
                 monthly="Mensual"
+                borderLine={true}
             />
             <PaymentBusinessDataContainer>
                 {
