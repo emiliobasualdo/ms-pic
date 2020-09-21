@@ -38,7 +38,10 @@ export const Table = styled.table`
     }
     & tbody {
         & tr {
-            border-top: 1px solid #eee;
+            border-top: ${props => !props.onlyFirstTdStyled && '1px solid #eee'}
+        }
+        & tr:first-child {
+            border-top: ${props => props.onlyFirstTdStyled && '1px solid #eee'}
         }
         & td {
             display: flex;
@@ -47,6 +50,9 @@ export const Table = styled.table`
             padding: 1rem 0;
             font-size: .8rem;
             width: 8rem;
+        }
+        & td:first-child {
+            ${props => props.onlyFirstTdStyled && 'font-size: 1.2rem; font-weight:800'}
         }
     }
 `;

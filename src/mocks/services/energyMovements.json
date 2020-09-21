@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Energía",
+    "enterprise": "Edenor",
+    "clients": "18658",
+    "ammount": 61273036,
+    "transactions": "18658",
+    "avgTicket": 3284
+  },
+  {
+    "title": "Energía",
+    "enterprise": "Edenor",
+    "clients": "11321",
+    "ammount": 31766050,
+    "transactions": "11321",
+    "avgTicket": 2805
+  }
+]

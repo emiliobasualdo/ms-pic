@@ -3,7 +3,13 @@ import {LastMovementsContainer, LastMovementsHeadings, Table} from "./Table2.sty
 import Button from "../Button/Button";
 import GetAppOutlinedIcon from '@material-ui/icons/GetAppOutlined';
 
-const Table2 = ({ title, subtitle, headings, items, difference, buttonName }) => {
+const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firstHeadingOnlyOnce }) => {
+
+    if (firstHeadingOnlyOnce) {
+        items.forEach((item) => {
+            return items.indexOf(item) !== 0 ? item.title = '' : false;
+        })
+    }
 
     return (
         <LastMovementsContainer title={title}>
@@ -12,7 +18,7 @@ const Table2 = ({ title, subtitle, headings, items, difference, buttonName }) =>
                 <h3>{ subtitle }</h3>
             </LastMovementsHeadings>
             <div>
-                <Table>
+                <Table onlyFirstTdStyled={firstHeadingOnlyOnce}>
                     <thead>
                         <tr>
                             {

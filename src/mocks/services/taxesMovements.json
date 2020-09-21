@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (CABA)",
+    "clients": "5236",
+    "ammount": 9545228,
+    "transactions": "5236",
+    "avgTicket": 1823
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (Provincia de Bs.As.)",
+    "clients": "2314",
+    "ammount": 4049500,
+    "transactions": "2314",
+    "avgTicket": 1750
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (Provincia de Santa Fe)",
+    "clients": "1032",
+    "ammount": 918480,
+    "transactions": "1032",
+    "avgTicket": 890
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (Provincia de Entre Rios)",
+    "clients": "825",
+    "ammount": 1014750,
+    "transactions": "825",
+    "avgTicket": 1230
+  }
+]
