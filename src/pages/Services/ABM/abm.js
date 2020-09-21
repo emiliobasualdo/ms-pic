@@ -1,27 +1,27 @@
 import React from 'react';
 import {Table2, TitleCard} from "../../../components";
 import BlurOnRoundedIcon from "@material-ui/icons/BlurOnRounded";
-import rankings from '../../../mocks/services/rankings.json';
+import abm from '../../../mocks/services/abm.json';
 
-const ServicesRanking = () => {
-    const tableHeadings = ['Servicios', 'Empresa', 'Clientes', 'Monto', 'Transacciones', 'Ticket Promedio', 'Perfiles'];
+const ServicesABM = () => {
+    const tableHeadings = ['Servicios', 'Empresa', 'Clientes', 'Alta', 'Modificación', 'Baja'];
 
     return (
         <>
             <TitleCard
                 icon={<BlurOnRoundedIcon fontSize="large"/>}
-                title="Ranking de Servicios"
-                description="Servicios pagados por medio de su aplicación"
-                search={true}
+                title="Modificación de Servicios"
+                description="Alta - Baja - Modificación"
             />
             <Table2
                 title="Detalle de Servicios básicos"
                 headings={tableHeadings}
-                items={rankings}
+                items={abm}
                 buttonName="Ver"
+                abm={true}
             />
         </>
     )
 }
 
-export default ServicesRanking;
+export default ServicesABM;

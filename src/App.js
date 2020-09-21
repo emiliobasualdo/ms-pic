@@ -43,7 +43,8 @@ import {
     Promotions,
     Reports,
     ServicesTotal,
-    ServicesRanking
+    ServicesRanking,
+    ServicesABM
 } from './pages';
 
 const GlobalStyle = createGlobalStyle(({theme}) => {
@@ -111,6 +112,7 @@ const App = () => {
                                 <Redirect from ="/" to="total" noThrow/>
                                 <ServicesTotal path="/total"/>
                                 <ServicesRanking path="/ranking" />
+                                <ServicesABM path="/abm" />
                             </Services>
                             <Promotions exact path="promociones">
                                 <Redirect from ="/" to="total" noThrow/>

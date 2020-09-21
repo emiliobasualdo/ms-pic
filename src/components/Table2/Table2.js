@@ -3,7 +3,7 @@ import {LastMovementsContainer, LastMovementsHeadings, Table} from "./Table2.sty
 import Button from "../Button/Button";
 import GetAppOutlinedIcon from '@material-ui/icons/GetAppOutlined';
 
-const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firstHeadingOnlyOnce }) => {
+const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firstHeadingOnlyOnce, abm }) => {
 
     if (firstHeadingOnlyOnce) {
         items.forEach((item) => {
@@ -47,19 +47,47 @@ const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firs
                                                 )
                                             })
                                         }
-                                        <td>
-                                            {buttonName === 'state' ? (
-                                                <GetAppOutlinedIcon
-                                                    fontSize="default"
-                                                    onClick={() => console.log('ICON', item)}
-                                                    style={{ cursor: 'pointer' }}/>
-                                            ) : (
-                                                <Button
-                                                    buttonName={buttonName}
-                                                    onButtonClicked={() => console.log('ITEM:', item)}
-                                                />
-                                            )}
-                                        </td>
+                                        {
+                                            abm && (
+                                                <>
+                                                    <td>
+                                                        <Button
+                                                            buttonName="NA"
+                                                            onButtonClicked={() => console.log('ITEM:', item)}
+                                                        />
+                                                    </td>
+                                                    <td>
+                                                        <Button
+                                                            buttonName="Generar"
+                                                            onButtonClicked={() => console.log('ITEM:', item)}
+                                                        />
+                                                    </td>
+                                                    <td>
+                                                        <Button
+                                                            buttonName="Generar"
+                                                            onButtonClicked={() => console.log('ITEM:', item)}
+                                                        />
+                                                    </td>
+                                                </>
+                                            )
+                                        }
+                                        {
+                                            !abm && (
+                                                <td>
+                                                    {buttonName === 'state' ? (
+                                                        <GetAppOutlinedIcon
+                                                            fontSize="default"
+                                                            onClick={() => console.log('ICON', item)}
+                                                            style={{ cursor: 'pointer' }}/>
+                                                    ) : (
+                                                        <Button
+                                                            buttonName={buttonName}
+                                                            onButtonClicked={() => console.log('ITEM:', item)}
+                                                        />
+                                                    )}
+                                                </td>
+                                            )
+                                        }
                                         {difference && <td>Difference here</td>}
                                     </tr>
                                 )

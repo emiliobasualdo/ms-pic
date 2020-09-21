@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Energía",
+    "enterprise": "Edenor",
+    "clients": "18658"
+  },
+  {
+    "title": "Energía",
+    "enterprise": "Edesur",
+    "clients": "11321"
+  },
+  {
+    "title": "Gas",
+    "enterprise": "Metrogas",
+    "clients": "12356"
+  },
+  {
+    "title": "Gas",
+    "enterprise": "Ecogas",
+    "clients": "10350"
+  },
+  {
+    "title": "Gas",
+    "enterprise": "Naturgy",
+    "clients": "6358"
+  },
+  {
+    "title": "Gas",
+    "enterprise": "Camuzzi",
+    "clients": "3214"
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (CABA)",
+    "clients": "5236"
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (Provincia de Bs.As.)",
+    "clients": "2314"
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (Provincia de Santa Fe)",
+    "clients": "1.032"
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (Provincia de Entre Rios)",
+    "clients": "0"
+  }
+]
