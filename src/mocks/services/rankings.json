@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Energía",
+    "enterprise": "Edenor",
+    "clients": "18658",
+    "amount": 61273036,
+    "transactions": "18658",
+    "avgTicket": 3284
+  },
+  {
+    "title": "Energía",
+    "enterprise": "Edesur",
+    "clients": "11321",
+    "amount": 31766050,
+    "transactions": "11321",
+    "avgTicket": 2805
+  },
+  {
+    "title": "Gas",
+    "enterprise": "Metrogas",
+    "clients": "12356",
+    "amount": 31273036,
+    "transactions": "12356",
+    "avgTicket": 2531
+  },
+  {
+    "title": "Gas",
+    "enterprise": "Ecogas",
+    "clients": "10350",
+    "amount": 21766050,
+    "transactions": "10350",
+    "avgTicket": 2103
+  },
+  {
+    "title": "Gas",
+    "enterprise": "Naturgy",
+    "clients": "6358",
+    "amount": 10045640,
+    "transactions": "6358",
+    "avgTicket": 1580
+  },
+  {
+    "title": "Gas",
+    "enterprise": "Camuzzi",
+    "clients": "3214",
+    "amount": 4049640,
+    "transactions": "3214",
+    "avgTicket": 1260
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (CABA)",
+    "clients": "5236",
+    "amount": 9545228,
+    "transactions": "5236",
+    "avgTicket": 1823
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (Provincia de Bs.As.)",
+    "clients": "2314",
+    "amount": 4049500,
+    "transactions": "2314",
+    "avgTicket": 1750
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (Provincia de Santa Fe)",
+    "clients": "1.032",
+    "amount": 918480,
+    "transactions": "1032",
+    "avgTicket": 890
+  },
+  {
+    "title": "Impuestos",
+    "enterprise": "ABL (Provincia de Entre Rios)",
+    "clients": "825",
+    "amount": 1014750,
+    "transactions": "825",
+    "avgTicket": 1230
+  }
+]

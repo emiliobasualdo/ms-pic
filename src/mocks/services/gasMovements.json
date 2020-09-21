@@ -3,7 +3,7 @@
     "title": "Gas",
     "enterprise": "Metrogas",
     "clients": "12356",
-    "ammount": 31273036,
+    "amount": 31273036,
     "transactions": "12356",
     "avgTicket": 2531
   },
@@ -11,7 +11,7 @@
     "title": "Gas",
     "enterprise": "Ecogas",
     "clients": "10350",
-    "ammount": 21766050,
+    "amount": 21766050,
     "transactions": "10350",
     "avgTicket": 2103
   },
@@ -19,7 +19,7 @@
     "title": "Gas",
     "enterprise": "Naturgy",
     "clients": "6358",
-    "ammount": 10045640,
+    "amount": 10045640,
     "transactions": "6358",
     "avgTicket": 1580
   },
@@ -27,7 +27,7 @@
     "title": "Gas",
     "enterprise": "Camuzzi",
     "clients": "3214",
-    "ammount": 4049640,
+    "amount": 4049640,
     "transactions": "3214",
     "avgTicket": 1260
   }
