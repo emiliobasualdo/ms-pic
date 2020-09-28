@@ -48,6 +48,8 @@ import ServicesABM from './Services/ABM/abm';
 
 //Promotions
 import Promotions from './Promotions/Promotions';
+import PromotionsTotal from "./Promotions/Total/Total";
+import PromotionsHistoric from './Promotions/Historic/Historic'
 
 //Reports
 import Reports from './Reports/Reports';
@@ -96,5 +98,8 @@ export {
     ServicesABM,
 
     Promotions,
+    PromotionsTotal,
+    PromotionsHistoric,
+
     Reports
 }

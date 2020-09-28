@@ -18,7 +18,7 @@ const ServicesABM = () => {
                 headings={tableHeadings}
                 items={abm}
                 buttonName="Ver"
-                abm={true}
+                threeButtons={true}
             />
         </>
     )

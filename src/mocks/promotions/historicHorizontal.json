@@ -1,0 +1,35 @@
+[
+  {
+    "import": 16,
+    "text": "Campañas Históricas"
+  },
+  {
+    "import": "439307",
+    "text": "Clientes Impactados"
+  },
+  {
+    "import": {
+      "first": "105.311",
+      "percentage": 24
+    },
+    "text": "Consumos"
+  },
+  {
+    "import": {
+      "first": 138496750,
+      "percentage": 33.2
+    },
+    "text": "Ahorros"
+  },
+  {
+    "import": {
+      "first": 30217603,
+      "percentage": 16.4
+    },
+    "text": "Aportes Propios"
+  },
+  {
+    "import": 1.14,
+    "text": "# Transacciones"
+  }
+]

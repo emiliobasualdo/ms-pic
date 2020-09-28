@@ -16,7 +16,7 @@ export const TitleCardContainer = styled.div(({theme}) => {
         padding: 1.5rem;
         margin: 2.5rem 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: ${props => props.withSlider === true ? 'flex-start' : 'space-between'};
         align-items: center;
         animation: ${fadeIn} .5s .2s ease-in backwards;
     `;
@@ -88,4 +88,20 @@ export const Input = styled.div`
         text-align: right;
         margin-right: 1rem;
     }
+`;
+
+export const SliderContent = styled.div`
+    margin-left: 10rem;
+`;
+
+export const Range = styled.span`
+    font-size: .8rem;
+    font-weight: 800;
+    color: #626262;
+`;
+
+export const SliderValue = styled.span`
+    margin-left: .2rem;
+    color: #00c292;
+    font-size: .8rem;
 `;

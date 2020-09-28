@@ -1,0 +1,41 @@
+[
+  {
+    "import": 3,
+    "text": "Campañas Vigentes"
+  },
+  {
+    "import": {
+      "first": "53123",
+      "percentage": 78.0
+    },
+    "text": "Clientes Impactados"
+  },
+  {
+    "import": {
+      "first": 156417000,
+      "percentage": 63.3
+    },
+    "text": "Consumos"
+  },
+  {
+    "import": {
+      "first": 5206644,
+      "percentage": 100
+    },
+    "text": "Ahorros"
+  },
+  {
+    "import": {
+      "first": 1894345,
+      "percentage": 36.4
+    },
+    "text": "Aportes Propios"
+  },
+  {
+    "import": {
+      "first": 263920,
+      "percentage": 82.8
+    },
+    "text": "# Transacciones"
+  }
+]

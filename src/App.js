@@ -44,7 +44,9 @@ import {
     Reports,
     ServicesTotal,
     ServicesRanking,
-    ServicesABM
+    ServicesABM,
+    PromotionsTotal,
+    PromotionsHistoric
 } from './pages';
 
 const GlobalStyle = createGlobalStyle(({theme}) => {
@@ -116,6 +118,8 @@ const App = () => {
                             </Services>
                             <Promotions exact path="promociones">
                                 <Redirect from ="/" to="total" noThrow/>
+                                <PromotionsTotal path="/total" />
+                                <PromotionsHistoric path="/promocioneshistoricas" />
                             </Promotions>
                             <Reports exact path="informes">
                                 <Redirect from ="/" to="resumen" noThrow/>

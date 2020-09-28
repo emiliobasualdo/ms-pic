@@ -3,7 +3,7 @@ import {LastMovementsContainer, LastMovementsHeadings, Table} from "./Table2.sty
 import Button from "../Button/Button";
 import GetAppOutlinedIcon from '@material-ui/icons/GetAppOutlined';
 
-const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firstHeadingOnlyOnce, abm }) => {
+const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firstHeadingOnlyOnce, twoButtons, threeButtons }) => {
 
     if (firstHeadingOnlyOnce) {
         items.forEach((item) => {
@@ -48,7 +48,32 @@ const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firs
                                             })
                                         }
                                         {
-                                            abm && (
+                                            twoButtons && (
+                                                <>
+                                                    <td>
+                                                        <Button
+                                                            buttonName="Ver"
+                                                            onButtonClicked={() => console.log('ITEM:', item)}
+                                                        />
+                                                    </td>
+                                                    <td>
+                                                        {buttonName === 'state' ? (
+                                                            <GetAppOutlinedIcon
+                                                                fontSize="default"
+                                                                onClick={() => console.log('ICON', item)}
+                                                                style={{ cursor: 'pointer' }}/>
+                                                        ) : (
+                                                            <Button
+                                                                buttonName={buttonName}
+                                                                onButtonClicked={() => console.log('ITEM:', item)}
+                                                            />
+                                                        )}
+                                                    </td>
+                                                </>
+                                            )
+                                        }
+                                        {
+                                            threeButtons && (
                                                 <>
                                                     <td>
                                                         <Button
@@ -72,7 +97,7 @@ const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firs
                                             )
                                         }
                                         {
-                                            !abm && (
+                                            !twoButtons && !threeButtons && (
                                                 <td>
                                                     {buttonName === 'state' ? (
                                                         <GetAppOutlinedIcon

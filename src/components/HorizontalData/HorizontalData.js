@@ -1,15 +1,20 @@
 import React from 'react';
 import { HorizontalDataContainer, Table } from "./HorizontalData.styles";
-import totalMovements from '../../mocks/services/totalMovements.json';
 
-const HorizontalData = () => {
+const HorizontalData = ({ data, doubleData }) => {
+    console.log(data);
     return (
         <HorizontalDataContainer>
             <Table>
                 <thead>
                     <tr>
-                        {totalMovements.map((item, index) => {
-                            return (
+                        {data.map((item, index) => {
+                            if (doubleData && typeof item['import'].first === 'number') {
+                                item['import'].first = `$ ${item['import'].first}`;
+                            }
+                            return doubleData && item['import'].percentage ? (
+                                <th key={index}>{item['import']['first']}<br/>{item['import']['percentage']} %</th>
+                            ) : (
                                 <th key={index}>{item['import']}</th>
                             )
                         })}
@@ -17,7 +22,7 @@ const HorizontalData = () => {
                 </thead>
                 <tbody>
                     <tr>
-                        {totalMovements.map((item, index) => {
+                        {data.map((item, index) => {
                             return (
                                 <td key={index}>{item['text']}</td>
                             )

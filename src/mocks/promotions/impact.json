@@ -1,0 +1,79 @@
+[
+  {
+    "id": "001",
+    "clients": "7075",
+    "consumptions": 11722595,
+    "savings": 291764,
+    "own": 72941,
+    "tickets": "19940",
+    "clientsPercentage": "10.4 %",
+    "volumePercentage": "4.8 %",
+    "savingsPercentage": "25 %"
+  },
+  {
+    "id": "002",
+    "clients": "7222",
+    "consumptions": 12145207,
+    "savings": 604730,
+    "own": 211656,
+    "tickets": "20572",
+    "clientsPercentage": "10.6 %",
+    "volumePercentage": "4.9 %",
+    "savingsPercentage": "35 %"
+  },
+  {
+    "id": "003",
+    "clients": "7027",
+    "consumptions": 11736040,
+    "savings": 292110,
+    "own": 146055,
+    "tickets": "19798",
+    "clientsPercentage": "23 %",
+    "volumePercentage": "4.8 %",
+    "savingsPercentage": "25 %"
+  },
+  {
+    "id": "001-002",
+    "clients": "7875",
+    "consumptions": 26386052,
+    "savings": 987790,
+    "own": 296337,
+    "tickets": "44550",
+    "clientsPercentage": "23 %",
+    "volumePercentage": "4.8 %",
+    "savingsPercentage": "25 %"
+  },
+  {
+    "id": "001-003",
+    "clients": "7763",
+    "consumptions": 25945054,
+    "savings": 970741,
+    "own": 407711,
+    "tickets": "43792",
+    "clientsPercentage": "23 %",
+    "volumePercentage": "4.8 %",
+    "savingsPercentage": "25 %"
+  },
+  {
+    "id": "002-003",
+    "clients": "7781",
+    "consumptions": 11736040,
+    "savings": 292110,
+    "own": 146055,
+    "tickets": "19798",
+    "clientsPercentage": "23 %",
+    "volumePercentage": "4.8 %",
+    "savingsPercentage": "25 %"
+  },
+  {
+    "id": "Todas",
+    "clients": "8380",
+    "consumptions": 42349328,
+    "savings": 1407811,
+    "own": 515259,
+    "tickets": "71204",
+    "clientsPercentage": "23 %",
+    "volumePercentage": "4.8 %",
+    "savingsPercentage": "25 %"
+  }
+]

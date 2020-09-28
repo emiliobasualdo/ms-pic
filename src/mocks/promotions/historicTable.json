@@ -1,0 +1,90 @@
+[
+  {
+    "id": "Promo1A",
+    "universe": "54784",
+    "clientsI": "8218",
+    "percentage": "15 %",
+    "preConsumoption": 9039360,
+    "postConsumption": 10395264,
+    "total": 831621,
+    "discount": "8 %",
+    "ivaRelationship": "1.63"
+  },
+  {
+    "id": "Promo2A",
+    "universe": "15785",
+    "clientsI": "4104",
+    "percentage": "26 %",
+    "preConsumoption": 4604800,
+    "postConsumption": 5802048,
+    "total": 464164,
+    "discount": "8 %",
+    "ivaRelationship": "2.58"
+  },
+  {
+    "id": "Promo3A",
+    "universe": "12356",
+    "clientsI": "2965",
+    "percentage": "24 %",
+    "preConsumoption": 3826307,
+    "postConsumption": 4744621,
+    "total": 379570,
+    "discount": "8 %",
+    "ivaRelationship": "2.42"
+  },
+  {
+    "id": "Promo4A",
+    "universe": "18966",
+    "clientsI": "3414",
+    "percentage": "18 %",
+    "preConsumoption": 5197817,
+    "postConsumption": 6133424,
+    "total": 306671,
+    "discount": "5 %",
+    "ivaRelationship": "3.05"
+  },
+  {
+    "id": "Promo5A",
+    "universe": "13235",
+    "clientsI": "1588",
+    "percentage": "12 %",
+    "preConsumoption": 1418263,
+    "postConsumption": 1588454,
+    "total": 119134,
+    "discount": "8 %",
+    "ivaRelationship": "1.43"
+  },
+  {
+    "id": "Promo1B",
+    "universe": "58984",
+    "clientsI": "21234",
+    "percentage": "36 %",
+    "preConsumoption": 21806503,
+    "postConsumption": 24423283,
+    "total": 12211642,
+    "discount": "50 %",
+    "ivaRelationship": "0.21"
+  },
+  {
+    "id": "Promo2B",
+    "universe": "23598",
+    "clientsI": "6607",
+    "percentage": "28 %",
+    "preConsumoption": 3700166,
+    "postConsumption": 5550250,
+    "total": 1387562,
+    "discount": "25 %",
+    "ivaRelationship": "1.33"
+  },
+  {
+    "id": "Promo3B",
+    "universe": "25687",
+    "clientsI": "7706",
+    "percentage": "30 %",
+    "preConsumoption": 4962728,
+    "postConsumption": 7940365,
+    "total": 1588073,
+    "discount": "20 %",
+    "ivaRelationship": "1.88"
+  }
+]
