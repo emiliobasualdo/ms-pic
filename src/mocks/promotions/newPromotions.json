@@ -1,0 +1,46 @@
+[
+  {
+    "id": "001",
+    "clientsQty": "68092",
+    "impactedClients": "12523",
+    "from": "01/05/20",
+    "to": "15/05/20",
+    "discount": "15 %",
+    "ownPercentage": "45%",
+    "thirdsPercentage": "55 %",
+    "rate": "3.2 %"
+  },
+  {
+    "id": "002",
+    "clientsQty": "68092",
+    "impactedClients": "17586",
+    "from": "01/05/20",
+    "to": "20/05/20",
+    "discount": "30 %",
+    "ownPercentage": "35%",
+    "thirdsPercentage": "65 %",
+    "rate": "7.2 %"
+  },
+  {
+    "id": "003",
+    "clientsQty": "68092",
+    "impactedClients": "2569",
+    "from": "10/05/20",
+    "to": "25/05/20",
+    "discount": "10 %",
+    "ownPercentage": "100 %",
+    "thirdsPercentage": "0 %",
+    "rate": "15 %"
+  },
+  {
+    "id": "004",
+    "clientsQty": "68092",
+    "impactedClients": "8050",
+    "from": "25/05/20",
+    "to": "30/05/20",
+    "discount": "10 %",
+    "ownPercentage": "0 %",
+    "thirdsPercentage": "100 %",
+    "rate": "2 %"
+  }
+]

@@ -49,10 +49,13 @@ import ServicesABM from './Services/ABM/abm';
 //Promotions
 import Promotions from './Promotions/Promotions';
 import PromotionsTotal from "./Promotions/Total/Total";
-import PromotionsHistoric from './Promotions/Historic/Historic'
+import PromotionsHistoric from './Promotions/Historic/Historic';
+import PromotionsNew from './Promotions/New/New';
 
 //Reports
 import Reports from './Reports/Reports';
+import ReportsSummary from './Reports/Summary/Summary';
+import ReportsHistoric from './Reports/Historic/Historic';
 
 export {
     Business,
@@ -100,6 +103,9 @@ export {
     Promotions,
     PromotionsTotal,
     PromotionsHistoric,
+    PromotionsNew,
 
-    Reports
+    Reports,
+    ReportsSummary,
+    ReportsHistoric
 }

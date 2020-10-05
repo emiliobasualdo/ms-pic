@@ -8,6 +8,7 @@ import gasMovements from '../../../mocks/services/gasMovements.json';
 import taxesMovements from '../../../mocks/services/taxesMovements.json';
 
 const ServicesTotal = () => {
+    const tableHeadings = ['Servicios', 'Empresa', 'Clientes', 'Monto', 'Transacciones', 'Ticket Promedio', 'Perfiles'];
     return (
         <ServicesTotalContainer>
             <TitleCard
@@ -16,9 +17,9 @@ const ServicesTotal = () => {
                 description="Total movimientos"
             />
             <HorizontalData data={totalMovements}/>
-            <ServiceDetail title="Detalle de Servicios básicos" items={ energyMovements } />
-            <ServiceDetail title="Detalle de Servicios básicos" items={ gasMovements } />
-            <ServiceDetail title="Detalle de Servicios básicos" items={ taxesMovements } />
+            <ServiceDetail title="Detalle de Servicios básicos" headings={tableHeadings} items={ energyMovements } />
+            <ServiceDetail title="Detalle de Servicios básicos" headings={tableHeadings} items={ gasMovements } />
+            <ServiceDetail title="Detalle de Servicios básicos" headings={tableHeadings} items={ taxesMovements } />
         </ServicesTotalContainer>
     )
 }

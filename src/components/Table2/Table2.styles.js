@@ -56,3 +56,11 @@ export const Table = styled.table`
         }
     }
 `;
+
+export const Ball = styled.div`
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: ${props => props.color};
+    margin: 0 auto;
+`;

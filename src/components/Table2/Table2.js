@@ -1,9 +1,9 @@
 import React from 'react';
-import {LastMovementsContainer, LastMovementsHeadings, Table} from "./Table2.styles";
+import {LastMovementsContainer, LastMovementsHeadings, Table, Ball } from "./Table2.styles";
 import Button from "../Button/Button";
 import GetAppOutlinedIcon from '@material-ui/icons/GetAppOutlined';
 
-const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firstHeadingOnlyOnce, twoButtons, threeButtons }) => {
+const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firstHeadingOnlyOnce, twoButtons, threeButtons, firstButtonName, secondButtonName, thirdButtonName }) => {
 
     if (firstHeadingOnlyOnce) {
         items.forEach((item) => {
@@ -23,7 +23,20 @@ const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firs
                         <tr>
                             {
                                 headings.map((item, index) => {
-                                    return <th key={index}>{item}</th>
+                                    switch (item) {
+                                        case 'red':
+                                            return <th key={index}><Ball color={item} /></th>
+                                        case 'orange':
+                                            return <th key={index}><Ball color={item} /></th>
+                                        case 'yellow':
+                                            return <th key={index}><Ball color={item} /></th>
+                                        case 'greenyellow':
+                                            return <th key={index}><Ball color={item} /></th>
+                                        case 'darkGreen':
+                                            return <th key={index}><Ball color={item} /></th>
+                                        default:
+                                            return <th key={index}>{item}</th>
+                                    }
                                 })
                             }
                         </tr>
@@ -77,19 +90,19 @@ const Table2 = ({ title, subtitle, headings, items, difference, buttonName, firs
                                                 <>
                                                     <td>
                                                         <Button
-                                                            buttonName="NA"
+                                                            buttonName={firstButtonName}
                                                             onButtonClicked={() => console.log('ITEM:', item)}
                                                         />
                                                     </td>
                                                     <td>
                                                         <Button
-                                                            buttonName="Generar"
+                                                            buttonName={secondButtonName}
                                                             onButtonClicked={() => console.log('ITEM:', item)}
                                                         />
                                                     </td>
                                                     <td>
                                                         <Button
-                                                            buttonName="Generar"
+                                                            buttonName={thirdButtonName}
                                                             onButtonClicked={() => console.log('ITEM:', item)}
                                                         />
                                                     </td>

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "36557",
+    "question": "001",
+    "red": "35 %",
+    "orange": "30 %",
+    "yellow": "17 %",
+    "green": "13 %",
+    "darkGreen": "5 %"
+  },
+  {
+    "title": "36557",
+    "question": "002",
+    "red": "35 %",
+    "orange": "22 %",
+    "yellow": "22 %",
+    "green": "10 %",
+    "darkGreen": "11 %"
+  },
+  {
+    "title": "36557",
+    "question": "003",
+    "red": "10 %",
+    "orange": "15 %",
+    "yellow": "25 %",
+    "green": "30 %",
+    "darkGreen": "20 %"
+  },
+  {
+    "title": "36557",
+    "question": "004",
+    "red": "35 %",
+    "orange": "22 %",
+    "yellow": "22 %",
+    "green": "10 %",
+    "darkGreen": "11 %"
+  },
+  {
+    "title": "36557",
+    "question": "005",
+    "red": "5 %",
+    "orange": "10 %",
+    "yellow": "20 %",
+    "green": "35 %",
+    "darkGreen": "30 %"
+  }
+]

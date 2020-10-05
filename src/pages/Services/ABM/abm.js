@@ -19,6 +19,9 @@ const ServicesABM = () => {
                 items={abm}
                 buttonName="Ver"
                 threeButtons={true}
+                firstButtonName="NA"
+                secondButtonName="Generar"
+                thirdButtonName="Generar"
             />
         </>
     )

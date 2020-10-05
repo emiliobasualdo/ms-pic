@@ -2,14 +2,13 @@ import React from 'react';
 import {Table2} from "../index";
 
 
-const ServiceDetail = ({title, items}) => {
-    const tableHeadings = ['Servicios', 'Empresa', 'Clientes', 'Monto', 'Transacciones', 'Ticket Promedio', 'Perfiles'];
+const ServiceDetail = ({title, items, headings}) => {
 
     return (
         <>
             <Table2
                 title={title}
-                headings={tableHeadings}
+                headings={headings}
                 items={items}
                 buttonName="Ver"
                 firstHeadingOnlyOnce={true}
